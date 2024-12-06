@@ -7,31 +7,31 @@ import React from 'react'
 function Home() {
   const carouselImages = [
     {
-      src: '/src/assets/image/image1.jpg',
+      src: '/image/image1.jpg',
       title: 'Maintenance industrielle et gestion\n' + 'de projets\n',
       description:
         '' +
         "Nous offrons des services complets en gestion de projets et préparation d'arrêt,\n",
     },
     {
-      src: '/src/assets/image/image2.jpg',
+      src: '/image/image2.jpg',
       title: 'title',
       description: 'description',
     },
     {
-      src: '/src/assets/image/image3.jpg',
+      src: '/image/image3.jpg',
       title: 'title',
       description: 'description',
     },
     {
-      src: '/src/assets/image/image4.png',
+      src: '/image/image4.png',
       title: 'title',
       description: 'description',
     },
   ]
   const carouselText = [
     {
-      src: '/src/assets/image/image1.jpg',
+      src: '/image/image1.jpg',
       title: 'Système de sécurité instrumentés',
       description:
         'Dans le contexte de la sécurité industrielle, les systèmes de sécurité instrumentés (SIS) ' +
@@ -40,7 +40,7 @@ function Home() {
         'des solutions adaptées visant à atteindre les niveaux requis de sécurité et de conformité,',
     },
     {
-      src: '/src/assets/image/image2.jpg',
+      src: '/image/image2.jpg',
       title: 'Gestion projets',
       description:
         'Préparation.' +
@@ -51,7 +51,7 @@ function Home() {
         'Management.',
     },
     {
-      src: '/src/assets/image/image3.jpg',
+      src: '/image/image3.jpg',
       title: 'Maintenance Industrielle',
       description:
         'Instrumea vous aide à établir des plans de maintenance préventive et des indicateurs pour optimiser ' +
@@ -74,7 +74,7 @@ function Home() {
       {/* First Section (Background Image with Title) */}
       <div
         className="py-[200px] bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8"
-        style={{backgroundImage: "url('/src/assets/image/bg2.jpg')"}}
+        style={{backgroundImage: "url('/image/bg2.jpg')"}}
       >
         {/* Title Section */}
         <div className="p-1 max-w-3xl z-10 bg-black bg-opacity-50 rounded m-4">
@@ -103,28 +103,28 @@ function Home() {
         >
           {[
             {
-              image: '/src/assets/image/image3.jpg',
+              image: '/image/image3.jpg',
               title: 'Raffinage Pétrochimie',
               link: '/service',
-              icon: '/src/assets/image/icons/icon3.png',
+              icon: '/image/icons/icon3.png',
             },
             {
-              image: '/src/assets/image/image1.jpg',
+              image: '/image/image1.jpg',
               title: 'Energie',
               link: '/service',
-              icon: '/src/assets/image/icons/icon2.png',
+              icon: '/image/icons/icon2.png',
             },
             {
-              image: '/src/assets/image/image2.jpg',
+              image: '/image/image2.jpg',
               title: 'Industrie',
               link: '/service',
-              icon: '/src/assets/image/icons/icon1.png',
+              icon: '/image/icons/icon1.png',
             },
             {
-              image: '/src/assets/image/image3.jpg',
+              image: '/image/image3.jpg',
               title: 'Ingénierie',
               link: '/service',
-              icon: '/src/assets/image/icons/icon4.png',
+              icon: '/image/icons/icon4.png',
             },
           ].map((card, index) => (
             <div
@@ -229,7 +229,7 @@ function Home() {
       <div
         className="py-12 px-6 bg-cover bg-center bg-white"
         style={{
-          backgroundImage: `url('/src/assets/image/logoO.png')`,
+          backgroundImage: `url('/image/logoO.png')`,
           backgroundSize: '200%',
           backgroundRepeat: 'no-repeat',
         }}
@@ -302,7 +302,7 @@ function Home() {
             {/* First Item */}
             <div className="flex items-start space-x-4">
               <img
-                src="/src/assets/image/icons/iconQ1.png"
+                src="/image/icons/iconQ1.png"
                 alt="Qualité"
                 className="w-16 h-16 p-2 bg-amber-600 rounded-full"
               />
@@ -320,7 +320,7 @@ function Home() {
             {/* Second Item */}
             <div className="flex items-start space-x-4">
               <img
-                src="/src/assets/image/icons/iconQ2.png"
+                src="/image/icons/iconQ2.png"
                 alt="Sécurité"
                 className="w-16 h-16 p-2   bg-amber-600 rounded-full"
               />
@@ -337,7 +337,7 @@ function Home() {
             {/* Third Item */}
             <div className="flex items-start space-x-4">
               <img
-                src="/src/assets/image/icons/iconQ3.png"
+                src="/image/icons/iconQ3.png"
                 alt="Environnement"
                 className="w-16 h-16 p-2  bg-amber-600 rounded-full "
               />

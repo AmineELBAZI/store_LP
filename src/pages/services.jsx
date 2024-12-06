@@ -3,19 +3,19 @@ import React, {useState, useEffect} from 'react'
 const Services = () => {
   const [expandedCard, setExpandedCard] = useState(null)
   const [backgroundImage, setBackgroundImage] = useState(
-    "url('/src/assets/image/backgroundAP.png')",
+    "url('/image/backgroundAP.png')",
   )
 
   const carouselImages = [
     {
-      src: '/src/assets/image/image1.jpg',
+      src: '/image/image1.jpg',
       title: "Préparation d'arrêt",
       description:
         'Rédaction du cahier des charges, consultation des entreprises sous-traitantes,' +
         ' spécification du matériel, estimation des coûts, mise en place de processus de préparation, supervision...',
     },
     {
-      src: '/src/assets/image/image2.jpg',
+      src: '/image/image2.jpg',
       title: 'Méthode et fiabilisation',
       description:
         'Amélioration et pérennisation du processus de remise en état du matériel et des contrats, ' +
@@ -24,14 +24,14 @@ const Services = () => {
         ' méthodologie pour la gestion des mesures de maitrise de risques instrumentées...',
     },
     {
-      src: '/src/assets/image/image3.jpg',
+      src: '/image/image3.jpg',
       title: 'Automatismes',
       description:
         "Analyses fonctionnelles, développement d'applica- tions sur automates, développement d'applications IHM, " +
         'automates de sécurité, rédaction de cahiers des charges, programmations, rédaction de modes opéra- toires, maintenance...',
     },
     {
-      src: '/src/assets/image/image4.png',
+      src: '/image/image4.png',
       title: 'Projet et travaux neufs',
       description:
         'Planification des projets et des études, préparation des travaux, achats du matériel, supervision des travaux...',
@@ -45,10 +45,10 @@ const Services = () => {
 
   // Array of background images to rotate
   const images = [
-    "url('/src/assets/image/backgroundAP.png')",
-    "url('/src/assets/image/background1.jpg')",
-    "url('/src/assets/image/background2.jpg')",
-    "url('/src/assets/image/background1.jpg')",
+    "url('/image/backgroundAP.png')",
+    "url('/image/background1.jpg')",
+    "url('/image/background2.jpg')",
+    "url('/image/background1.jpg')",
   ]
 
   // Change background image every 5 seconds
@@ -94,7 +94,7 @@ const Services = () => {
             <a className="block h-full">
               <img
                 className="object-cover w-22 h-22 mb-4 m-2 mx-auto"
-                src="/src/assets/image/icons/iconS1.png"
+                src="/image/icons/iconS1.png"
                 alt="/service"
                 style={{filter: 'invert(1)'}}
               />
@@ -150,7 +150,7 @@ const Services = () => {
             {/* First Item */}
             <div className="flex items-start space-x-4 mt-12">
               <img
-                src="/src/assets/image/icons/iconQ1.png"
+                src="/image/icons/iconQ1.png"
                 alt="Qualité"
                 className="w-20 h-20 m-12  "
               />
@@ -164,7 +164,7 @@ const Services = () => {
             {/* Second Item */}
             <div className="flex items-start  mt-12 space-x-4">
               <img
-                src="/src/assets/image/icons/iconQ2.png"
+                src="/image/icons/iconQ2.png"
                 alt="Hygiène"
                 className="w-20 h-20  m-12 "
               />
@@ -176,7 +176,7 @@ const Services = () => {
             {/* Third Item */}
             <div className="flex items-start m-12 space-x-4">
               <img
-                src="/src/assets/image/icons/iconQ3.png"
+                src="/image/icons/iconQ3.png"
                 alt="Sécurité"
                 className="w-20 h-20 m-12  "
               />
@@ -192,7 +192,7 @@ const Services = () => {
       <div
         className="py-12 px-6 bg-cover bg-center bg-white"
         style={{
-          backgroundImage: `url('/src/assets/image/BGlogo.png')`,
+          backgroundImage: `url('/image/BGlogo.png')`,
           backgroundSize: '100%',
           backgroundRepeat: 'no-repeat',
         }}
@@ -264,7 +264,7 @@ const Services = () => {
             {/* First Item */}
             <div className="flex items-start space-x-4">
               <img
-                src="/src/assets/image/icons/iconQ1.png"
+                src="/image/icons/iconQ1.png"
                 alt="Qualité"
                 className="w-16 h-16 p-2 bg-amber-600 rounded-full"
               />
@@ -284,7 +284,7 @@ const Services = () => {
             {/* Second Item */}
             <div className="flex items-start space-x-4">
               <img
-                src="/src/assets/image/icons/iconQ2.png"
+                src="/image/icons/iconQ2.png"
                 alt="Hygiène"
                 className="w-16 h-16 p-2 bg-amber-600 rounded-full"
               />
@@ -303,7 +303,7 @@ const Services = () => {
             {/* Third Item */}
             <div className="flex items-start space-x-4">
               <img
-                src="/src/assets/image/icons/iconQ3.png"
+                src="/image/icons/iconQ3.png"
                 alt="Sécurité"
                 className="w-16 h-16 p-2 bg-amber-600 rounded-full"
               />

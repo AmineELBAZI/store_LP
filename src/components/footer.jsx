@@ -12,7 +12,7 @@ const Footer = () => {
                 <div
                   className="logo bg-cover bg-center w-12 h-12 mr-2"
                   style={{
-                    backgroundImage: `url('/src/assets/image/logoF.png')`,
+                    backgroundImage: `url('/image/logoF.png')`,
                     backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat',
                   }}
@@ -24,7 +24,7 @@ const Footer = () => {
               <div>
                 <h2 className="mb-6 text-ml font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center">
                   <img
-                    src="/src/assets/image/icons/iconF1.png"
+                    src="/image/icons/iconF1.png"
                     alt="Contacts Icon"
                     className="w-10 h-10 mr-2"
                   />
@@ -57,7 +57,7 @@ const Footer = () => {
               <div>
                 <h2 className="mb-6 text-ml font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center">
                   <img
-                    src="/src/assets/image/icons/iconF2.png"
+                    src="/image/icons/iconF2.png"
                     alt="Location Icon"
                     className="w-10 h-10 mr-2"
                   />
@@ -75,7 +75,7 @@ const Footer = () => {
               <div>
                 <h2 className="mb-6 text-ml font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center">
                   <img
-                    src="/src/assets/image/icons/iconF3.png"
+                    src="/image/icons/iconF3.png"
                     alt="Resources Icon"
                     className="w-10 h-10 mr-2"
                   />
@@ -108,7 +108,7 @@ const Footer = () => {
               <div>
                 <h2 className="mb-6 text-ml font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center">
                   <img
-                    src="/src/assets/image/icons/iconF4.png"
+                    src="/image/icons/iconF4.png"
                     alt="Join Us Icon"
                     className="w-10 h-10 mr-2"
                   />

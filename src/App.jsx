@@ -12,11 +12,14 @@ import Footer from './components/footer.jsx'
 
 function App() {
   return (
-    <BrowserRouter>
+  <>
+    
+    <BrowserRouter >
+    <Navbars />
       {/* Navbar shown on all pages */}
-      <Navbars />
+    
 
-      <div className="main-content">
+      <div >
         <Routes>
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
@@ -29,6 +32,7 @@ function App() {
       {/* Footer shown on all pages */}
       <Footer />
     </BrowserRouter>
+    </>
   )
 }
 

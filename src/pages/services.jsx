@@ -1,6 +1,12 @@
 import React, {useState, useEffect} from 'react'
 
 const Services = () => {
+
+  const [showMore, setShowMore] = useState(false);
+
+  const toggleDescription = () => {
+    setShowMore((prev) => !prev);
+  };
   const [expandedCard, setExpandedCard] = useState(null)
   const [backgroundImage, setBackgroundImage] = useState(
     "url('/image/backgroundAP.png')",
@@ -65,20 +71,19 @@ const Services = () => {
     <div>
       {/* First Section (Background Image with Title) */}
       <div
-        className="py-[300px] bg-cover bg-center flex flex-col items-start justify-center  relative p-10 "
-        style={{backgroundImage: backgroundImage}}
+        className="py-20 md:py-40 lg:py-[300px] bg-cover bg-center flex flex-col items-start justify-center relative px-4 md:px-8 lg:px-10"
+        style={{ backgroundImage: backgroundImage }}
       >
         {/* Title Section */}
-        <div className="rounded-lg  text-left mt-[0px]  max-w-3xl bg-white p-4  text-black opacity-90 shadow-lg hover:scale-110">
-          <p className="text-lg md:text-2xl">
-            Installée en Rhône Alpes, <b className="text-blue-600">INSTRUMEA</b>{' '}
-            est une société spécialisée dans les métiers de l'ingénierie.
+        <div className="rounded-lg text-left mt-0 max-w-lg md:max-w-2xl lg:max-w-3xl bg-white p-4 text-black opacity-90 shadow-lg transform transition hover:scale-105">
+          <p className="text-base md:text-lg lg:text-4xl">
+            Installée en Rhône Alpes, <b className="text-blue-600">INSTRUMEA</b> est
+            une société spécialisée dans les métiers de l'ingénierie.
           </p>
-          <p className="text-lg md:text-xl">
-            dans le domaine de l'instrumentation et de l'informatique
-            industriel.
+          <p className="text-base md:text-lg lg:text-3xl">
+            dans le domaine de l'instrumentation et de l'informatique industriel.
           </p>
-          <p className="text-lg md:text-xl">
+          <p className="text-base md:text-lg lg:text-3xl">
             Elle accompagne les industries françaises dans leurs projets, elle
             propose une assistance technique en maintenance, travaux neufs et
             préparation d'arrêt.
@@ -87,23 +92,19 @@ const Services = () => {
 
         {/* Cards Section */}
         <div
-          className="absolute transform  translate-x-[90%] w-2/4   mt-[550px]   z-20"
-          style={{gap: '0px'}}
+          className="absolute transform translate-x-0 md:translate-x-[50%] lg:translate-x-[90%] w-11/12 md:w-2/3 lg:w-2/4 mt-20 md:mt-[300px] lg:mt-[550px] z-20 flex justify-center"
+          style={{ gap: '0px' }}
         >
-          <div className="bg-amber-700 border  border-gray-200 shadow-lg overflow-hidden rounded-b-full relative h-[400px] w-[500px] p-8 opacity-90 flex justify-center items-center hover:scale-110">
+          <div className="bg-amber-700 border border-gray-200 shadow-lg overflow-hidden rounded-b-full relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
             <a className="block h-full">
               <img
-                className="object-cover w-22 h-22 mb-4 m-2 mx-auto"
+                className="object-cover w-30 h-30 mb-4  mx-auto"
                 src="/image/icons/iconS1.png"
                 alt="/service"
-                style={{filter: 'invert(1)'}}
+                style={{ filter: 'invert(1)' }}
               />
-
-              {/* Icon at the top */}
-              <div className="absolute top-4 left-4 bg-transparent flex justify-center  items-center"></div>
-
               {/* Title with overlay */}
-              <h5 className="absolute inset-0  mt-20  flex items-center justify-center  text-white text-2xl font-bold tracking-tight  text-center">
+              <h5 className="absolute inset-0 mt-12 md:mt-16 lg:mt-20 flex items-center justify-center text-white text-sm md:text-3xl lg:text-3xl font-bold tracking-tight text-center">
                 Présentation de nos services et domaines d'expertise
               </h5>
             </a>
@@ -111,82 +112,398 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Section 3 */}
+
       <div className="bg-white bg-cover bg-center">
         <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4">
           {/* First Column (Main Paragraph with Title) */}
-          <div className="text-gray-700 text-lg md:text-xl leading-relaxed p-12 mt-8">
-            <h2 className="text-amber-700 text-5xl font-bold mb-8">
-              <b className="text-black  font-bold mb-4">
+          <div className=" text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12">
+            <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8">
+              <b className="text-black font-bold mb-4">
                 Présentation de notre entreprise et de ses processus :
               </b>
             </h2>
-            <p className="text-black m-6 text-3xl">
+            <div className='p-6 text-gray-600 '>
+            <p className=" text-blue mb-4 text-xl md:text-3xl">
               Instrumea offre une expertise complète en ingénierie et gestion de
-              projets, avec une approche structurée et rigoureuse. Nous
-              intervenons dans la planification, la préparation des travaux,
+              projets, avec une approche structurée et rigoureuse. 
+            </p>
+            <p className=" mb-4 text-xl md:text-3xl">
+              Nous intervenons dans la planification, la préparation des travaux,
               l’achat de matériel, et la supervision des opérations.
             </p>
-            <p className="text-black m-6 text-3xl">
+            <p className=" mb-4 text-xl md:text-3xl">
               Nos services incluent le développement d’applications sur
               automates, la rédaction de cahiers des charges, et la maintenance
               des équipements, tout en garantissant des solutions fiables et
               innovantes.
             </p>
-            <p className="text-black m-6 text-3xl">
+            <p className=" mb-4 text-xl md:text-3xl">
               Nous assurons également la budgétisation, l'amélioration des
               équipements, et la gestion de démarches SIL et SIS, tout en
               respectant les normes QHSE grâce au référentiel MASE.
             </p>
-            <p className="text-black m-6 text-3xl">
+            <p className=" mb-4 text-xl md:text-3xl">
               Avec une méthodologie rigoureuse, nous répondons aux besoins les
               plus complexes, notamment dans les projets neufs, l’automatisme,
               et la préparation des arrêts techniques.
             </p>
+            </div>
           </div>
 
-          {/* Second Column (Three Sections with Logos and Titles) */}
-          <div className="space-y-8 bg-[#eaf1f5] rounded-l-full text-5xl ml-0 p-[150px] hover:scale-110 ">
-            {/* First Item */}
-            <div className="flex items-start space-x-4 mt-12">
-              <img
-                src="/image/icons/iconQ1.png"
-                alt="Qualité"
-                className="w-20 h-20 m-12  "
-              />
-              <div>
-                <h1 className=" font-semibold m-12 text-black">
-                  Société à taille humaine
-                </h1>
-              </div>
-            </div>
+          {/* Wrapper for Centering */}
+          <div
+          className="flex items-center justify-center bg-cover bg-center hover:scale-110 rounded-full p-6 md:p-8 max-w-[80%] mx-auto m-10"
+          style={{
+            backgroundImage: `url('/image/background2.jpg')`,
+            height: '700px', 
+            width:'700px', 
 
-            {/* Second Item */}
-            <div className="flex items-start  mt-12 space-x-4">
-              <img
-                src="/image/icons/iconQ2.png"
-                alt="Hygiène"
-                className="w-20 h-20  m-12 "
-              />
-              <div>
-                <h4 className=" font-semibold m-12 text-black">Dynamique</h4>
-              </div>
-            </div>
+          }}
+        ></div>
 
-            {/* Third Item */}
-            <div className="flex items-start m-12 space-x-4">
-              <img
-                src="/image/icons/iconQ3.png"
-                alt="Sécurité"
-                className="w-20 h-20 m-12  "
-              />
-              <div>
-                <h4 className=" font-semibold m-12 text-black">A l'écoute</h4>
+        </div>
+      </div>
+
+      {/* Section 3 */}
+      <section className="bg-white bg-cover bg-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4">
+          {/* Wrapper for Centering */}
+          <div
+          className="flex items-center justify-center bg-cover bg-center hover:scale-110 rounded-full p-6 md:p-8 max-w-[80%] mx-auto m-10"
+          style={{
+            backgroundImage: `url('/image/background1.jpg')`,
+            height: '700px', 
+            width:'700px', 
+
+          }}
+        ></div>
+
+          <div className="text-gray-700 text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12">
+            <div className="space-y-8 text-xl md:text-3xl transition-transform">
+              {/* 1 Item */}
+              <div className="flex items-start space-x-4 m-6 md:m-12">
+                <img
+                  src="/image/icons/iconSs1.png"
+                  alt="Qualité"
+                  className="w-16 h-16 m-4"
+                />
+                <div>
+                  <h4 className="font-semibold m-4 text-black">
+                    Expertise polyvalente et complète
+                  </h4>
+                </div>
+              </div>
+
+              {/* 2 Item */}
+              <div className="flex items-start space-x-4 m-6 md:m-12">
+                <img
+                  src="/image/icons/iconSs2.png"
+                  alt="Dynamique"
+                  className="w-16 h-16 m-4"
+                />
+                <div>
+                  <h4 className="font-semibold m-4 text-black">
+                    Engagement envers l’excellence opérationnelle
+                  </h4>
+                </div>
+              </div>
+
+              {/* 3 Item */}
+              <div className="flex items-start space-x-4 m-6 md:m-12">
+                <img
+                  src="/image/icons/iconSs3.png"
+                  alt="A l'écoute"
+                  className="w-16 h-16 m-4"
+                />
+                <div>
+                  <h4 className="font-semibold m-4 text-black">
+                    Solutions innovantes et adaptées
+                  </h4>
+                </div>
+              </div>
+
+              {/* 4 Item */}
+              <div className="flex items-start space-x-4 m-6 md:m-12">
+                <img
+                  src="/image/icons/iconSs4.png"
+                  alt="A l'écoute"
+                  className="w-16 h-16 m-4"
+                />
+                <div>
+                  <h4 className="font-semibold m-4 text-black">
+                    Accompagnement sur mesure
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+
+
+      
+
+      <section className="p-8">
+      <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-center">
+        <b className="text-black font-bold mb-4">
+        <b className="text-blue-600">INSTRUMEA</b> intervient dans plusieurs secteurs d'activités
+        </b>
+      </h2>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+          {/* Column 1 */}
+          <div className="bg-white p-6 rounded-lg text-center">
+            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+              <img
+                src="/image/icons/icon3.png"
+                alt="Image 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+              Raffinage Pétrochimie
+            </h3>
+            <p
+              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+                showMore ? '' : 'line-clamp-4'
+              }`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+              sollicitudin eros libero non justo. Quisque vel tempor dui.
+            </p>
+            <button
+              onClick={toggleDescription}
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              {showMore ? '◁' : '▷'}
+            </button>
+          </div>
+
+          {/* Column 2 */}
+          <div className="bg-white p-6 rounded-lg text-center">
+            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+              <img
+                src="/image/icons/icon5.png"
+                alt="Image 2"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+              Chimie
+            </h3>
+            <p
+              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+                showMore ? '' : 'line-clamp-4'
+              }`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+              sollicitudin eros libero non justo. Quisque vel tempor dui.
+            </p>
+            <button
+              onClick={toggleDescription}
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              {showMore ? '◁' : '▷'}
+            </button>
+          </div>
+
+          {/* Column 3 */}
+          <div className="bg-white p-6 rounded-lg text-center">
+            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+              <img
+                src="/image/icons/icon1.png"
+                alt="Image 3"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+              Energie
+            </h3>
+            <p
+              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+                showMore ? '' : 'line-clamp-4'
+              }`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+              sollicitudin eros libero non justo. Quisque vel tempor dui.
+            </p>
+            <button
+              onClick={toggleDescription}
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              {showMore ? '◁' : '▷'}
+            </button>
+          </div>
+
+          {/* Column 4 */}
+          <div className="bg-white p-6 rounded-lg text-center">
+            <div className="w-40 h-40 mx-auto mb-4 rounded-full p-8 overflow-hidden">
+              <img
+                src="/image/icons/icon6.png"
+                alt="Image 4"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+              Pharmaceutique
+            </h3>
+            <p
+              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+                showMore ? '' : 'line-clamp-4'
+              }`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+              sollicitudin eros libero non justo. Quisque vel tempor dui.
+            </p>
+            <button
+              onClick={toggleDescription}
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              {showMore ? '◁' : '▷'}
+            </button>
+          </div>
+        </div>
+
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Column 1 */}
+          <div className="bg-white p-6 rounded-lg text-center">
+            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+              <img
+                src="/image/icons/icon3.png"
+                alt="Image 1"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+              Raffinage Pétrochimie
+            </h3>
+            <p
+              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+                showMore ? '' : 'line-clamp-4'
+              }`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+              sollicitudin eros libero non justo. Quisque vel tempor dui.
+            </p>
+            <button
+              onClick={toggleDescription}
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              {showMore ? '◁' : '▷'}
+            </button>
+          </div>
+
+          {/* Column 2 */}
+          <div className="bg-white p-6 rounded-lg text-center">
+            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+              <img
+                src="/image/icons/icon5.png"
+                alt="Image 2"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+              Chimie
+            </h3>
+            <p
+              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+                showMore ? '' : 'line-clamp-4'
+              }`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+              sollicitudin eros libero non justo. Quisque vel tempor dui.
+            </p>
+            <button
+              onClick={toggleDescription}
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              {showMore ? '◁' : '▷'}
+            </button>
+          </div>
+
+          {/* Column 3 */}
+          <div className="bg-white p-6 rounded-lg text-center">
+            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+              <img
+                src="/image/icons/icon1.png"
+                alt="Image 3"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+              Energie
+            </h3>
+            <p
+              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+                showMore ? '' : 'line-clamp-4'
+              }`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+              sollicitudin eros libero non justo. Quisque vel tempor dui.
+            </p>
+            <button
+              onClick={toggleDescription}
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              {showMore ? '◁' : '▷'}
+            </button>
+          </div>
+
+          {/* Column 4 */}
+          <div className="bg-white p-6 rounded-lg text-center">
+            <div className="w-40 h-40 mx-auto mb-4 rounded-full p-8 overflow-hidden">
+              <img
+                src="/image/icons/icon6.png"
+                alt="Image 4"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+              Pharmaceutique
+            </h3>
+            <p
+              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+                showMore ? '' : 'line-clamp-4'
+              }`}
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+              sollicitudin eros libero non justo. Quisque vel tempor dui.
+            </p>
+            <button
+              onClick={toggleDescription}
+              className="text-blue-600 hover:text-blue-800 font-semibold"
+            >
+              {showMore ? '◁' : '▷'}
+            </button>
+          </div>
+        </div>
+
+
       </div>
+    </section>
+
+
+
+
+
+
 
       {/* Section 2 */}
       <div
@@ -202,15 +519,12 @@ const Services = () => {
             Ses compétences:
           </h2>
           <div className="h-1 bg-blue-600 mb-8 w-1/4 mx-auto"></div>
-          <p className="text-lg text-black  mb-6 mt-2 md:text-xl">
+          <p className="text-lg text-black  mb-6 mt-2 md:text-2xl mb-4">
             Nous offrons des solutions complètes en planification, supervision
-            de travaux, développement d'applications automatisées, et mise en
-            œuvre de systèmes de sécurité. Nous assurons la maintenance,
+            de travaux. Nous assurons la maintenance,
             améliorons les équipements, gérons les obsolescences, et
             garantissons des processus fiables grâce à des méthodologies
-            rigoureuses. Notre expertise inclut également la budgétisation, la
-            consultation de sous-traitants, et la gestion de projets neufs et
-            d'arrêts techniques.
+            rigoureuses.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
@@ -221,7 +535,7 @@ const Services = () => {
                 onClick={() => handleCardClick(index)}
               >
                 {/* Always show title */}
-                <h3 className="text-2xl font-semibold text-blue-900 mb-2 p-4">
+                <h3 className="text-3xl font-semibold text-blue-900 mb-2 p-4">
                   {item.title}
                 </h3>
                 <div className="p-4">
@@ -235,7 +549,7 @@ const Services = () => {
                 {/* Show description and image only if expanded */}
                 {expandedCard === index && (
                   <div className="p-4">
-                    <p className="text-gray-700 text-lg">{item.description}</p>
+                    <p className="text-gray-700 text-2xl">{item.description}</p>
                   </div>
                 )}
               </div>
@@ -244,83 +558,6 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Section 3 */}
-      <div className="bg-white bg-cover bg-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 bg-[#eaf1f5] gap-4">
-          {/* First Column (Main Paragraph with Title) */}
-          <div
-            className="py-12 px-6 bg-cover bg-center  rounded-r-full"
-            style={{
-              backgroundImage: `url('/image/background.jpg')`,
-              backgroundSize: '100%',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
-            {/* First Item */}
-          </div>
-
-          {/* Second Column (Three Sections with Logos and Titles) */}
-          <div className="space-y-8 bg-[#eaf1f5] p-20">
-            {/* First Item */}
-            <div className="flex items-start space-x-4">
-              <img
-                src="/image/icons/iconQ1.png"
-                alt="Qualité"
-                className="w-16 h-16 p-2 bg-amber-600 rounded-full"
-              />
-              <div>
-                <h4 className="text-2xl font-semibold text-blue-800">
-                  Qualité
-                </h4>
-                <p className="text-lg text-black mt-2">
-                  La qualité de nos services est notre priorité. Nous
-                  garantissons des solutions innovantes et efficaces tout en
-                  respectant les standards les plus stricts en matière de
-                  qualité.
-                </p>
-              </div>
-            </div>
-
-            {/* Second Item */}
-            <div className="flex items-start space-x-4">
-              <img
-                src="/image/icons/iconQ2.png"
-                alt="Hygiène"
-                className="w-16 h-16 p-2 bg-amber-600 rounded-full"
-              />
-              <div>
-                <h4 className="text-2xl font-semibold text-blue-800">
-                  Hygiène
-                </h4>
-                <p className="text-lg text-black mt-2">
-                  Nous veillons à respecter les règles d'hygiène et à garantir
-                  un environnement de travail sain et sûr pour tous nos
-                  collaborateurs.
-                </p>
-              </div>
-            </div>
-
-            {/* Third Item */}
-            <div className="flex items-start space-x-4">
-              <img
-                src="/image/icons/iconQ3.png"
-                alt="Sécurité"
-                className="w-16 h-16 p-2 bg-amber-600 rounded-full"
-              />
-              <div>
-                <h4 className="text-2xl font-semibold text-blue-800">
-                  Sécurité
-                </h4>
-                <p className="text-lg text-black mt-2">
-                  La sécurité de nos équipes est essentielle. Nous mettons en
-                  place des procédures strictes pour éviter les accidents et
-                  garantir la sécurité de tous.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

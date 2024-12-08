@@ -22,7 +22,7 @@ function Navbars() {
               backgroundRepeat: 'no-repeat',
             }}
           ></div>
-          <span className="text-2xl font-semibold dark:text-white hover:opacity-80">
+          <span className="text-3xl font-semibold dark:text-white hover:opacity-80">
             INSTRUMEA
           </span>
         </Link>

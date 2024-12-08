@@ -28,7 +28,7 @@ const Footer = () => {
                     alt="Contacts Icon"
                     className="w-10 h-10 mr-2"
                   />
-                  Nous Contacts
+                  Nous contacter
                 </h2>
                 <ul className="text-blue-900 dark:text-gray-400 font-medium">
                   <li>
@@ -79,7 +79,7 @@ const Footer = () => {
                     alt="Resources Icon"
                     className="w-10 h-10 mr-2"
                   />
-                  Nos Resources
+                  Nos ressources
                 </h2>
                 <ul className="text-blue-900 dark:text-gray-400 font-medium">
                   <li>

@@ -71,8 +71,8 @@ const Services = () => {
     <div>
       {/* First Section (Background Image with Title) */}
       <div
-        className="py-20 md:py-40 lg:py-[300px] bg-cover bg-center flex flex-col items-start justify-center relative px-4 md:px-8 lg:px-10"
-        style={{ backgroundImage: backgroundImage }}
+        className="py-20 md:py-40 lg:py-[200px] bg-cover bg-gradient-to-r to-cyan-950 from-white bg-center flex flex-col items-start justify-center relative px-4 md:px-8 lg:px-10"
+       
       >
         {/* Title Section */}
         <div className="rounded-lg text-left mt-0 max-w-lg md:max-w-2xl lg:max-w-3xl bg-white p-4 text-black opacity-90 shadow-lg transform transition hover:scale-105">
@@ -519,7 +519,7 @@ const Services = () => {
             Ses compétences:
           </h2>
           <div className="h-1 bg-blue-600 mb-8 w-1/4 mx-auto"></div>
-          <p className="text-lg text-black  mb-6 mt-2 md:text-2xl mb-4">
+          <p className="text-lg text-black  mb-6 mt-2 md:text-2xl ">
             Nous offrons des solutions complètes en planification, supervision
             de travaux. Nous assurons la maintenance,
             améliorons les équipements, gérons les obsolescences, et

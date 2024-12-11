@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
     <>
-      <footer className="bg-white dark:bg-gray-900">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <footer className="bg-white w-full dark:bg-gray-900">
+        <div className="mx-auto w-full  p-20 py-6 lg:py-8">
           <div className="md:flex md:justify-center md:space-x-12">
             <div className="mb-6 md:mb-0 text-center">
-              <a href="/" className="flex items-center justify-center">
-                {/* Logo in the background of the company name */}
+              <Link to="/" className="flex items-center justify-center">
                 <div
                   className="logo bg-cover bg-center w-12 h-12 mr-2"
                   style={{
@@ -17,10 +17,9 @@ const Footer = () => {
                     backgroundRepeat: 'no-repeat',
                   }}
                 />
-              </a>
+              </Link>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-20 text-center sm:grid-cols-4 justify-center">
-              {/* Centers the columns */}
               <div>
                 <h2 className="mb-6 text-ml font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center">
                   <img
@@ -63,7 +62,6 @@ const Footer = () => {
                   />
                   Où nous retrouver
                 </h2>
-
                 <ul className="text-blue-900 dark:text-gray-400 font-medium">
                   <li>
                     <strong>Agence de Lyon :</strong>
@@ -83,24 +81,24 @@ const Footer = () => {
                 </h2>
                 <ul className="text-blue-900 dark:text-gray-400 font-medium">
                   <li>
-                    <a href="/" className="hover:underline">
+                    <Link to="/" className="hover:underline">
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/a_propos" className="hover:underline">
+                    <Link to="/a_propos" className="hover:underline">
                       A propos
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/service" className="hover:underline">
+                    <Link to="/service" className="hover:underline">
                       Services
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/contact" className="hover:underline">
+                    <Link to="/contact" className="hover:underline">
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -116,14 +114,14 @@ const Footer = () => {
                 </h2>
                 <ul className="text-blue-900 dark:text-gray-400 font-medium">
                   <li>
-                    <a href="/service" className="hover:underline">
+                    <Link to="/service" className="hover:underline">
                       LinkedIn
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/service" className="hover:underline">
+                    <Link to="/service" className="hover:underline">
                       X
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -132,8 +130,6 @@ const Footer = () => {
 
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <div className="sm:flex sm:items-center sm:justify-center space-x-4">
-            {' '}
-            {/* Centers the footer content */}
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               © 2024{' '}
               <a href="https://www.instrumea.com" className="hover:underline">
@@ -145,7 +141,7 @@ const Footer = () => {
         </div>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

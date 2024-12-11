@@ -1,8 +1,8 @@
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-
-import Slider from 'react-slick'
 import React from 'react'
+import ImagePopup from "../components/ImagePopup"
+import { Link } from 'react-router-dom';
 
 function Home() {
   const carouselImages = [
@@ -73,33 +73,38 @@ function Home() {
     <div className="bg-gray-100">
       {/* First Section (Background Image with Title) */}
       <div
-        className="py-[200px] bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8"
-        style={{backgroundImage: "url('/image/bg2.jpg')"}}
+        className="py-[200px] bg-gradient-to-r from-cyan-950 to-white bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8"
+
+
       >
         {/* Title Section */}
-        <div className="p-1 max-w-3xl z-10 bg-black bg-opacity-50 rounded m-4">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left">
+        <div className=" max-w-3xl z-10   p-3">
+
+          <div
+            className="bg-cover bg-center w-full h-20  mr-2 hover:opacity-80  "
+            style={{
+              backgroundImage: `url('/image/logoW.png')`,
+              backgroundSize: 'contain',
+              backgroundRepeat: 'no-repeat',
+            }}
+          >
+
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left ">
             INSTRUMEA
           </h1>
-          {/* Blue Bar */}
-          <div className="h-1 ml-0 bg-gray-100 mb-8 w-2/4 mx-auto"></div>
-          <p className=" text-lg md:text-xl text-left m-4 mb-4">
-            <b className="text-white  mb-4 ">
-              <p>
-                {' '}
-                Des spécialistes et des compétences en instrumentation
-                industrielle
-              </p>
 
-              <p> dédiés à vos projet .</p>
-            </b>
-          </p>
+
         </div>
+
+
+
+        {/* Cards Section */}
 
         {/* Cards Section */}
         <div
           className="absolute transform translate-x-[90%] w-2/4 mr-0 mt-[600px] grid grid-cols-1 md:grid-cols-4 z-20"
-          style={{gap: '0px'}} // Removes space between cards
+          style={{ gap: '0px' }} // Removes space between cards
         >
           {[
             {
@@ -131,28 +136,28 @@ function Home() {
               key={index}
               className="bg-white border border-gray-200 shadow-lg overflow-hidden hover:scale-125 relative h-[450px] md:h-[350px]"
             >
-              <a href={card.link} className="block h-full">
+              <Link to={card.link} className="block h-full">
                 <img
-                  className="w-full h-full object-cover "
+                  className="w-full h-full object-cover"
                   src={card.image}
                   alt={card.title}
                 />
 
                 {/* Icon at the top */}
-                <div className="absolute top-4 left-4 bg-transparent flex justify-center items-center  ">
+                <div className="absolute top-4 left-4 bg-transparent flex justify-center items-center">
                   <img
-                    className="w-20 h-20  transform transition-transform duration-300  "
+                    className="w-20 h-20 transform transition-transform duration-300"
                     src={card.icon}
                     alt={`${card.title} icon`}
-                    style={{filter: 'invert(1)'}}
+                    style={{ filter: 'invert(1)' }}
                   />
                 </div>
 
                 {/* Title with overlay */}
-                <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold tracking-tight bg-black bg-opacity-50 hover:bg-opacity-10 ">
+                <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold tracking-tight bg-black bg-opacity-50 hover:bg-opacity-10">
                   {card.title}
                 </h5>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
@@ -201,49 +206,37 @@ function Home() {
         </div>
       </div>
 
-      {/* Fourth Section (Image Carousel with Text Overlay) */}
-      <div className="bg-slate-300 py-12">
-        <div className="max-w-6xl mx-auto">
-          <Slider {...carouselSettings}>
-            {carouselImages.map((item, index) => (
-              <div key={index} className="relative ">
-                <img
-                  src={item.src}
-                  alt={`Slide ${index + 1}`}
-                  className="w-full h-96 object-cover rounded-lg "
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-                  <div className="text-white text-2xl md:text-3xl font-bold text-center px-4">
-                    <h3 className="mb-10">{item.title}</h3>
-                    <p className="text-xl font-semibold mb-4">
-                      {item.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div>
+      {/* Fourth Section (Image and Description Slider) */}
+
+      <ImagePopup></ImagePopup>
+
+
+
+
+
       {/* Third Section (3 Columns with Title and Description) */}
+
+
       <div
-        className="py-12 px-6 bg-cover bg-center bg-white"
+        className="  bg-cover bg-center bg-white pb-8 "
         style={{
           backgroundImage: `url('/image/logoO.png')`,
           backgroundSize: '200%',
           backgroundRepeat: 'no-repeat',
         }}
+
       >
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-            Nos Services
-          </h2>
-          <div className="h-1 bg-blue-600 mb-8 w-1/4 mx-auto"></div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-white min-w-8 w-2/6 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600 ">
+          Nos Services :
+        </h2>
+        <div className="max-w-6xl mx-auto text-center ">
+
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 ">
             {carouselText.slice(0, 3).map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-lg transform transition-all hover:scale-110 hover:shadow-2xl relative overflow-hidden group"
+                className="bg-white p-6 rounded-lg shadow-lg transform transition-all hover:scale-110 hover:shadow-2xl relative overflow-hidden group hover-text-black"
               >
                 {/* Hidden image initially, revealed on hover with 50% opacity */}
                 <img
@@ -253,20 +246,20 @@ function Home() {
                 />
                 {/* Card content */}
                 <div className="relative z-10">
-                  <h3 className="text-xl font-semibold hover:text-blue-900 mb-8 transition-colors duration-300">
+                  <h3 className="text-2xl font-semibold text-white  group-hover:text-blue-900 mb-8 transition-colors duration-300">
                     {item.title}
                   </h3>
-                  <p className="text-gray-700 text-lg group-hover:text-black opacity-0 mt-4 group-hover:opacity-100 transition-colors duration-300">
+                  <p className="text-gray-700 text-lg group-hover:text-black  opacity-0 mt-4 group-hover:opacity-100 transition-colors duration-300">
                     {/* Handle the second card description as one word per row */}
                     {index === 1
                       ? item.description
-                          .split('.')
-                          .filter(text => text.trim() !== '')
-                          .map((line, idx) => (
-                            <span key={idx} className="block  m-3">
-                              {line.trim()}
-                            </span>
-                          ))
+                        .split('.')
+                        .filter(text => text.trim() !== '')
+                        .map((line, idx) => (
+                          <span key={idx} className="block  m-3">
+                            {line.trim()}
+                          </span>
+                        ))
                       : item.description}
                   </p>
                 </div>
@@ -276,17 +269,23 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-white bg-cover bg-center ">
+      <div className="bg-[#eaf1f5] bg-cover bg-center ">
+
         <div className="grid grid-cols-1   md:grid-cols-2 bg-[#eaf1f5]  gap-4  ">
+
           {/* First Column (Main Paragraph with Title) */}
-          <div className="text-gray-700 text-lg md:text-xl  leading-relaxed p-12 mt-8">
-            <h3 className="text-amber-700 text-3xl font-bold mb-8">
-              <b className="text-black text-3xl font-bold mb-4">
+          <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  ">
+            <h2 className="text-3xl md:text-4xl font-bold text-white  min-w-8 w-2/3 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600">
+              Nos Services :
+            </h2>
+
+            <h3 className="text-amber-700 text-3xl font-bold mb-8 p-6 ">
+              <b className="text-black text-3xl font-bold ">
                 Politique QHSE
               </b>{' '}
               (Qualité, Hygiène, Sécurité, Environnement)
             </h3>
-            <p className="text-black m-3 text-1xl">
+            <p className="text-black m-3 text-1xl pl-12">
               Notre politique vise à renforcer la culture SSE (Sécurité, Santé,
               Environnement) de nos collaborateurs. Cette approche nous permet
               de perfectionner nos pratiques et de réduire les risques au
@@ -298,9 +297,9 @@ function Home() {
           </div>
 
           {/* Second Column (Three Sections with Logos and Titles) */}
-          <div className="space-y-8   bg-white  p-20 ">
+          <div className="space-y-8   bg-white  p-20  ">
             {/* First Item */}
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 pt-12">
               <img
                 src="/image/icons/iconQ1.png"
                 alt="Qualité"

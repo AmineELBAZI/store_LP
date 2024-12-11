@@ -24,7 +24,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="service" element={<Services />} />
-          <Route path="a_propos" element={<A_propos />} />
+          <Route path="a_propos" element={<A_propos />}  />
           <Route path="*" element={<NoPage />} />
         </Routes>
       </div>

@@ -14,6 +14,7 @@
     "check": "yarn lint && yarn format:check"
   },
   "dependencies": {
+    "emailjs-com": "^3.2.0",
     "formik": "^2.4.5",
     "i18next": "^23.11.5",
     "react": "^18.3.1",

@@ -276,7 +276,7 @@ function Home() {
           {/* First Column (Main Paragraph with Title) */}
           <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  ">
             <h2 className="text-3xl md:text-4xl font-bold text-white  min-w-8 w-2/3 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600">
-              Nos Services :
+            Nos Politiques  :
             </h2>
 
             <h3 className="text-amber-700 text-3xl font-bold mb-8 p-6 ">

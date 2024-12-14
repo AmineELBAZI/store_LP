@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import emailjs from 'emailjs-com';
+import { useAddKeyframes, fadeInAnimation ,fadeOutAnimation } from "../components/animationUtils.jsx";
 
 const Contact = () => {
+  useAddKeyframes();
   const [searchParams] = useSearchParams();
   const objectTitle = searchParams.get('Object');
 
@@ -77,34 +79,34 @@ const Contact = () => {
             <div className="md:flex gap-x-12 lg:mb-16 mb-10 relative">
               {/* Left Column */}
               <div className="md:w-1/2 mb-8 md:mb-0 p-2">
-                <h2 className="text-black font-manrope text-4xl lg:text-4xl font-semibold leading-10 mb-5 text-center lg:text-left">
+                <h2 className="text-black font-manrope text-4xl lg:text-4xl font-semibold leading-10 mb-5 text-center lg:text-left " style={fadeInAnimation}>
                   Contactez-nous
                 </h2>
-                <p className="text-gray-800 text-2xl font-normal leading-7 mb-7 text-center lg:text-left m-10">
+                <p className="text-gray-800 text-2xl font-normal leading-7 mb-7 text-center lg:text-left m-10" style={fadeInAnimation}>
                   Que vous ayez une question ou que vous souhaitiez simplement nous dire bonjour, nous sommes là pour faciliter la communication avec vous.
                 </p>
                 <div className="mb-8 p-8">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                     <div>
-                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left ">
+                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left " style={fadeInAnimation}>
                       Responsable technique & commercial :  
                       </h6>
-                      <h6 className="text-blue-700 text-2xl font-medium leading-5 pb-3 text-center lg:text-left m-6">
+                      <h6 className="text-blue-700 text-2xl font-medium leading-5 pb-3 text-center lg:text-left m-6" style={fadeInAnimation}>
                       Youssef FAHIM 
                       </h6>
-                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left">
+                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left" style={fadeInAnimation}>
                       E-mail :  youssef.fahim@instrumea.com
                       </h3>
                       
                     </div>
-                    <div className='border-l-2 md:border-indigo-600 border-gray-200 px-6 md:px-10 py-6'>
-                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left ">
+                    <div className='border-l-2 md:border-indigo-600 border-gray-200 px-6 md:px-10 py-6' >
+                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left " style={fadeInAnimation}>
                       Assistante administrative: 
                       </h6>
-                      <h6 className="text-blue-700 text-2xl font-medium leading-5 pb-3 text-center lg:text-left m-6">
+                      <h6 className="text-blue-700 text-2xl font-medium leading-5 pb-3 text-center lg:text-left m-6" style={fadeInAnimation}>
                       Laurence ROCHE 
                       </h6>
-                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left">
+                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left" style={fadeInAnimation}>
                       E-mail :  laurence.roche@instrumea.com
                       </h3>
                     </div>
@@ -117,12 +119,13 @@ const Contact = () => {
                   src="/image/background1.jpg"
                   alt="Illustration de contact"
                   className="w-full h-full rounded-lg shadow-lg"
+                  style={fadeInAnimation}
                 />
               </div>
             </div>
           </div>
           {/* Form Section */}
-          <div className="mx-auto w-full px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto w-full px-4 sm:px-6 lg:px-8 " style={fadeInAnimation}>
             <form className="grid lg:grid-cols-2 grid-cols-1 gap-x-12 p-4" onSubmit={handleSubmit}>
               <div className="flex flex-col gap-4">
                 <input

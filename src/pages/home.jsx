@@ -1,10 +1,12 @@
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import React from 'react'
+import { React ,useEffect} from 'react'
 import ImagePopup from "../components/ImagePopup"
 import { Link } from 'react-router-dom';
+import { useAddKeyframes, fadeInAnimation ,fadeOutAnimation } from "../components/animationUtils.jsx";
 
 function Home() {
+  useAddKeyframes();
   const carouselImages = [
     {
       src: '/image/image1.jpg',
@@ -29,6 +31,8 @@ function Home() {
       description: 'description',
     },
   ]
+  
+
   const carouselText = [
     {
       src: '/image/image1.jpg',
@@ -78,24 +82,26 @@ function Home() {
 
       >
         {/* Title Section */}
-        <div className=" max-w-3xl z-10   p-3">
+        <div className=" max-w-3xl z-10   p-3 "   style={fadeInAnimation}>
 
-          <div
-            className="bg-cover bg-center w-full h-20  mr-2 hover:opacity-80  "
+          <div 
+            className="bg-cover bg-center w-full h-20  mr-2 hover:opacity-80 "  
             style={{
               backgroundImage: `url('/image/logoW.png')`,
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
             }}
+            
           >
 
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left ">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left  "  style={fadeInAnimation}>
             INSTRUMEA
           </h1>
-
+       
 
         </div>
+
 
 
 
@@ -154,7 +160,7 @@ function Home() {
                 </div>
 
                 {/* Title with overlay */}
-                <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold tracking-tight bg-black bg-opacity-50 hover:bg-opacity-10">
+                <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold tracking-tight bg-black bg-opacity-50 hover:bg-opacity-10" style={fadeInAnimation}>
                   {card.title}
                 </h5>
               </Link>
@@ -163,7 +169,10 @@ function Home() {
         </div>
       </div>
 
+       
       {/* Second Section (About the Company) */}
+
+
       <div className="bg-gray-100 mt-[250px] px-6 mb-4">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
@@ -174,7 +183,7 @@ function Home() {
           {/* Two text columns and one card column */}
           <div className="grid grid-cols-1 md:grid-cols-3  ml-12 gap-20">
             {/* Text section (2 columns) */}
-            <div className="col-span-2 text-gray-700  text-lg md:text-xl leading-relaxed">
+            <div className="col-span-2 text-gray-700  text-lg md:text-xl leading-relaxed " style={fadeInAnimation}>
               <p>
                 <b className="text-blue-900">Instrumea</b> est une société
                 spécialisée dans les services techniques en instrumentation.
@@ -276,7 +285,7 @@ function Home() {
           {/* First Column (Main Paragraph with Title) */}
           <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  ">
             <h2 className="text-3xl md:text-4xl font-bold text-white  min-w-8 w-2/3 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600">
-            Nos Politiques  :
+              Nos Politiques  :
             </h2>
 
             <h3 className="text-amber-700 text-3xl font-bold mb-8 p-6 ">

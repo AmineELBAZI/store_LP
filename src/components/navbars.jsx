@@ -15,14 +15,14 @@ function Navbars() {
         >
           {/* Logo */}
           <div
-            className="bg-cover bg-center w-12 h-12  mr-2 hover:opacity-80 animate-pulse "
+            className="bg-cover bg-center w-12 h-12  mr-2 hover:opacity-80 animate-pulse   hover:animate-none"
             style={{
               backgroundImage: `url('/image/logoBLACK.png')`,
               backgroundSize: 'contain',
               backgroundRepeat: 'no-repeat',
             }}
           ></div>
-          <span className="text-3xl font-semibold dark:text-white hover:opacity-80">
+          <span className="text-3xl font-semibold dark:text-white hover:opacity-80 hover:text-blue-800">
             INSTRUMEA
           </span>
         </Link>

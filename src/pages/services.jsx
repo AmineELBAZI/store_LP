@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
-
+import { useAddKeyframes, fadeInAnimation ,fadeOutAnimation } from "../components/animationUtils.jsx";
 const Services = () => {
+  useAddKeyframes();
 
   const [showMore, setShowMore] = useState(false);
 
@@ -75,7 +76,7 @@ const Services = () => {
        
       >
         {/* Title Section */}
-        <div className="rounded-lg text-left mt-0 max-w-lg md:max-w-2xl lg:max-w-3xl bg-white p-4 text-black opacity-90 shadow-lg transform transition hover:scale-105">
+        <div className="rounded-lg text-left mt-0 max-w-lg md:max-w-2xl lg:max-w-3xl bg-white p-4 text-black opacity-90 shadow-lg transform transition hover:scale-105" style={fadeInAnimation}>
           <p className="text-base md:text-lg lg:text-4xl">
             Installée en Rhône Alpes, <b className="text-blue-600">INSTRUMEA</b> est
             une société spécialisée dans les métiers de l'ingénierie.
@@ -96,7 +97,7 @@ const Services = () => {
           style={{ gap: '0px' }}
         >
           <div className="bg-amber-700 border border-gray-200 shadow-lg overflow-hidden rounded-b-full relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
-            <a className="block h-full">
+            <a className="block h-full" style={fadeInAnimation}>
               <img
                 className="object-cover w-30 h-30 mb-4  mx-auto"
                 src="/image/icons/iconS1.png"
@@ -104,7 +105,7 @@ const Services = () => {
                 style={{ filter: 'invert(1)' }}
               />
               {/* Title with overlay */}
-              <h5 className="absolute inset-0 mt-12 md:mt-16 lg:mt-20 flex items-center justify-center text-white text-sm md:text-3xl lg:text-3xl font-bold tracking-tight text-center">
+              <h5 className="absolute inset-0 mt-12 md:mt-16 lg:mt-20 flex items-center justify-center text-white text-sm md:text-3xl lg:text-3xl font-bold tracking-tight text-center" style={fadeInAnimation}>
                 Présentation de nos services et domaines d'expertise
               </h5>
             </a>
@@ -116,33 +117,33 @@ const Services = () => {
       <div className="bg-white bg-cover bg-center">
         <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4">
           {/* First Column (Main Paragraph with Title) */}
-          <div className=" text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12">
+          <div className=" text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12 fade-in-up">
             <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8">
               <b className="text-black font-bold mb-4">
                 Présentation de notre entreprise et de ses processus :
               </b>
             </h2>
             <div className='p-6 text-gray-600 '>
-            <p className=" text-blue mb-4 text-xl md:text-3xl">
+            <p className=" text-blue mb-4 text-xl md:text-3xl hover:text-blue-800">
               Instrumea offre une expertise complète en ingénierie et gestion de
               projets, avec une approche structurée et rigoureuse. 
             </p>
-            <p className=" mb-4 text-xl md:text-3xl">
+            <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
               Nous intervenons dans la planification, la préparation des travaux,
               l’achat de matériel, et la supervision des opérations.
             </p>
-            <p className=" mb-4 text-xl md:text-3xl">
+            <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
               Nos services incluent le développement d’applications sur
               automates, la rédaction de cahiers des charges, et la maintenance
               des équipements, tout en garantissant des solutions fiables et
               innovantes.
             </p>
-            <p className=" mb-4 text-xl md:text-3xl">
+            <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
               Nous assurons également la budgétisation, l'amélioration des
               équipements, et la gestion de démarches SIL et SIS, tout en
               respectant les normes QHSE grâce au référentiel MASE.
             </p>
-            <p className=" mb-4 text-xl md:text-3xl">
+            <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 fade-in-up-delayed">
               Avec une méthodologie rigoureuse, nous répondons aux besoins les
               plus complexes, notamment dans les projets neufs, l’automatisme,
               et la préparation des arrêts techniques.
@@ -188,7 +189,7 @@ const Services = () => {
                   className="w-16 h-16 m-4"
                 />
                 <div>
-                  <h4 className="font-semibold m-4 text-black">
+                  <h4 className="font-semibold m-4 text-black hover:text-blue-800">
                     Expertise polyvalente et complète
                   </h4>
                 </div>
@@ -202,7 +203,7 @@ const Services = () => {
                   className="w-16 h-16 m-4"
                 />
                 <div>
-                  <h4 className="font-semibold m-4 text-black">
+                  <h4 className="font-semibold m-4 text-black hover:text-blue-800">
                     Engagement envers l’excellence opérationnelle
                   </h4>
                 </div>
@@ -213,10 +214,10 @@ const Services = () => {
                 <img
                   src="/image/icons/iconSs3.png"
                   alt="A l'écoute"
-                  className="w-16 h-16 m-4"
+                  className="w-16 h-16 m-4 "
                 />
                 <div>
-                  <h4 className="font-semibold m-4 text-black">
+                  <h4 className="font-semibold m-4 text-black hover:text-blue-800">
                     Solutions innovantes et adaptées
                   </h4>
                 </div>
@@ -230,7 +231,7 @@ const Services = () => {
                   className="w-16 h-16 m-4"
                 />
                 <div>
-                  <h4 className="font-semibold m-4 text-black">
+                  <h4 className="font-semibold m-4 text-black hover:text-blue-800">
                     Accompagnement sur mesure
                   </h4>
                 </div>
@@ -245,8 +246,8 @@ const Services = () => {
 
       <section className="p-8">
       <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-center">
-        <b className="text-black font-bold mb-4">
-        <b className="text-blue-600">INSTRUMEA</b> intervient dans plusieurs secteurs d'activités
+        <b className="text-black font-bold mb-4 hover:text-blue-800 ">
+        <b className="text-blue-600 hover:text-black">INSTRUMEA</b> intervient dans plusieurs secteurs d'activités
         </b>
       </h2>
       <div className="container mx-auto">
@@ -260,11 +261,11 @@ const Services = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl hover:text-black">
               Raffinage Pétrochimie
             </h3>
             <p
-              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
                 showMore ? '' : 'line-clamp-4'
               }`}
             >
@@ -290,11 +291,11 @@ const Services = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
               Chimie
             </h3>
             <p
-              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
                 showMore ? '' : 'line-clamp-4'
               }`}
             >
@@ -320,11 +321,11 @@ const Services = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
               Energie
             </h3>
             <p
-              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
                 showMore ? '' : 'line-clamp-4'
               }`}
             >
@@ -350,11 +351,11 @@ const Services = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
               Pharmaceutique
             </h3>
             <p
-              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
                 showMore ? '' : 'line-clamp-4'
               }`}
             >
@@ -383,11 +384,11 @@ const Services = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
               Raffinage Pétrochimie
             </h3>
             <p
-              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
                 showMore ? '' : 'line-clamp-4'
               }`}
             >
@@ -413,11 +414,11 @@ const Services = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
               Chimie
             </h3>
             <p
-              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
                 showMore ? '' : 'line-clamp-4'
               }`}
             >
@@ -443,11 +444,11 @@ const Services = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
               Energie
             </h3>
             <p
-              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
                 showMore ? '' : 'line-clamp-4'
               }`}
             >
@@ -473,11 +474,11 @@ const Services = () => {
                 className="w-full h-full object-cover"
               />
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl">
+            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
               Pharmaceutique
             </h3>
             <p
-              className={`text-gray-600 text-sm mb-4 lg:text-2xl ${
+              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
                 showMore ? '' : 'line-clamp-4'
               }`}
             >

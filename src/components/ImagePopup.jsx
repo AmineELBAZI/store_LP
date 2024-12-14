@@ -76,7 +76,7 @@ const ImagePopup = () => {
   };
   return (
     <div className="bg-[#eaf1f5]">
-      <h2 className="text-3xl md:text-4xl font-bold text-white w-fit rounded-br-full  bg-cyan-600 p-6 mb-8 hover:bg-white hover:text-cyan-600">
+      <h2 className="text-3xl md:text-4xl font-bold text-white w-1/3 rounded-br-full  bg-cyan-600 p-6 mb-8 hover:bg-white hover:text-cyan-600">
         Nos Offres d'Emploi :
       </h2>
       <div className="h-full flex justify-center items-center bg-[#eaf1f5]  p-6">

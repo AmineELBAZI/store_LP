@@ -1,6 +1,11 @@
-import React, {useState, useEffect} from 'react'
-import { useAddKeyframes, fadeInAnimation ,fadeOutAnimation } from "../components/animationUtils.jsx";
+import React, { useState, useEffect } from 'react'
+import { useAddKeyframes, fadeInAnimation, fadeOutAnimation } from "../components/animationUtils.jsx";
+import '../pages/services.css';
+import { motion } from 'framer-motion';
+import  AnimationWrapper from '../components/animationWraUP.jsx';
+
 const Services = () => {
+
   useAddKeyframes();
 
   const [showMore, setShowMore] = useState(false);
@@ -73,7 +78,7 @@ const Services = () => {
       {/* First Section (Background Image with Title) */}
       <div
         className="py-20 md:py-40 lg:py-[200px] bg-cover bg-gradient-to-r to-cyan-950 from-white bg-center flex flex-col items-start justify-center relative px-4 md:px-8 lg:px-10"
-       
+
       >
         {/* Title Section */}
         <div className="rounded-lg text-left mt-0 max-w-lg md:max-w-2xl lg:max-w-3xl bg-white p-4 text-black opacity-90 shadow-lg transform transition hover:scale-105" style={fadeInAnimation}>
@@ -117,50 +122,85 @@ const Services = () => {
       <div className="bg-white bg-cover bg-center">
         <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4">
           {/* First Column (Main Paragraph with Title) */}
-          <div className=" text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12 fade-in-up">
-            <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8">
+          <div ref={ref} className="text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12">
+            <motion.h2
+              className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 1 }}
+            >
               <b className="text-black font-bold mb-4">
                 Présentation de notre entreprise et de ses processus :
               </b>
-            </h2>
-            <div className='p-6 text-gray-600 '>
-            <p className=" text-blue mb-4 text-xl md:text-3xl hover:text-blue-800">
-              Instrumea offre une expertise complète en ingénierie et gestion de
-              projets, avec une approche structurée et rigoureuse. 
-            </p>
-            <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
-              Nous intervenons dans la planification, la préparation des travaux,
-              l’achat de matériel, et la supervision des opérations.
-            </p>
-            <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
-              Nos services incluent le développement d’applications sur
-              automates, la rédaction de cahiers des charges, et la maintenance
-              des équipements, tout en garantissant des solutions fiables et
-              innovantes.
-            </p>
-            <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
-              Nous assurons également la budgétisation, l'amélioration des
+            </motion.h2>
+            <div className="p-6 text-gray-600">
+              <motion.p
+                className="text-blue mb-4 text-xl md:text-3xl hover:text-blue-800"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 1, delay: 0.2 }}
+              >
+                Instrumea offre une expertise complète en ingénierie et gestion de
+                projets, avec une approche structurée et rigoureuse.
+              </motion.p>
+              <motion.p
+                className="mb-4 text-xl md:text-3xl hover:text-blue-800"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 1, delay: 0.4 }}
+              >
+                Nous intervenons dans la planification, la préparation des travaux,
+                l’achat de matériel, et la supervision des opérations.
+              </motion.p>
+              <motion.p
+                className="mb-4 text-xl md:text-3xl hover:text-blue-800"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 1, delay: 0.6 }}
+              >
+                Nos services incluent le développement d’applications sur
+                automates, la rédaction de cahiers des charges, et la maintenance
+                des équipements, tout en garantissant des solutions fiables et
+                innovantes.
+              </motion.p>
+              <motion.p
+                className="mb-4 text-xl md:text-3xl hover:text-blue-800"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 1, delay: 0.6 }}
+              >
+                Nous assurons également la budgétisation, l'amélioration des
               équipements, et la gestion de démarches SIL et SIS, tout en
               respectant les normes QHSE grâce au référentiel MASE.
-            </p>
-            <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 fade-in-up-delayed">
+              </motion.p>
+              <motion.p
+                className="mb-4 text-xl md:text-3xl hover:text-blue-800"
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                transition={{ duration: 1, delay: 0.6 }}
+              >
               Avec une méthodologie rigoureuse, nous répondons aux besoins les
               plus complexes, notamment dans les projets neufs, l’automatisme,
               et la préparation des arrêts techniques.
-            </p>
+              </motion.p>
+              
             </div>
           </div>
 
-          {/* Wrapper for Centering */}
-          <div
-          className="flex items-center justify-center bg-cover bg-center hover:scale-110 rounded-full p-6 md:p-8 max-w-[80%] mx-auto m-10"
-          style={{
-            backgroundImage: `url('/image/background2.jpg')`,
-            height: '700px', 
-            width:'700px', 
 
-          }}
-        ></div>
+          {/* Wrapper for Centering */}
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+          <div
+            className="flex items-center justify-center bg-cover bg-center hover:scale-110 rounded-full p-6 md:p-8 max-w-[80%] mx-auto mt-20 m-10"
+            style={{
+              backgroundImage: `url('/image/background.jpg')`,
+              height: '700px',
+              width: '700px',
+
+            }}
+            
+          ></div>
+           </AnimationWrapper>
 
         </div>
       </div>
@@ -169,20 +209,24 @@ const Services = () => {
       <section className="bg-white bg-cover bg-center">
         <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4">
           {/* Wrapper for Centering */}
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
           <div
-          className="flex items-center justify-center bg-cover bg-center hover:scale-110 rounded-full p-6 md:p-8 max-w-[80%] mx-auto m-10"
-          style={{
-            backgroundImage: `url('/image/background1.jpg')`,
-            height: '700px', 
-            width:'700px', 
+            className="flex items-center justify-center bg-cover bg-center hover:scale-110 rounded-full p-6 md:p-8 max-w-[80%] mx-auto m-10"
+            style={{
+              backgroundImage: `url('/image/background1.jpg')`,
+              height: '700px',
+              width: '700px',
 
-          }}
-        ></div>
+            }}
+          ></div>
+          </AnimationWrapper>
 
           <div className="text-gray-700 text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12">
             <div className="space-y-8 text-xl md:text-3xl transition-transform">
               {/* 1 Item */}
-              <div className="flex items-start space-x-4 m-6 md:m-12">
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+              <div className="flex items-start space-x-4 m-6 md:m-12"
+             >
                 <img
                   src="/image/icons/iconSs1.png"
                   alt="Qualité"
@@ -194,7 +238,8 @@ const Services = () => {
                   </h4>
                 </div>
               </div>
-
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               {/* 2 Item */}
               <div className="flex items-start space-x-4 m-6 md:m-12">
                 <img
@@ -208,7 +253,8 @@ const Services = () => {
                   </h4>
                 </div>
               </div>
-
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               {/* 3 Item */}
               <div className="flex items-start space-x-4 m-6 md:m-12">
                 <img
@@ -222,7 +268,8 @@ const Services = () => {
                   </h4>
                 </div>
               </div>
-
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               {/* 4 Item */}
               <div className="flex items-start space-x-4 m-6 md:m-12">
                 <img
@@ -236,269 +283,268 @@ const Services = () => {
                   </h4>
                 </div>
               </div>
+              </AnimationWrapper>
             </div>
           </div>
         </div>
       </section>
 
 
-      
+
 
       <section className="p-8">
-      <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-center">
-        <b className="text-black font-bold mb-4 hover:text-blue-800 ">
-        <b className="text-blue-600 hover:text-black">INSTRUMEA</b> intervient dans plusieurs secteurs d'activités
-        </b>
-      </h2>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
-          {/* Column 1 */}
-          <div className="bg-white p-6 rounded-lg text-center">
-            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-              <img
-                src="/image/icons/icon3.png"
-                alt="Image 1"
-                className="w-full h-full object-cover"
-              />
+      <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+        <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-center">
+          <b className="text-black font-bold mb-4 hover:text-blue-800 ">
+            <b className="text-blue-600 hover:text-black">INSTRUMEA</b> intervient dans plusieurs secteurs d'activités
+          </b>
+        </h2>
+        </AnimationWrapper>
+        <div className="container mx-auto">
+        <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+            {/* Column 1 */}
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+                <img
+                  src="/image/icons/icon3.png"
+                  alt="Image 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl hover:text-black">
+                Raffinage Pétrochimie
+              </h3>
+              <p
+                className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  }`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+                Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+                sollicitudin eros libero non justo. Quisque vel tempor dui.
+              </p>
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                {showMore ? '◁' : '▷'}
+              </button>
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl hover:text-black">
-              Raffinage Pétrochimie
-            </h3>
-            <p
-              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
-                showMore ? '' : 'line-clamp-4'
-              }`}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-              sollicitudin eros libero non justo. Quisque vel tempor dui.
-            </p>
-            <button
-              onClick={toggleDescription}
-              className="text-blue-600 hover:text-blue-800 font-semibold"
-            >
-              {showMore ? '◁' : '▷'}
-            </button>
-          </div>
 
-          {/* Column 2 */}
-          <div className="bg-white p-6 rounded-lg text-center">
-            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-              <img
-                src="/image/icons/icon5.png"
-                alt="Image 2"
-                className="w-full h-full object-cover"
-              />
+            {/* Column 2 */}
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+                <img
+                  src="/image/icons/icon5.png"
+                  alt="Image 2"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                Chimie
+              </h3>
+              <p
+                className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  }`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+                Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+                sollicitudin eros libero non justo. Quisque vel tempor dui.
+              </p>
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                {showMore ? '◁' : '▷'}
+              </button>
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
-              Chimie
-            </h3>
-            <p
-              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
-                showMore ? '' : 'line-clamp-4'
-              }`}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-              sollicitudin eros libero non justo. Quisque vel tempor dui.
-            </p>
-            <button
-              onClick={toggleDescription}
-              className="text-blue-600 hover:text-blue-800 font-semibold"
-            >
-              {showMore ? '◁' : '▷'}
-            </button>
-          </div>
 
-          {/* Column 3 */}
-          <div className="bg-white p-6 rounded-lg text-center">
-            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-              <img
-                src="/image/icons/icon1.png"
-                alt="Image 3"
-                className="w-full h-full object-cover"
-              />
+            {/* Column 3 */}
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+                <img
+                  src="/image/icons/icon1.png"
+                  alt="Image 3"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                Energie
+              </h3>
+              <p
+                className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  }`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+                Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+                sollicitudin eros libero non justo. Quisque vel tempor dui.
+              </p>
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                {showMore ? '◁' : '▷'}
+              </button>
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
-              Energie
-            </h3>
-            <p
-              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
-                showMore ? '' : 'line-clamp-4'
-              }`}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-              sollicitudin eros libero non justo. Quisque vel tempor dui.
-            </p>
-            <button
-              onClick={toggleDescription}
-              className="text-blue-600 hover:text-blue-800 font-semibold"
-            >
-              {showMore ? '◁' : '▷'}
-            </button>
-          </div>
 
-          {/* Column 4 */}
-          <div className="bg-white p-6 rounded-lg text-center">
-            <div className="w-40 h-40 mx-auto mb-4 rounded-full p-8 overflow-hidden">
-              <img
-                src="/image/icons/icon6.png"
-                alt="Image 4"
-                className="w-full h-full object-cover"
-              />
+            {/* Column 4 */}
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-40 h-40 mx-auto mb-4 rounded-full p-8 overflow-hidden">
+                <img
+                  src="/image/icons/icon6.png"
+                  alt="Image 4"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                Pharmaceutique
+              </h3>
+              <p
+                className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  }`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+                Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+                sollicitudin eros libero non justo. Quisque vel tempor dui.
+              </p>
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                {showMore ? '◁' : '▷'}
+              </button>
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
-              Pharmaceutique
-            </h3>
-            <p
-              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
-                showMore ? '' : 'line-clamp-4'
-              }`}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-              sollicitudin eros libero non justo. Quisque vel tempor dui.
-            </p>
-            <button
-              onClick={toggleDescription}
-              className="text-blue-600 hover:text-blue-800 font-semibold"
-            >
-              {showMore ? '◁' : '▷'}
-            </button>
           </div>
+          </AnimationWrapper>
+
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Column 1 */}
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+                <img
+                  src="/image/icons/icon3.png"
+                  alt="Image 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                Raffinage Pétrochimie
+              </h3>
+              <p
+                className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  }`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+                Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+                sollicitudin eros libero non justo. Quisque vel tempor dui.
+              </p>
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                {showMore ? '◁' : '▷'}
+              </button>
+            </div>
+
+            {/* Column 2 */}
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+                <img
+                  src="/image/icons/icon5.png"
+                  alt="Image 2"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                Chimie
+              </h3>
+              <p
+                className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  }`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+                Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+                sollicitudin eros libero non justo. Quisque vel tempor dui.
+              </p>
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                {showMore ? '◁' : '▷'}
+              </button>
+            </div>
+
+            {/* Column 3 */}
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+                <img
+                  src="/image/icons/icon1.png"
+                  alt="Image 3"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                Energie
+              </h3>
+              <p
+                className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  }`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+                Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+                sollicitudin eros libero non justo. Quisque vel tempor dui.
+              </p>
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                {showMore ? '◁' : '▷'}
+              </button>
+            </div>
+
+            {/* Column 4 */}
+            <div className="bg-white p-6 rounded-lg text-center">
+              <div className="w-40 h-40 mx-auto mb-4 rounded-full p-8 overflow-hidden">
+                <img
+                  src="/image/icons/icon6.png"
+                  alt="Image 4"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                Pharmaceutique
+              </h3>
+              <p
+                className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  }`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
+                Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
+                sollicitudin eros libero non justo. Quisque vel tempor dui.
+              </p>
+              <button
+                onClick={toggleDescription}
+                className="text-blue-600 hover:text-blue-800 font-semibold"
+              >
+                {showMore ? '◁' : '▷'}
+              </button>
+            </div>
+          </div>
+          </AnimationWrapper>
+
+
         </div>
-
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {/* Column 1 */}
-          <div className="bg-white p-6 rounded-lg text-center">
-            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-              <img
-                src="/image/icons/icon3.png"
-                alt="Image 1"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
-              Raffinage Pétrochimie
-            </h3>
-            <p
-              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
-                showMore ? '' : 'line-clamp-4'
-              }`}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-              sollicitudin eros libero non justo. Quisque vel tempor dui.
-            </p>
-            <button
-              onClick={toggleDescription}
-              className="text-blue-600 hover:text-blue-800 font-semibold"
-            >
-              {showMore ? '◁' : '▷'}
-            </button>
-          </div>
-
-          {/* Column 2 */}
-          <div className="bg-white p-6 rounded-lg text-center">
-            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-              <img
-                src="/image/icons/icon5.png"
-                alt="Image 2"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
-              Chimie
-            </h3>
-            <p
-              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
-                showMore ? '' : 'line-clamp-4'
-              }`}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-              sollicitudin eros libero non justo. Quisque vel tempor dui.
-            </p>
-            <button
-              onClick={toggleDescription}
-              className="text-blue-600 hover:text-blue-800 font-semibold"
-            >
-              {showMore ? '◁' : '▷'}
-            </button>
-          </div>
-
-          {/* Column 3 */}
-          <div className="bg-white p-6 rounded-lg text-center">
-            <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-              <img
-                src="/image/icons/icon1.png"
-                alt="Image 3"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
-              Energie
-            </h3>
-            <p
-              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
-                showMore ? '' : 'line-clamp-4'
-              }`}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-              sollicitudin eros libero non justo. Quisque vel tempor dui.
-            </p>
-            <button
-              onClick={toggleDescription}
-              className="text-blue-600 hover:text-blue-800 font-semibold"
-            >
-              {showMore ? '◁' : '▷'}
-            </button>
-          </div>
-
-          {/* Column 4 */}
-          <div className="bg-white p-6 rounded-lg text-center">
-            <div className="w-40 h-40 mx-auto mb-4 rounded-full p-8 overflow-hidden">
-              <img
-                src="/image/icons/icon6.png"
-                alt="Image 4"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
-              Pharmaceutique
-            </h3>
-            <p
-              className={`text-gray-800 text-sm mb-4 lg:text-2xl ${
-                showMore ? '' : 'line-clamp-4'
-              }`}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-              Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-              sollicitudin eros libero non justo. Quisque vel tempor dui.
-            </p>
-            <button
-              onClick={toggleDescription}
-              className="text-blue-600 hover:text-blue-800 font-semibold"
-            >
-              {showMore ? '◁' : '▷'}
-            </button>
-          </div>
-        </div>
-
-
-      </div>
-    </section>
+      </section>
 
 
 
@@ -516,9 +562,11 @@ const Services = () => {
         }}
       >
         <div className="max-w-6xl mx-auto text-center">
+        <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
             Ses compétences:
-          </h2>
+          </h2></AnimationWrapper>
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
           <div className="h-1 bg-blue-600 mb-8 w-1/4 mx-auto"></div>
           <p className="text-lg text-black  mb-6 mt-2 md:text-2xl ">
             Nous offrons des solutions complètes en planification, supervision
@@ -527,7 +575,8 @@ const Services = () => {
             garantissons des processus fiables grâce à des méthodologies
             rigoureuses.
           </p>
-
+          </AnimationWrapper>
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
             {carouselImages.map((item, index) => (
               <div
@@ -556,6 +605,7 @@ const Services = () => {
               </div>
             ))}
           </div>
+          </AnimationWrapper>
         </div>
       </div>
 

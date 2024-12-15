@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import Modal from "react-modal";
 import { useNavigate } from "react-router-dom";
+import  AnimationWraRL from '../components/animationWraRL.jsx';
+import  AnimationWrapper from './animationWraUP.jsx';
 
 
 const carouselImages = [
@@ -76,13 +78,15 @@ const ImagePopup = () => {
   };
   return (
     <div className="bg-[#eaf1f5]">
+       <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
       <h2 className="text-3xl md:text-4xl font-bold text-white w-1/3 rounded-br-full  bg-cyan-600 p-6 mb-8 hover:bg-white hover:text-cyan-600">
         Nos Offres d'Emploi :
       </h2>
+      </AnimationWraRL>
       <div className="h-full flex justify-center items-center bg-[#eaf1f5]  p-6">
 
         <div className="w-full max-w-5xl">
-
+        <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
           <Slider {...carouselSettings}>
             {carouselImages.map((item, index) => (
               <div key={index} className="flex justify-center">
@@ -122,6 +126,7 @@ const ImagePopup = () => {
               </div>
             ))}
           </Slider>
+          </AnimationWrapper>
 
           {/* Popup Modal */}
           <Modal

@@ -4,6 +4,9 @@ import { React ,useEffect} from 'react'
 import ImagePopup from "../components/ImagePopup"
 import { Link } from 'react-router-dom';
 import { useAddKeyframes, fadeInAnimation ,fadeOutAnimation } from "../components/animationUtils.jsx";
+import  AnimationWrapper from '../components/animationWraUP.jsx';
+import  AnimationWraRL from '../components/animationWraRL.jsx';
+
 
 function Home() {
   useAddKeyframes();
@@ -82,8 +85,9 @@ function Home() {
 
       >
         {/* Title Section */}
+        
         <div className=" max-w-3xl z-10   p-3 "   style={fadeInAnimation}>
-
+        
           <div 
             className="bg-cover bg-center w-full h-20  mr-2 hover:opacity-80 "  
             style={{
@@ -108,10 +112,12 @@ function Home() {
         {/* Cards Section */}
 
         {/* Cards Section */}
+        
         <div
           className="absolute transform translate-x-[90%] w-2/4 mr-0 mt-[600px] grid grid-cols-1 md:grid-cols-4 z-20"
           style={{ gap: '0px' }} // Removes space between cards
-        >
+         >
+          
           {[
             {
               image: '/image/image3.jpg',
@@ -166,24 +172,30 @@ function Home() {
               </Link>
             </div>
           ))}
+          
         </div>
+       
       </div>
-
+     
        
       {/* Second Section (About the Company) */}
 
 
       <div className="bg-gray-100 mt-[250px] px-6 mb-4">
         <div className="max-w-5xl mx-auto text-center">
+        <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
             Qui sommes-nous ?
           </h2>
+          </AnimationWrapper>
           <div className="h-1 bg-blue-600 mb-8 w-2/4 mx-auto"></div>
 
           {/* Two text columns and one card column */}
           <div className="grid grid-cols-1 md:grid-cols-3  ml-12 gap-20">
             {/* Text section (2 columns) */}
+           
             <div className="col-span-2 text-gray-700  text-lg md:text-xl leading-relaxed " style={fadeInAnimation}>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <p>
                 <b className="text-blue-900">Instrumea</b> est une société
                 spécialisée dans les services techniques en instrumentation.
@@ -197,9 +209,11 @@ function Home() {
                 de coordination des travaux neufs et de gestion des arrêts de
                 maintenance programmés.
               </p>
+              </AnimationWrapper>
             </div>
-
+           
             {/* Cards section (1 column) */}
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <div className="col-span-1 hover:scale-125">
               <div className="bg-blue-600 p-4 rounded shadow-md text-white">
                 <h3 className="text-2xl font-bold mb-4">Notre Expertise</h3>
@@ -211,6 +225,7 @@ function Home() {
                 </p>
               </div>
             </div>
+            </AnimationWrapper>
           </div>
         </div>
       </div>
@@ -235,12 +250,14 @@ function Home() {
         }}
 
       >
+         <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
         <h2 className="text-3xl md:text-4xl font-bold text-white min-w-8 w-2/6 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600 ">
           Nos Services :
         </h2>
+        </AnimationWraRL>
         <div className="max-w-6xl mx-auto text-center ">
 
-
+        <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 ">
             {carouselText.slice(0, 3).map((item, index) => (
               <div
@@ -275,6 +292,7 @@ function Home() {
               </div>
             ))}
           </div>
+          </AnimationWraRL>
         </div>
       </div>
 
@@ -284,16 +302,20 @@ function Home() {
 
           {/* First Column (Main Paragraph with Title) */}
           <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  ">
+          <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
             <h2 className="text-3xl md:text-4xl font-bold text-white  min-w-8 w-2/3 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600">
               Nos Politiques  :
             </h2>
-
+            </AnimationWraRL>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <h3 className="text-amber-700 text-3xl font-bold mb-8 p-6 ">
               <b className="text-black text-3xl font-bold ">
                 Politique QHSE
               </b>{' '}
               (Qualité, Hygiène, Sécurité, Environnement)
             </h3>
+            </AnimationWrapper>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <p className="text-black m-3 text-1xl pl-12">
               Notre politique vise à renforcer la culture SSE (Sécurité, Santé,
               Environnement) de nos collaborateurs. Cette approche nous permet
@@ -303,11 +325,13 @@ function Home() {
               d'intégrer les meilleures pratiques et de répondre aux exigences
               réglementaires et normatives.
             </p>
+            </AnimationWrapper>
           </div>
 
           {/* Second Column (Three Sections with Logos and Titles) */}
           <div className="space-y-8   bg-white  p-20  ">
             {/* First Item */}
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <div className="flex items-start space-x-4 pt-12">
               <img
                 src="/image/icons/iconQ1.png"
@@ -324,8 +348,11 @@ function Home() {
                 </p>
               </div>
             </div>
+            </AnimationWrapper>
+           
 
             {/* Second Item */}
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <div className="flex items-start space-x-4">
               <img
                 src="/image/icons/iconQ2.png"
@@ -341,8 +368,10 @@ function Home() {
                 </p>
               </div>
             </div>
+            </AnimationWrapper>
 
             {/* Third Item */}
+            <AnimationWrapper transition={{ duration: 1, delay: 0.5 }}>
             <div className="flex items-start space-x-4">
               <img
                 src="/image/icons/iconQ3.png"
@@ -356,6 +385,7 @@ function Home() {
                 <p>Minimiser l’impact de notre activité sur l’environnement.</p>
               </div>
             </div>
+            </AnimationWrapper>
           </div>
         </div>
       </div>

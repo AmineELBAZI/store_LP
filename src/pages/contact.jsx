@@ -99,7 +99,7 @@ const Contact = () => {
                       </h3>
                       
                     </div>
-                    <div className='border-l-2 md:border-indigo-600 border-gray-200 px-6 md:px-10 py-6' >
+                    <div className='border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6' >
                       <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left " style={fadeInAnimation}>
                       Assistante administrative: 
                       </h6>
@@ -114,7 +114,7 @@ const Contact = () => {
                 </div>
               </div>
               {/* Right Column with Image */}
-              <div className="md:w-1/2 border-l-2 md:border-indigo-600 border-gray-200 px-6 md:px-10 py-6">
+              <div className="md:w-1/2 border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6">
                 <img
                   src="/image/background1.jpg"
                   alt="Illustration de contact"
@@ -194,7 +194,7 @@ const Contact = () => {
                 <input
                   type="file"
                   accept=".xls,.xlsx,.doc,.docx,.ppt,.pdf,.jpg,.jpeg,.png"
-                  className="w-full text-gray-900 text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-600 file:text-white hover:file:bg-indigo-700"
+                  className="w-full text-gray-900 text-sm file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700"
                 />
                 <div className="flex items-center gap-2">
                   <input type="checkbox" required />
@@ -208,7 +208,7 @@ const Contact = () => {
                     J'accepte les termes et conditions générales.
                   </label>
                 </div>
-                <button className="w-full h-12 text-center text-white text-base font-semibold leading-6 rounded-full bg-indigo-600 shadow transition-all duration-700 hover:bg-indigo-800">
+                <button className="w-full h-12 text-center text-white text-base font-semibold leading-6 rounded-full bg-blue-600 shadow transition-all duration-700 hover:bg-blue-800">
                   Envoyer
                 </button>
               </div>

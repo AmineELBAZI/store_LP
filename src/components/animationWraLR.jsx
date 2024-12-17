@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-const AnimationWraRL = ({
+const AnimationWraLR = ({
   children,
-  initial = { opacity: 0, x: -120 },
+  initial = { opacity: 0, x: 120 },
   animate = { opacity: 1, x: 0 },
-  transition = { duration: 1, delay: 6 },
+  transition = { duration: 1, delay: 0 },
   threshold = 0.2,
   triggerOnce = true,
 }) => {
@@ -27,4 +27,4 @@ const AnimationWraRL = ({
   );
 };
 
-export default AnimationWraRL;
+export default AnimationWraLR;

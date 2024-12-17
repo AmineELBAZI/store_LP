@@ -114,7 +114,7 @@ function Home() {
         {/* Cards Section */}
         
         <div
-          className="absolute transform translate-x-[90%] w-2/4 mr-0 mt-[600px] grid grid-cols-1 md:grid-cols-4 z-20"
+          className="absolute transform translate-x-[90%] w-2/4 mr-0 mt-[600px] grid grid-cols-1 md:grid-cols-4 z-20 sm:grid-cols-4 sm:text-xs"
           style={{ gap: '0px' }} // Removes space between cards
          >
           
@@ -275,14 +275,14 @@ function Home() {
                   <h3 className="text-2xl font-semibold text-white  group-hover:text-blue-900 mb-8 transition-colors duration-300">
                     {item.title}
                   </h3>
-                  <p className="text-gray-700 text-lg group-hover:text-black  opacity-0 mt-4 group-hover:opacity-100 transition-colors duration-300">
+                  <p className="text-gray-700 text-lg group-hover:text-black  opacity-0 mt-4 group-hover:opacity-100 transition-colors duration-300 ">
                     {/* Handle the second card description as one word per row */}
                     {index === 1
                       ? item.description
                         .split('.')
                         .filter(text => text.trim() !== '')
                         .map((line, idx) => (
-                          <span key={idx} className="block  m-3">
+                          <span key={idx} className="block   m-3">
                             {line.trim()}
                           </span>
                         ))
@@ -339,7 +339,7 @@ function Home() {
                 className="w-16 h-16 p-2 bg-amber-600 rounded-full"
               />
               <div>
-                <h4 className="text-blue-900 font-semibold  text-lg">
+                <h4 className="text-blue-900 font-semibold  text-xl">
                   Qualité
                 </h4>
                 <p>
@@ -360,7 +360,7 @@ function Home() {
                 className="w-16 h-16 p-2   bg-amber-600 rounded-full"
               />
               <div>
-                <h4 className="text-blue-900 font-semibold  text-lg">
+                <h4 className="text-blue-900 font-semibold  text-xl">
                   Sécurité
                 </h4>
                 <p>
@@ -379,7 +379,7 @@ function Home() {
                 className="w-16 h-16 p-2  bg-amber-600 rounded-full "
               />
               <div>
-                <h4 className="text-blue-900 font-semibold  text-lg">
+                <h4 className="text-blue-900 font-semibold  text-xl">
                   Environnement
                 </h4>
                 <p>Minimiser l’impact de notre activité sur l’environnement.</p>

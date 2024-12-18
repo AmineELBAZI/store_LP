@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import {Link, useLocation} from 'react-router-dom'
-import './Navbars.css' // Ensure the CSS file is imported
+import './Navbars.css' 
 
 function Navbars() {
   const [isOpen, setIsOpen] = useState(false)
@@ -61,7 +61,7 @@ function Navbars() {
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {[
               {to: '/', label: 'Accueil'},
-              {to: '/a_propos', label: 'A propos'},
+              {to: '/about_us', label: 'A propos'},
               {to: '/service', label: 'Services'},
               {to: '/contact', label: 'Contact'},
             ].map(item => (

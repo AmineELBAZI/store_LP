@@ -76,7 +76,7 @@ const Services = () => {
     <div>
       {/* First Section (Background Image with Title) */}
       <div
-        className="py-20 md:py-40 lg:py-[200px] bg-cover bg-gradient-to-r to-cyan-950 from-white bg-center flex flex-col items-start justify-center relative px-4 md:px-8 lg:px-10"
+        className="py-20 md:py-40 lg:py-[200px] bg-cover  bg-gradient-to-r to-cyan-950 from-white bg-center flex flex-col items-start justify-center relative px-4 md:px-8 lg:px-10"
         style={{
           backgroundImage: `url('/image/backgroundSs.jpeg')`,
           height: '800px',
@@ -543,41 +543,44 @@ const Services = () => {
         <div class="gap-16 items-center py-16 px-8 mx-auto max-w-screen-2xl lg:grid lg:grid-cols-2 lg:py-24 lg:px-12">
 
           <div class="text-gray-700 dark:text-gray-300">
-          <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-            <h2 class="mb-6 text-5xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-white  hover:text-orange-600">
-              We didn't reinvent the wheel
-            </h2>
+            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
+              <h2 class="mb-6 text-5xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-orange-600">
+                Matériel Utilisé par INSTRUMEA
+              </h2>
             </AnimationWraLR>
             <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-            <p class="mb-6 text-2xl md:text-3xl leading-relaxed">
-              We are strategists, designers, and developers. Innovators and problem solvers. Small enough to be simple
-              and quick, but big enough to deliver the scope you want at the pace you need.
-            </p>
+              <p class="mb-6 text-2xl md:text-3xl leading-relaxed">
+                Chez INSTRUMEA, nous utilisons une gamme complète de matériels adaptés aux besoins exigeants des industries françaises.
+              </p>
+              <p class="mb-6 text-2xl md:text-3xl leading-relaxed">
+                Nos capteurs de haute précision, automates programmables, interfaces homme-machine, et outils logiciels garantissent des solutions innovantes et performantes.
+              </p>
             </AnimationWraRL>
             <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-            <p class="text-2xl md:text-3xl leading-relaxed">
-              Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.
-            </p>
+              <p class="text-2xl md:text-3xl leading-relaxed">
+                Grâce à ces équipements et à l’expertise de nos équipes, nous assurons un service de qualité, répondant aux normes les plus strictes et aux exigences spécifiques des projets industriels.
+              </p>
             </AnimationWraLR>
           </div>
 
 
-          <div class="grid grid-cols-2 gap-6 mt-12 lg:mt-0">
-          <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-            <img
-              class="w-full h-auto rounded-lg transform hover:scale-105 transition duration-300"
-              src="/image/backgroundSs6.jpg"
-              alt="Office Content 1"
-            />
-             </AnimationWraRL>
 
-             <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-            <img
-              class="w-full h-auto mt-6 lg:mt-12 rounded-lg transform hover:scale-105 transition duration-300"
-              src="/image/backgroundSs7.jpg"
-              alt="Office Content 2"
-            />
-             </AnimationWraLR>
+          <div class="grid grid-cols-2 gap-6 mt-12 lg:mt-0">
+            <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
+              <img
+                class="w-full h-auto rounded-lg transform hover:scale-105 transition duration-300"
+                src="/image/backgroundSs6.jpg"
+                alt="Office Content 1"
+              />
+            </AnimationWraRL>
+
+            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
+              <img
+                class="w-full h-auto mt-6 lg:mt-12 rounded-lg transform hover:scale-105 transition duration-300"
+                src="/image/backgroundSs7.jpg"
+                alt="Office Content 2"
+              />
+            </AnimationWraLR>
           </div>
         </div>
       </section>
@@ -595,19 +598,20 @@ const Services = () => {
       >
         <div className="max-w-6xl mx-auto text-center">
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6  hover:text-orange-600">
               Ses compétences:
             </h2>
           </AnimationWrapper>
           <div className="h-1 bg-blue-600 mb-8 w-1/4 mx-auto"></div>
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <p className="text-lg text-black  mb-6 mt-2 md:text-2xl ">
+            <p className="text-lg text-black mb-6 mt-2 md:text-2xl hover:text-orange-600 bg-white/50 backdrop-blur-md shadow-lg rounded-lg p-4">
               Nous offrons des solutions complètes en planification, supervision
               de travaux. Nous assurons la maintenance,
               améliorons les équipements, gérons les obsolescences, et
               garantissons des processus fiables grâce à des méthodologies
               rigoureuses.
             </p>
+
           </AnimationWrapper>
 
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>

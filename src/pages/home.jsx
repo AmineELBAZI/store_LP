@@ -120,25 +120,25 @@ function Home() {
           
           {[
             {
-              image: '/image/image3.jpg',
+              image: '/image/backgroundHh5.jpeg',
               title: 'Raffinage Pétrochimie',
               link: '/service',
               icon: '/image/icons/icon3.png',
             },
             {
-              image: '/image/image1.jpg',
+              image: '/image/backgroundHh3.jpeg',
               title: 'Energie',
               link: '/service',
               icon: '/image/icons/icon2.png',
             },
             {
-              image: '/image/image2.jpg',
+              image: '/image/backgroundHh6.jpeg',
               title: 'Industrie',
               link: '/service',
               icon: '/image/icons/icon1.png',
             },
             {
-              image: '/image/image3.jpg',
+              image: '/image/backgroundSs2.jpeg',
               title: 'Ingénierie',
               link: '/service',
               icon: '/image/icons/icon4.png',

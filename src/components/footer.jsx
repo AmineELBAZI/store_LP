@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-900 w-full">
       <div className="mx-auto max-w-7xl p-4 sm:p-2 pt-8 lg:p-2">
-
+ {/* Logo Section */}
         <div className=" justify-items-start m-8 ">
           <Link to="/" className="flex items-start">
             <div
@@ -23,7 +23,7 @@ const Footer = () => {
          
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
-          {/* Logo Section */}
+         
 
 
           {/* Contact Section */}

@@ -123,47 +123,47 @@ const Services = () => {
       </div>
 
 
-      <div className="bg-white bg-cover bg-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4">
+      <div className=" bg-cover bg-center  dark:bg-gray-900">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4  dark:bg-gray-900">
           {/* First Column (Main Paragraph with Title) */}
           <div className=" text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12 fade-in-up">
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8">
-                <b className="text-black font-bold mb-4 hover:text-orange-600">
+                <b className="text-black font-bold mb-4 hover:text-orange-600  dark:text-white  dark:bg-gray-900">
                   Présentation de notre entreprise et de ses processus :
                 </b>
               </h2>
             </AnimationWrapper>
             <div className='p-6 text-gray-600 '>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" text-blue mb-4 text-xl md:text-3xl hover:text-blue-800">
+                <p className=" text-blue mb-4 text-xl md:text-3xl hover:text-blue-800 dark:text-white">
                   Instrumea offre une expertise complète en ingénierie et gestion de
                   projets, avec une approche structurée et rigoureuse.
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
+                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 dark:text-white">
                   Nous intervenons dans la planification, la préparation des travaux,
                   l’achat de matériel, et la supervision des opérations.
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
+                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 dark:text-white">
                   Nos services incluent le développement d’applications sur
                   automates, la rédaction de cahiers des charges, et la maintenance
                   des équipements, tout en garantissant des solutions fiables et
                   innovantes.
                 </p>
               </AnimationWrapper>
-              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800">
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}> 
+                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 dark:text-white">
                   Nous assurons également la budgétisation, l'amélioration des
                   équipements, et la gestion de démarches SIL et SIS, tout en
                   respectant les normes QHSE grâce au référentiel MASE.
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 fade-in-up-delayed">
+                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 fade-in-up-delayed dark:text-white">
                   Avec une méthodologie rigoureuse, nous répondons aux besoins les
                   plus complexes, notamment dans les projets neufs, l’automatisme,
                   et la préparation des arrêts techniques.
@@ -190,8 +190,8 @@ const Services = () => {
       </div>
 
       {/* Section 3 */}
-      <section className="bg-white bg-cover bg-center ">
-        <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4">
+      <section className="bg-white bg-cover bg-center   dark:bg-gray-900">
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4  dark:bg-gray-900">
           {/* Wrapper for Centering */}
           <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
             <div
@@ -217,7 +217,7 @@ const Services = () => {
                     className="w-16 h-16 m-4"
                   />
                   <div>
-                    <h4 className="font-semibold m-4 text-black hover:text-orange-600 hover:scale-x-110  duration-500">
+                    <h4 className="font-semibold m-4 text-black hover:text-orange-600 hover:scale-x-110  duration-500 dark:text-white">
                       Expertise polyvalente et complète
                     </h4>
                   </div>
@@ -232,7 +232,7 @@ const Services = () => {
                     className="w-16 h-16 m-4"
                   />
                   <div>
-                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500">
+                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500 dark:text-white">
                       Engagement envers l’excellence opérationnelle
                     </h4>
                   </div>
@@ -248,7 +248,7 @@ const Services = () => {
                     className="w-16 h-16 m-4 "
                   />
                   <div>
-                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500">
+                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500 dark:text-white">
                       Solutions innovantes et adaptées
                     </h4>
                   </div>
@@ -263,7 +263,7 @@ const Services = () => {
                     className="w-16 h-16 m-4"
                   />
                   <div>
-                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500">
+                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500 dark:text-white">
                       Accompagnement sur mesure
                     </h4>
                   </div>
@@ -276,9 +276,9 @@ const Services = () => {
 
       <section className="p-8 ">
         <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-          <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-center">
-            <b className="text-black font-bold mb-4 hover:text-orange-600    duration-500">
-              <b className="text-blue-600 hover:text-black  duration-500">INSTRUMEA</b> intervient dans plusieurs secteurs d'activités
+          <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-center ">
+            <b className="text-black font-bold mb-4 hover:text-orange-600    duration-500 dark:text-white">
+              <b className="text-blue-600 hover:text-black  duration-500 dark:text-white">INSTRUMEA</b> intervient dans plusieurs secteurs d'activités
             </b>
           </h2>
         </AnimationWrapper>
@@ -286,19 +286,19 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
             {/* Column 1 */}
             <AnimationWraRL transition={{ duration: 1, delay: 0.3 }}>
-              <div className="bg-white p-6 rounded-lg text-center   border-0 hover:border hover:border-blue-600 shadow-lg">
-                <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
+              <div className="bg-white p-6 rounded-lg text-center   border-0 hover:border hover:border-blue-600 shadow-lg  dark:bg-gray-900">
+                <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden  dark:bg-gray-900">
                   <img
                     src="/image/icons/icon3.png"
                     alt="Image 1"
                     className="w-full h-full object-cover bg-blend-color-dodge"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl hover:text-black   ">
+                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl hover:text-black  dark:text-white  ">
                   Raffinage Pétrochimie
                 </h3>
                 <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 dark:text-white'
                     }`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -325,11 +325,11 @@ const Services = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black dark:text-white">
                   Chimie
                 </h3>
                 <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 dark:text-white'
                     }`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -356,11 +356,11 @@ const Services = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black dark:text-white">
                   Energie
                 </h3>
                 <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 dark:text-white'
                     }`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -386,11 +386,11 @@ const Services = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black dark:text-white">
                   Pharmaceutique
                 </h3>
                 <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 dark:text-white'
                     }`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -420,11 +420,11 @@ const Services = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black dark:text-white">
                   Raffinage Pétrochimie
                 </h3>
                 <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 dark:text-white'
                     }`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -451,11 +451,11 @@ const Services = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black dark:text-white">
                   Chimie
                 </h3>
                 <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 dark:text-white'
                     }`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -482,11 +482,11 @@ const Services = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black dark:text-white">
                   Energie
                 </h3>
                 <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 dark:text-white'
                     }`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -512,11 +512,11 @@ const Services = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black">
+                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black dark:text-white">
                   Pharmaceutique
                 </h3>
                 <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
+                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 dark:text-white'
                     }`}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
@@ -549,15 +549,15 @@ const Services = () => {
               </h2>
             </AnimationWraLR>
             <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-              <p class="mb-6 text-2xl md:text-3xl leading-relaxed">
+              <p class="mb-6 text-2xl md:text-3xl leading-relaxed dark:text-white">
                 Chez INSTRUMEA, nous utilisons une gamme complète de matériels adaptés aux besoins exigeants des industries françaises.
               </p>
-              <p class="mb-6 text-2xl md:text-3xl leading-relaxed">
+              <p class="mb-6 text-2xl md:text-3xl leading-relaxed dark:text-white">
                 Nos capteurs de haute précision, automates programmables, interfaces homme-machine, et outils logiciels garantissent des solutions innovantes et performantes.
               </p>
             </AnimationWraRL>
             <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-              <p class="text-2xl md:text-3xl leading-relaxed">
+              <p class="text-2xl md:text-3xl leading-relaxed dark:text-white">
                 Grâce à ces équipements et à l’expertise de nos équipes, nous assurons un service de qualité, répondant aux normes les plus strictes et aux exigences spécifiques des projets industriels.
               </p>
             </AnimationWraLR>
@@ -604,7 +604,7 @@ const Services = () => {
           </AnimationWrapper>
           <div className="h-1 bg-blue-600 mb-8 w-1/4 mx-auto"></div>
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <p className="text-lg text-black mb-6 mt-2 md:text-2xl hover:text-orange-600 bg-white/50 backdrop-blur-md shadow-lg rounded-lg p-4">
+            <p className="text-lg text-black mb-6 mt-2 md:text-2xl hover:text-orange-600 bg-white/50 backdrop-blur-md shadow-lg rounded-lg p-4 dark:text-white">
               Nous offrons des solutions complètes en planification, supervision
               de travaux. Nous assurons la maintenance,
               améliorons les équipements, gérons les obsolescences, et
@@ -623,7 +623,7 @@ const Services = () => {
                   onClick={() => handleCardClick(index)}
                 >
                   {/* Always show title */}
-                  <h3 className="text-3xl font-semibold text-blue-900 mb-2 p-4">
+                  <h3 className="text-3xl font-semibold text-blue-900 mb-2 p-4 dark:text-white">
                     {item.title}
                   </h3>
                   <div className="p-4">
@@ -636,7 +636,7 @@ const Services = () => {
                   {/* Show description and image only if expanded */}
                   {expandedCard === index && (
                     <div className="p-4">
-                      <p className="text-gray-700 text-2xl">{item.description}</p>
+                      <p className="text-gray-700 text-2xl dark:text-white">{item.description}</p>
                     </div>
                   )}
                 </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AnimationWrapper from '../components/animationWraUP.jsx';
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900 w-full">
+    <footer className="bg-white dark:bg-gray-700 w-full dark:text-white">
       <div className="mx-auto max-w-7xl p-4 sm:p-2 pt-8 lg:p-2">
  {/* Logo Section */}
         <div className=" justify-items-start m-8 ">
@@ -16,7 +17,7 @@ const Footer = () => {
                 backgroundRepeat: 'no-repeat',
               }}
             />
-             <span className="text-4xl font-semibold hover:shadow-blue-700 hover:text-blue-600  text-blue-900 m-2">
+             <span className="text-4xl font-semibold hover:shadow-blue-700 hover:text-blue-600 dark:text-white text-blue-900 m-2">
             INSTRUMEA
           </span>
           </Link>
@@ -27,7 +28,9 @@ const Footer = () => {
 
 
           {/* Contact Section */}
+          
           <div>
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center justify-self-center">
               <img
                 src="/image/icons/iconF1.png"
@@ -36,7 +39,9 @@ const Footer = () => {
               />
               Nous contacter
             </h2>
-            <ul className="text-blue-900 dark:text-gray-400 font-medium space-y-2 justify-self-center p-4">
+            </AnimationWrapper>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+            <ul className="text-blue-900  font-medium space-y-2 justify-self-center p-4 dark:text-white">
               <li>
                 <strong>RTC :</strong> Youssef FAHIM
                 <a
@@ -58,10 +63,12 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
+            </AnimationWrapper>
           </div>
 
           {/* Location Section */}
           <div>
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center justify-self-center">
               <img
                 src="/image/icons/iconF2.png"
@@ -70,16 +77,20 @@ const Footer = () => {
               />
               Où nous retrouver
             </h2>
-            <ul className="text-blue-900 dark:text-gray-400 font-medium justify-self-center p-4">
+            </AnimationWrapper>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+            <ul className="text-blue-900 dark:text-white font-medium justify-self-center  p-4">
               <li>
                 <strong>Agence de Lyon :</strong>
                 <div>Z.A des Platières, 5 rue Frédéric Monin</div>
               </li>
             </ul>
+            </AnimationWrapper>
           </div>
 
           {/* Resources Section */}
           <div>
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center justify-self-center">
               <img
                 src="/image/icons/iconF3.png"
@@ -88,7 +99,9 @@ const Footer = () => {
               />
               Nos ressources
             </h2>
-            <ul className="text-blue-900 dark:text-gray-400 font-medium space-y-2 justify-self-center p-4">
+            </AnimationWrapper>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+            <ul className="text-blue-900 dark:text-white font-medium space-y-2 justify-self-center p-4">
               <li>
                 <Link to="/" className="hover:underline">
                   Home
@@ -110,10 +123,12 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+            </AnimationWrapper>
           </div>
 
           {/* Join Us Section */}
           <div>
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center justify-self-center">
               <img
                 src="/image/icons/iconF4.png"
@@ -122,7 +137,9 @@ const Footer = () => {
               />
               Rejoignez-nous
             </h2>
-            <ul className="text-blue-900 dark:text-gray-400 font-medium space-y-2 justify-self-center p-4">
+            </AnimationWrapper>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+            <ul className="text-blue-900 dark:text-white font-medium space-y-2 justify-self-center p-4">
               <li>
                 <Link to="/service" className="hover:underline">
                   LinkedIn
@@ -134,12 +151,13 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
+            </AnimationWrapper>
           </div>
         </div>
 
-        <hr className="my-8 border-gray-200 dark:border-gray-700" />
+        <hr className="my-8 border-gray-200 dark:border-gray-700 " />
         <div className="flex flex-col justify-items-center sm:flex-row sm:justify-center">
-          <span className="text-sm text-gray-500 dark:text-gray-400">
+          <span className="text-sm text-gray-500 dark:text-white">
             © 2024{' '}
             <a href="https://www.instrumea.com" className="hover:underline">
               INSTRUMEA™

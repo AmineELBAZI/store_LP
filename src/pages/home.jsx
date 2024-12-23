@@ -44,7 +44,7 @@ function Home() {
         'Dans le contexte de la sécurité industrielle, les systèmes de sécurité instrumentés (SIS) ' +
         'sont essentiels pour garantir les réductions de risque identifiés comme nécessaire dans les dans les analyses' +
         ' de risques ou dans les études de danger. Pour évaluer et analyser ces systèmes, Instrumea propose ' +
-        'des solutions adaptées visant à atteindre les niveaux requis de sécurité et de conformité,',
+        'des solutions adaptées visant à atteindre les niveaux requis de sécurité et de conformité.',
     },
     {
       src: '/image/image2.jpg',
@@ -77,7 +77,7 @@ function Home() {
   }
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 dark:bg-gray-900">
       {/* First Section (Background Image with Title) */}
       <div
         className="py-[200px] bg-gradient-to-r from-cyan-950 to-white bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8"
@@ -146,7 +146,7 @@ function Home() {
           ].map((card, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 shadow-lg overflow-hidden hover:scale-125 relative h-[450px] md:h-[350px] duration-500"
+              className="bg-white border border-gray-200 shadow-lg overflow-hidden hover:scale-125 relative h-[450px] md:h-[350px] duration-500 dark:bg-gray-900"
             >
               <Link to={card.link} className="block h-full">
                 <img
@@ -190,10 +190,10 @@ function Home() {
       {/* Second Section (About the Company) */}
 
 
-      <div className="bg-gray-100 mt-[250px] px-6 mb-4">
+      <div className="bg-gray-100 mt-[250px] px-6 mb-4  dark:text-white  dark:bg-gray-900">
         <div className="max-w-5xl mx-auto text-center">
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 hover:scale-125 duration-500 hover:text-orange-600 dark:text-white">
               Qui sommes-nous ?
             </h2>
           </AnimationWrapper>
@@ -203,10 +203,10 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3  ml-12 gap-20">
             {/* Text section (2 columns) */}
 
-            <div className="col-span-2 text-gray-700  text-lg md:text-xl leading-relaxed " style={fadeInAnimation}>
+            <div className="col-span-2 text-gray-700  text-lg md:text-xl leading-relaxed hover:p-6 hover:scale-125 duration-500 dark:text-white" style={fadeInAnimation}>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
                 <p>
-                  <b className="text-blue-900">Instrumea</b> est une société
+                  <b className="text-blue-900 ">Instrumea</b> est une société
                   spécialisée dans les services techniques en instrumentation.
                 </p>
                 <p>
@@ -223,9 +223,9 @@ function Home() {
 
             {/* Cards section (1 column) */}
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <div className="col-span-1 hover:scale-125">
-                <div className="bg-blue-600 p-4 rounded shadow-md text-white">
-                  <h3 className="text-2xl font-bold mb-4">Notre Expertise</h3>
+              <div className="group col-span-1 hover:scale-125 duration-500">
+                <div className="bg-blue-600 p-4 rounded shadow-md text-white dark:bg-orange-600">
+                  <h3 className="text-2xl font-bold mb-4 ">Notre Expertise</h3>
                   <p className="text-lg">
                     Nos spécialistes en instrumentation accompagnent les donneurs
                     d’ordre en apportant leur expertise dans le domaine, afin de
@@ -280,18 +280,18 @@ function Home() {
                     className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-10 transition-opacity duration-500"
                   />
                   {/* Card content */}
-                  <div className="relative z-10">
-                    <h3 className="text-2xl font-semibold text-white  group-hover:text-blue-900 mb-8 transition-colors duration-300">
+                  <div className="group relative z-10 ">
+                    <h3 className="text-2xl font-semibold text-white  group-hover:text-blue-900 mb-8 transition-colors duration-300 group-hover:text-3xl">
                       {item.title}
                     </h3>
-                    <p className="text-gray-700 text-lg group-hover:text-black  opacity-0 mt-4 group-hover:opacity-100 transition-colors duration-300 ">
+                    <p className="text-gray-700 text-lg group-hover:text-black  opacity-0 mt-4 group-hover:opacity-100 transition-colors duration-300 group-hover:text-2xl">
                       {/* Handle the second card description as one word per row */}
                       {index === 1
                         ? item.description
                           .split('.')
                           .filter(text => text.trim() !== '')
                           .map((line, idx) => (
-                            <span key={idx} className="block   m-3">
+                            <span key={idx} className="block   m-3 ">
                               {line.trim()}
                             </span>
                           ))
@@ -305,27 +305,27 @@ function Home() {
         </div>
       </div>
 
-      <div className="bg-[#eaf1f5] bg-cover bg-center ">
+      <div className="bg-[#eaf1f5] bg-cover bg-center dark:bg-gray-900 ">
 
-        <div className="grid grid-cols-1   md:grid-cols-2 bg-[#eaf1f5]  gap-4  ">
+        <div className="grid grid-cols-1   md:grid-cols-2 bg-[#eaf1f5]  gap-4 dark:bg-gray-900 dark:text-white ">
 
           {/* First Column (Main Paragraph with Title) */}
           <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  ">
             <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-              <h2 className="text-3xl md:text-4xl font-bold text-white  min-w-8 w-2/3 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600">
+              <h2 className="text-3xl md:text-4xl font-bold text-white  min-w-8 w-2/3 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600 ">
                 Nos Politiques  :
               </h2>
             </AnimationWraRL>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <h3 className="text-amber-700 text-3xl font-bold mb-8 p-6 ">
-                <b className="text-black text-3xl font-bold ">
+              <h3 className="text-orange-600 text-3xl font-bold mb-8 p-6 hover:text-gray-700 hover:scale-104  hover:pl-12 duration-500 dark:text-white dark:hover:text-orange-600">
+                <b className="text-black text-3xl font-bold hover:text-orange-600 dark:text-white ">
                   Politique QHSE
                 </b>{' '}
                 (Qualité, Hygiène, Sécurité, Environnement)
               </h3>
             </AnimationWrapper>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <p className="text-black m-3 text-1xl pl-12">
+              <p className="text-black m-3 text-1xl pl-12 hover:scale-105 duration-500 hover:text-orange-600   hover:pl-20 dark:text-white">
                 Notre politique vise à renforcer la culture SSE (Sécurité, Santé,
                 Environnement) de nos collaborateurs. Cette approche nous permet
                 de perfectionner nos pratiques et de réduire les risques au
@@ -338,17 +338,17 @@ function Home() {
           </div>
 
           {/* Second Column (Three Sections with Logos and Titles) */}
-          <div className="space-y-8   bg-white  p-20  ">
+          <div className="space-y-8   bg-white  p-20  dark:bg-gray-700">
             {/* First Item */}
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <div className="flex items-start space-x-4 pt-12">
+              <div className=" group flex items-start space-x-4 pt-12 hover:scale-120 hover:p-4 duration-500 ">
                 <img
                   src="/image/icons/iconQ1.png"
                   alt="Qualité"
-                  className="w-16 h-16 p-2 bg-amber-600 rounded-full"
+                  className="w-16 h-16 p-2 bg-amber-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-xl">
+                  <h4 className="text-blue-900 font-semibold  text-2xl dark:text-orange-600 ">
                     Qualité
                   </h4>
                   <p>
@@ -362,14 +362,14 @@ function Home() {
 
             {/* Second Item */}
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <div className="flex items-start space-x-4">
+              <div className=" group flex items-start space-x-4  hover:scale-120 hover:p-4 duration-500">
                 <img
                   src="/image/icons/iconQ2.png"
                   alt="Sécurité"
-                  className="w-16 h-16 p-2   bg-amber-600 rounded-full"
+                  className="w-16 h-16 p-2   bg-amber-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-xl">
+                  <h4 className="text-blue-900 font-semibold  text-2xl  dark:text-orange-600">
                     Sécurité
                   </h4>
                   <p>
@@ -381,14 +381,14 @@ function Home() {
 
             {/* Third Item */}
             <AnimationWrapper transition={{ duration: 1, delay: 0.5 }}>
-              <div className="flex items-start space-x-4">
+              <div className=" group flex items-start space-x-4  hover:scale-120 hover:p-4 duration-500">
                 <img
                   src="/image/icons/iconQ3.png"
                   alt="Environnement"
-                  className="w-16 h-16 p-2  bg-amber-600 rounded-full "
+                  className="w-16 h-16 p-2  bg-amber-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-xl">
+                  <h4 className="text-blue-900 font-semibold  text-2xl  dark:text-orange-600">
                     Environnement
                   </h4>
                   <p>Minimiser l’impact de notre activité sur l’environnement.</p>

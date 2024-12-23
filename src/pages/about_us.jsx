@@ -181,20 +181,11 @@ const About_us = () => {
           <div className="relative flex justify-center items-center bg-none  px-6 py-4 rounded-lg z-10">
             <ResponsiveContainer width={800} height={650}>
               <LineChart data={data}>
-                {/* Cartesian Grid with increased stroke width */}
                 <CartesianGrid strokeDasharray="3 3" stroke="#213555" strokeWidth={1} />
-
-                {/* XAxis with bigger font size and stroke */}
                 <XAxis dataKey="year" stroke="#213555" strokeWidth={4} fontSize={18}  />
-
-                {/* YAxis with bigger stroke width */}
                 <YAxis stroke="#213555" strokeWidth={4} fontSize={18} />
-
-                {/* Tooltip and Legend can have adjusted text */}
                 <Tooltip />
                 <Legend />
-
-                {/* Line with increased stroke width and active dot size */}
                 <Line type="monotone" dataKey="value" stroke="#EB5B00" strokeWidth={4} activeDot={{ r: 12 }} className="m-12" />
               </LineChart>
             </ResponsiveContainer>

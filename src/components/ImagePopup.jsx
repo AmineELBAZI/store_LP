@@ -77,13 +77,13 @@ const ImagePopup = () => {
     setIsModalOpen(false);
   };
   return (
-    <div className="bg-[#eaf1f5]">
+    <div className="bg-[#eaf1f5] dark:bg-gray-900">
        <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
       <h2 className="text-3xl md:text-4xl font-bold text-white w-1/3 rounded-br-full  bg-cyan-600 p-6 mb-8 hover:bg-white hover:text-cyan-600">
         Nos Offres d'Emploi :
       </h2>
       </AnimationWraRL>
-      <div className="h-full flex justify-center items-center bg-[#eaf1f5]  p-6">
+      <div className="h-full flex justify-center items-center bg-[#eaf1f5]  p-6 dark:bg-gray-900">
 
         <div className="w-full max-w-5xl">
         <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>

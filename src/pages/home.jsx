@@ -146,8 +146,9 @@ function Home() {
           ].map((card, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 shadow-lg overflow-hidden hover:scale-125 relative h-[450px] md:h-[350px] duration-500 dark:bg-gray-900"
+              className="bg-white border border-gray-200 shadow-lg overflow-hidden relative h-[100px] hover:scale-110  sm:h-[150px] md:h-[260px] lg:h-[350px] duration-500 dark:bg-gray-900"
             >
+
               <Link to={card.link} className="block h-full">
                 <img
                   className="w-full h-full object-cover"
@@ -159,9 +160,9 @@ function Home() {
                 <div
                   className="absolute top-4 left-4 flex justify-center items-center rounded-full p-4"
                   style={{
-                    background: 'rgba(255, 255, 255, 0)', 
-                    backdropFilter: 'blur(10px)',         
-                    WebkitBackdropFilter: 'blur(10px)',    
+                    background: 'rgba(255, 255, 255, 0)',
+                    backdropFilter: 'blur(10px)',
+                    WebkitBackdropFilter: 'blur(10px)',
                   }}
                 >
                   <img
@@ -175,7 +176,7 @@ function Home() {
 
 
                 {/* Title with overlay */}
-                <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold tracking-tight bg-black bg-opacity-80 hover:bg-opacity-10" style={fadeInAnimation}>
+                <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl sm:text-[10px] md:text-[15px] lg:text-[20px] font-bold tracking-tight bg-black bg-opacity-80 hover:bg-opacity-10 p-1" style={fadeInAnimation}>
                   {card.title}
                 </h5>
               </Link>

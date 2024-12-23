@@ -71,7 +71,7 @@ const About_us = () => {
 
       {/* Timeline */}
       <section className="bg-gray-100 dark:bg-gray-900 py-12">
-        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white text-center mb-12 hover:text-orange-600">
+        <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white text-center mb-12 hover:text-orange-600 hover:scale-110 duration-500">
           Notre Parcours
         </h2>
         <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -82,66 +82,66 @@ const About_us = () => {
             <div className="absolute left-4 top-0 h-full border-l-4 border-orange-600"></div>
 
             {/* Timeline Item 1 */}
-            <div className="mb-10 ml-6">
-              <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900">
-                <span className="text-white font-bold">1</span>
+            <div className=" group  mb-10 ml-6 hover:pl-6 duration-500">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900 ">
+                <span className="text-white font-bold ">1</span>
               </span>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white hover:text-orange-600">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white group-hover:text-orange-600">
                 2020 - Année de Fondations
               </h3>
-              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 ">
+              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600 ">
                 Instrumea a été fondée avec la vision de révolutionner le monde des paiements pour les entreprises de logiciels.
               </p>
             </div>
 
             {/* Timeline Item 2 */}
-            <div className="mb-10 ml-6">
+            <div className="group mb-10 ml-6 hover:pl-6 duration-500">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900">
                 <span className="text-white font-bold">2</span>
               </span>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white hover:text-orange-600">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white group-hover:text-orange-600 ">
                 2021 - Expansion majeure
               </h3>
-              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4">
+              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600">
                 Nous nous sommes étendus à des marchés mondiaux, introduisant de nouveaux outils pour simplifier les paiements transfrontaliers.
               </p>
             </div>
 
             {/* Timeline Item 3 */}
-            <div className="mb-10 ml-6">
+            <div className="group mb-10 ml-6 hover:pl-6 duration-500">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900">
                 <span className="text-white font-bold">3</span>
               </span>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white hover:text-orange-600">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white group-hover:text-orange-600">
                 2022 - Étape d'Innovation
               </h3>
-              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4">
+              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600">
                 Introduction de l’analyse basée sur l'IA pour aider les entreprises à obtenir des informations plus approfondies sur leurs données de paiement.
               </p>
             </div>
 
             {/* Timeline Item 4 */}
-            <div className="ml-6">
+            <div className=" group ml-6 hover:pl-6 duration-500">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900">
                 <span className="text-white font-bold">4</span>
               </span>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white hover:text-orange-600">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white group-hover:text-orange-600">
                 2023 - Poussée vers l'avenir
               </h3>
-              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4">
+              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600">
                 Une année de consolidation de nos succès et de préparation pour l'avenir avec des projets innovants à venir.
               </p>
             </div>
 
             {/* Timeline Item 5 */}
-            <div className="ml-6">
-              <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900">
+            <div className=" group ml-6 hover:pl-6 duration-500">
+              <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900  ">
                 <span className="text-white font-bold">5</span>
               </span>
-              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white hover:text-orange-600">
+              <h3 className="text-2xl font-semibold text-gray-900 dark:text-white group-hover:text-orange-600">
                 2024 - Aujourd'hui
               </h3>
-              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4">
+              <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600">
                 Continue à mener l'industrie avec des solutions de pointe et une approche centrée sur le client.
               </p>
             </div>
@@ -151,7 +151,7 @@ const About_us = () => {
           <div className="flex justify-center items-center px-6 hover:scale-105 duration-500">
             <img
               className="w-full h-full rounded-full shadow-lg"
-              src="/image/backgroundSs.jpeg"
+              src="/image/backgroundAa9.jpeg"
               alt="Étapes d'Instrumea"
             />
           </div>
@@ -168,18 +168,18 @@ const About_us = () => {
           <div className="flex justify-center items-center px-6 hover:scale-105 duration-500">
             <img
               className="w-full h-full rounded-full shadow-lg"
-              src="/image/backgroundAa3.jpg"
+              src="/image/backgrounAa11.jpg"
               alt="Étapes d'Instrumea"
             />
           </div>
 
           {/* Inclined Background Separator */}
-          <div className="absolute top-0 left-1/2 w-full h-full   dark:gray-800 to-transparent transform  z-0">
+          <div className="absolute top-0 left-1/2  h-full   dark:gray-800 to-transparent transform  z-0">
           </div>
 
           {/* Chart Column */}
           <div className="relative flex justify-center items-center bg-none  px-6 py-4 rounded-lg z-10">
-            <ResponsiveContainer width={800} height={650}>
+            <ResponsiveContainer width="100%" height="100%">
               <LineChart data={data}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#213555" strokeWidth={1} />
                 <XAxis dataKey="year" stroke="#213555" strokeWidth={4} fontSize={18}  />

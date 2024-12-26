@@ -66,27 +66,22 @@ const About_us = () => {
 
       <section className="bg-white w-full dark:bg-gray-700 pt-0 p-20">
         <div className="py-8 px-4 mx-auto w-full sm:py-16 lg:px-6 p-20">
-          <div className="flex flex-col lg:flex-row items-start lg:items-center">
-
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 p-4 lg:p-8">
             <div className="lg:w-1/2 w-full lg:pr-8">
-              <h2 className=" text-6xl tracking-tight font-extrabold text-cyan-950 dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6   duration-500">
+              <h2 className="max-w-2xl mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight dark:text-white  text-cyan-950 leading-tight hover:text-orange-600 hover:pl-12 hover:pt-12 duration-500">
                 Notre Histoire :
               </h2>
-              <p className="font-light text-cyan-950  text-3xl dark:text-white hover:text-orange-600  pl-6 mt-20 hover:pl-12   duration-500">
-                Fondée en 2020, INSTRUMEA est née de la vision de deux amis passionnés par les domaines de l’instrumentation,
-                de l’automatisme et de l’informatique industrielle. Motivés par l’ambition de répondre aux défis techniques des industries,
-                ils ont décidé de mettre leur expertise au service des entreprises françaises, en offrant des solutions innovantes et sur mesure.
+              <p className="font-light text-cyan-950 text-lg md:text-xl lg:text-2xl xl:text-3xl dark:text-white hover:text-orange-600 pl-6 mt-8 lg:mt-20 hover:pl-12 duration-500">
+                Fondée en 2020, INSTRUMEA est née de la vision de deux amis passionnés par les domaines de l’instrumentation, de l’automatisme et de l’informatique industrielle. Motivés par l’ambition de répondre aux défis techniques des industries, ils ont décidé de mettre leur expertise au service des entreprises françaises, en offrant des solutions innovantes et sur mesure.
               </p>
             </div>
-
             <div className="lg:w-1/2 w-full">
-
-              <p className="font-light text-cyan-950  text-3xl dark:text-white hover:text-orange-600 p-6 pt-20 mt-20 hover:pl-12  duration-500">
-                Depuis sa création, INSTRUMEA s’est dédiée à l’accompagnement des industries en matière d’assistance technique, de maintenance et de fiabilisation
-                de l’instrumentation. L’entreprise continue de se développer, toujours animée par les mêmes valeurs de qualité, d’innovation et de service client.
+              <p className="font-light text-cyan-950 text-lg md:text-xl lg:text-2xl xl:text-3xl dark:text-white hover:text-orange-600 p-6 pt-8 lg:pt-20 mt-8 lg:mt-20 hover:pl-12 duration-500">
+                Depuis sa création, INSTRUMEA s’est dédiée à l’accompagnement des industries en matière d’assistance technique, de maintenance et de fiabilisation de l’instrumentation. L’entreprise continue de se développer, toujours animée par les mêmes valeurs de qualité, d’innovation et de service client.
               </p>
             </div>
           </div>
+
         </div>
       </section>
 
@@ -221,7 +216,7 @@ const About_us = () => {
 
 
 
-      <section className="grid grid-cols-2 md:grid-cols-3 gap-4 p-20 bg-[#eaf1f5]  dark:bg-orange-900">
+      <section className="grid grid-cols-2 md:grid-cols-3 gap-4 p-20 bg-[#eaf1f5]  dark:bg-gray-900 ">
         <div
           className="rounded-md overflow-hidden"
           style={{
@@ -289,19 +284,20 @@ const About_us = () => {
             alt="dashboard image" />
 
           <div className="mt-4 md:mt-0">
-            <h2 className="group  mb-4 text-5xl tracking-tight font-extrabold text-cyan-950 dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6  duration-500">
+            <h2 className="max-w-2xl mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-cyan-950  dark:text-white leading-tight hover:text-orange-600 hover:pl-12 hover:pt-12 duration-500">
               Rejoignez-nous et découvrez un univers d'excellence et de créativité !</h2>
 
-            <p className='m-6  pl-4 font-light  text-gray-600 text-3xl  dark:text-gray-400 hover:text-orange-600 hover:pl-12 hover:pt-6 duration-500'>
+            <p className='max-w-2xl mb-6 font-light text-cyan-950 lg:mb-8 md:text-lg lg:text-3xl dark:text-gray-600 hover:text-orange-600 p-6 hover:pl-12  hover:pt-12 duration-500'>
               Nous vous offrons une opportunité unique d'intégrer un modèle hors du commun où vos idées prennent vie et où vos ambitions trouvent leur épanouissement.
               N'attendez plus, faites le pas vers une expérience exceptionnelle qui transformera votre avenir !</p>
             <a
               href="#"
-              className="inline-flex items-center justify-center px-5 py-3 m-12 text-xl font-medium text-center text-gray-900 border border-orange-600 rounded-lg hover:bg-orange-600 hover:text-white focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-orange-600 dark:focus:ring-gray-800 dark:text-orange-600 duration-500 ml-20"
+              className="inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-3 mt-4 md:mt-6 text-sm md:text-lg lg:text-xl font-medium text-center text-gray-900 border border-orange-600 rounded-lg hover:bg-orange-600 hover:text-white focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-orange-600 dark:focus:ring-gray-800 dark:text-orange-600 duration-500 mx-auto lg:ml-20"
               onClick={(e) => handleScrollAndRedirect(e)}
             >
               Voir nos offres d'emplois
             </a>
+
           </div>
         </div>
       </section>

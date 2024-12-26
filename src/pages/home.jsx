@@ -261,7 +261,7 @@ function Home() {
 
       >
         <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-          <h2 className="text-3xl md:text-4xl font-bold text-white min-w-8 w-2/6 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600 ">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold dark:text-white text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-br-full bg-none p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8 hover:bg-white hover:text-cyan-600 duration-300">
             Nos Services :
           </h2>
         </AnimationWraRL>
@@ -313,8 +313,9 @@ function Home() {
           {/* First Column (Main Paragraph with Title) */}
           <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  ">
             <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-              <h2 className="text-3xl md:text-4xl font-bold text-white  min-w-8 w-2/3 rounded-r-full rounded-tr-none bg-cyan-600 p-6 pl-10 mb-8 hover:bg-white hover:text-cyan-600 ">
-                Nos Politiques  :
+
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold  dark:text-white text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-2/3 rounded-br-full bg-none p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8 hover:bg-white hover:text-cyan-600 duration-300">
+                Nos Politiques:
               </h2>
             </AnimationWraRL>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
@@ -324,6 +325,7 @@ function Home() {
                 </b>{' '}
                 (Qualité, Hygiène, Sécurité, Environnement)
               </h3>
+
             </AnimationWrapper>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <p className="text-black m-3 text-1xl pl-12 hover:scale-105 duration-500 hover:text-orange-600   hover:pl-20 dark:text-white">

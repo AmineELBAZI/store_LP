@@ -77,7 +77,7 @@ const Contact = () => {
             <div className="md:flex gap-x-12 lg:mb-16 mb-10 relative">
               {/* Left Column */}
               <div className="md:w-1/2 mb-8 md:mb-0 p-2">
-                <h2 className="text-cyan-950 font-manrope text-4xl lg:text-4xl  font-bold leading-10 mb-5 text-center lg:text-left dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                <h2 className="text-cyan-950 font-manrope text-4xl lg:text-4xl  font-bold leading-10 mb-5 text-center lg:text-left dark:text-white hover:text-orange-600  duration-700" style={fadeInAnimation}>
                   Contactez-nous
                 </h2>
                 <p className="text-gray-800 text-2xl font-normal leading-7 mb-7 text-center lg:text-left m-10 dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
@@ -86,24 +86,24 @@ const Contact = () => {
                 <div className="mb-8 p-8">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                     <div>
-                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-orange-600  duration-700" style={fadeInAnimation}>
                         Responsable technique & commercial :
                       </h6>
-                      <h6 className="text-blue-700 text-2xl font-medium leading-5 pb-3 text-center lg:text-left m-6 hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h6 className="text-blue-500 font-bold text-2xl  leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
                         Youssef FAHIM
                       </h6>
-                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-orange-600  hover:pt-6 duration-700" style={fadeInAnimation}>
                         E-mail :  youssef.fahim@instrumea.com
                       </h3>
                     </div>
                     <div className='border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6 dark:text-white'>
-                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-orange-600   duration-700" style={fadeInAnimation}>
                         Assistante administrative:
                       </h6>
-                      <h6 className="text-blue-700 text-2xl font-medium leading-5 pb-3 text-center lg:text-left m-6 hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h6 className="text-blue-500 text-2xl font-bold leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
                         Laurence ROCHE
                       </h6>
-                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-orange-600  hover:pt-6 duration-700" style={fadeInAnimation}>
                         E-mail :  laurence.roche@instrumea.com
                       </h3>
                     </div>
@@ -125,7 +125,7 @@ const Contact = () => {
           <div className="mx-auto w-full px-4 sm:px-6 lg:px-8" style={fadeInAnimation}>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {/* Image Section */}
-              <div className="border-gray-200 px-6 md:px-10 py-6">
+              <div className="border-gray-200 px-6 md:px-10 py-6 hover:scale-105 duration-500">
                 <img
                   src="/image/backgroundCc1.jpeg"
                   alt="Illustration de contact"
@@ -143,7 +143,7 @@ const Contact = () => {
                   required
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 dark:text-white"
+                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900"
                   placeholder="Nom (obligatoire)"
                 />
                 <input
@@ -152,7 +152,7 @@ const Contact = () => {
                   required
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 dark:text-white"
+                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900"
                   placeholder="Entreprise (obligatoire)"
                 />
                 <input
@@ -161,7 +161,7 @@ const Contact = () => {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 dark:text-white"
+                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 "
                   placeholder="Email (obligatoire)"
                 />
                 <input
@@ -170,7 +170,7 @@ const Contact = () => {
                   required
                   value={formData.position}
                   onChange={handleChange}
-                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 dark:text-white"
+                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 "
                   placeholder="Fonction (obligatoire)"
                 />
                 <input
@@ -178,7 +178,7 @@ const Contact = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 dark:text-white"
+                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 "
                   placeholder="Téléphone"
                 />
                 <input
@@ -186,14 +186,14 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 dark:text-white"
+                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900 "
                   placeholder="Sujet (obligatoire)"
                 />
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full h-40 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-lg border border-gray-800 focus:outline-none px-4 text-gray-900 dark:text-white"
+                  className="w-full h-40 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-lg border border-gray-800 focus:outline-none px-4 text-gray-900 "
                   placeholder="Votre message"
                 />
                 <button className="w-full h-12 text-center text-white text-xl font-semibold leading-6 rounded-full bg-blue-600 shadow transition-all duration-700 hover:bg-blue-800">

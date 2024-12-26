@@ -15,14 +15,23 @@ function Navbars() {
         >
           {/* Logo */}
           <div
-            className="bg-cover bg-center w-12 h-12  mr-2 hover:opacity-80 animate-pulse   hover:animate-none"
-            style={{
-              backgroundImage: `url('/image/logoBLACK.png')`,
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
-          ></div>
-          <span className="text-3xl font-semibold dark:text-white hover:opacity-80 hover:text-blue-800">
+              className="logo bg-cover bg-center w-12 h-12 dark:hidden"
+              style={{
+                backgroundImage: `url('/image/logoF.png')`,
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+              }}
+            />
+            {/* Dark Mode Logo */}
+            <div
+              className="logo bg-cover bg-center w-12 h-12 hidden dark:block"
+              style={{
+                backgroundImage: `url('/image/logoW.png')`,
+                backgroundSize: 'contain',
+                backgroundRepeat: 'no-repeat',
+              }}
+            />
+          <span className="text-3xl font-semibold dark:text-white hover:opacity-80 text-blue-950 dark:hover:text-orange-500 hover:text-blue-800">
             INSTRUMEA
           </span>
         </Link>
@@ -70,8 +79,8 @@ function Navbars() {
                   to={item.to}
                   className={`block py-2 px-3 rounded md:p-0 ${
                     location.pathname === item.to
-                      ? 'text-white bg-blue-700 md:bg-transparent md:text-blue-700 '
-                      : 'text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white'
+                      ? 'text-white  md:bg-transparent md:text-blue-700 dark:text-blue-400 '
+                      : 'text-gray-900  md:hover:bg-transparent md:hover:text-blue-700 dark:text-white  dark:hover:text-orange-600'
                   }`}
                 >
                   {item.label}

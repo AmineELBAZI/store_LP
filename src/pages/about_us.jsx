@@ -1,5 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import AnimationWrapper from '../components/animationWraUP.jsx';
+import AnimationWraRL from '../components/animationWraRL.jsx';
+import AnimationWraLR from '../components/animationWraLR.jsx';
 import {
   LineChart,
   Line,
@@ -46,21 +49,30 @@ const About_us = () => {
       <section class=" dark:bg-gray-900 bg-cover bg-center mb-0 pb-0 bg-gradient-to-r to-gray-700 from-white">
         <div class="grid w-full px-20  mx-auto lg:gap-8 xl:gap-0 lg:pt-16 lg:grid-cols-12">
           <div class="mr-auto place-self-center lg:col-span-7">
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight text-cyan-950 leading-none md:text-5xl xl:text-6xl  hover:text-orange-600 hover:pl-12  hover:pt-12  duration-500">
               Notre Entreprise
             </h1>
+            </AnimationWrapper>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <p class="max-w-2xl mb-6 font-light text-cyan-950 lg:mb-8 md:text-lg lg:text-3xl dark:text-gray-600 hover:text-orange-600 p-6 hover:pl-12  hover:pt-12 duration-500">
               INSTRUMEA est une société spécialisée dans les services techniques en instrumentation, offrant un support pour la maintenance,
               la coordination des travaux neufs et la gestion des arrêts de maintenance programmés pour les industries françaises.
             </p>
-
+            </AnimationWrapper>
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <a href="/service" class="inline-flex items-center justify-center px-12 py-3  p-6 text-base font-medium text-center text-gray-900 border border-orange-600 rounded-lg hover:bg-orange-600 hover:text-white focus:ring-4 focus:ring-gray-100 dark:text-gray-600 dark:border-gray-700 dark:hover:bg-orange-600 dark:focus:ring-gray-800 m-4 duration-500">
               nos services
             </a>
+            </AnimationWrapper>
           </div>
+          
           <div class="lg:mt-0 lg:col-span-5 lg:flex w-full h-auto " >
+          <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <img class="w-full h-auto mb-0 pb-0" src="/image/backgroundAa2.png" alt="mockup" />
+            </AnimationWrapper>
           </div>
+         
         </div>
       </section>
 
@@ -68,17 +80,26 @@ const About_us = () => {
         <div className="py-8 px-4 mx-auto w-full sm:py-16 lg:px-6 p-20">
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 p-4 lg:p-8">
             <div className="lg:w-1/2 w-full lg:pr-8">
+           
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h2 className="max-w-2xl mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight dark:text-white  text-cyan-950 leading-tight hover:text-orange-600 hover:pl-12 hover:pt-12 duration-500">
                 Notre Histoire :
               </h2>
+              </AnimationWrapper>
+            <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
               <p className="font-light text-cyan-950 text-lg md:text-xl lg:text-2xl xl:text-3xl dark:text-white hover:text-orange-600 pl-6 mt-8 lg:mt-20 hover:pl-12 duration-500">
                 Fondée en 2020, INSTRUMEA est née de la vision de deux amis passionnés par les domaines de l’instrumentation, de l’automatisme et de l’informatique industrielle. Motivés par l’ambition de répondre aux défis techniques des industries, ils ont décidé de mettre leur expertise au service des entreprises françaises, en offrant des solutions innovantes et sur mesure.
               </p>
+              </AnimationWraRL>
+           
             </div>
+
             <div className="lg:w-1/2 w-full">
+            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
               <p className="font-light text-cyan-950 text-lg md:text-xl lg:text-2xl xl:text-3xl dark:text-white hover:text-orange-600 p-6 pt-8 lg:pt-20 mt-8 lg:mt-20 hover:pl-12 duration-500">
                 Depuis sa création, INSTRUMEA s’est dédiée à l’accompagnement des industries en matière d’assistance technique, de maintenance et de fiabilisation de l’instrumentation. L’entreprise continue de se développer, toujours animée par les mêmes valeurs de qualité, d’innovation et de service client.
               </p>
+              </AnimationWraLR>
             </div>
           </div>
 
@@ -88,9 +109,11 @@ const About_us = () => {
 
       {/* Timeline */}
       <section className="bg-gray-100 dark:bg-gray-900 py-12">
+      <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
         <h2 className="text-4xl font-extrabold text-cyan-950 dark:text-white text-center mb-12 hover:text-orange-600 hover:scale-110 duration-500">
           Notre Parcours
         </h2>
+        </AnimationWrapper >
         <div className="container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12">
 
           {/* Timeline Column */}
@@ -99,70 +122,99 @@ const About_us = () => {
             <div className="absolute left-4 top-0 h-full border-l-4 border-orange-600"></div>
 
             {/* Timeline Item 1 */}
+            
             <div className=" group  mb-10 ml-6 hover:pl-6 hover:pt-6 duration-500">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900 ">
                 <span className="text-white font-bold ">1</span>
               </span>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h3 className="text-2xl font-semibold text-cyan-950 dark:text-white group-hover:text-orange-600">
                 2020 - Année de Fondations
               </h3>
+              </AnimationWrapper>
+              <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
               <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600 ">
                 Instrumea a été fondée avec la vision de révolutionner le monde des paiements pour les entreprises de logiciels.
               </p>
+              </AnimationWraLR>
             </div>
-
+            
             {/* Timeline Item 2 */}
+          
             <div className="group mb-10 ml-6 hover:pl-6 hover:pt-6 duration-500">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900">
                 <span className="text-white font-bold">2</span>
               </span>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h3 className="text-2xl font-semibold text-cyan-950 dark:text-white group-hover:text-orange-600 ">
                 2021 - Expansion majeure
               </h3>
+              </AnimationWrapper>
+              <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
               <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600">
                 Nous nous sommes étendus à des marchés mondiaux, introduisant de nouveaux outils pour simplifier les paiements transfrontaliers.
               </p>
+              </AnimationWraLR>
             </div>
-
+           
             {/* Timeline Item 3 */}
+            
             <div className="group mb-10 ml-6 hover:pl-6 hover:pt-6 duration-500">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900">
                 <span className="text-white font-bold">3</span>
               </span>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h3 className="text-2xl font-semibold text-cyan-950 dark:text-white group-hover:text-orange-600">
                 2022 - Étape d'Innovation
               </h3>
+              </AnimationWrapper>
+              <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
               <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600">
                 Introduction de l’analyse basée sur l'IA pour aider les entreprises à obtenir des informations plus approfondies sur leurs données de paiement.
               </p>
+              </AnimationWraLR>
             </div>
+          
 
             {/* Timeline Item 4 */}
+          
             <div className=" group ml-6 hover:pl-6 hover:pt-6 duration-500">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900">
                 <span className="text-white font-bold">4</span>
               </span>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h3 className="text-2xl font-semibold text-cyan-950 dark:text-white group-hover:text-orange-600">
                 2023 - Poussée vers l'avenir
               </h3>
+              </AnimationWrapper>
+              <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
               <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600">
                 Une année de consolidation de nos succès et de préparation pour l'avenir avec des projets innovants à venir.
               </p>
+              </AnimationWraLR>
             </div>
+           
 
             {/* Timeline Item 5 */}
+         
             <div className=" group ml-6 hover:pl-6 hover:pt-6 duration-500">
               <span className="absolute flex items-center justify-center w-8 h-8 bg-orange-600 rounded-full -left-4 ring-8 ring-gray-100 dark:ring-gray-900  ">
                 <span className="text-white font-bold">5</span>
               </span>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h3 className="text-2xl font-semibold text-cyan-950 dark:text-white group-hover:text-orange-600">
                 2024 - Aujourd'hui
               </h3>
+              </AnimationWrapper>
+              <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
               <p className="mt-2 text-lg font-light text-gray-700 dark:text-gray-400 m-4 group-hover:text-orange-600 ">
                 Continue à mener l'industrie avec des solutions de pointe et une approche centrée sur le client.
               </p>
+              </AnimationWraLR>
             </div>
+            
           </div>
+         
 
           {/* Image Column */}
           <div className="flex justify-center items-center px-6 hover:scale-105 duration-500">
@@ -189,7 +241,7 @@ const About_us = () => {
           </div>
 
           {/* Chart Column */}
-
+          <AnimationWrapper>
           <div className="flex justify-center items-center bg-none px-6 py-4 rounded-lg">
 
             <ResponsiveContainer width="100%" height={600} className="h-[200px] sm:h-[200px]">
@@ -209,6 +261,7 @@ const About_us = () => {
               </LineChart>
             </ResponsiveContainer>
           </div>
+          </AnimationWrapper>
         </div>
       </section>
 
@@ -217,6 +270,7 @@ const About_us = () => {
 
 
       <section className="grid grid-cols-2 md:grid-cols-3 gap-4 p-20 bg-[#eaf1f5]  dark:bg-gray-900 ">
+      <AnimationWraRL>
         <div
           className="rounded-md overflow-hidden"
           style={{
@@ -227,6 +281,8 @@ const About_us = () => {
 
           }}
         ></div>
+         </AnimationWraRL>
+         <AnimationWraLR>
         <div
           className="rounded-md overflow-hidden md:col-span-2"
           style={{
@@ -236,6 +292,8 @@ const About_us = () => {
             height: "250px",
           }}
         ></div>
+         </AnimationWraLR>
+         <AnimationWraRL>
         <div
           className="rounded-md overflow-hidden md:col-span-2"
           style={{
@@ -245,6 +303,8 @@ const About_us = () => {
             height: "250px",
           }}
         ></div>
+         </AnimationWraRL>
+         <AnimationWraLR>
         <div
           className="rounded-md overflow-hidden "
           style={{
@@ -255,6 +315,8 @@ const About_us = () => {
 
           }}
         ></div>
+         </AnimationWraLR>
+         <AnimationWraRL>
         <div
           className="rounded-md overflow-hidden"
           style={{
@@ -264,6 +326,8 @@ const About_us = () => {
             height: "250px",
           }}
         ></div>
+        </AnimationWraRL>
+        <AnimationWraLR>
         <div
           className="rounded-md overflow-hidden md:col-span-2"
           style={{
@@ -273,6 +337,8 @@ const About_us = () => {
             height: "250px",
           }}
         ></div>
+         </AnimationWraLR>
+      
 
 
       </section>
@@ -284,12 +350,18 @@ const About_us = () => {
             alt="dashboard image" />
 
           <div className="mt-4 md:mt-0">
+          <AnimationWrapper>
             <h2 className="max-w-2xl mb-4 text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-cyan-950  dark:text-white leading-tight hover:text-orange-600 hover:pl-12 hover:pt-12 duration-500">
-              Rejoignez-nous et découvrez un univers d'excellence et de créativité !</h2>
-
+              Rejoignez-nous et découvrez un univers d'excellence et de créativité !
+              </h2>
+              </AnimationWrapper>
+              <AnimationWrapper>
             <p className='max-w-2xl mb-6 font-light text-cyan-950 lg:mb-8 md:text-lg lg:text-3xl dark:text-gray-600 hover:text-orange-600 p-6 hover:pl-12  hover:pt-12 duration-500'>
               Nous vous offrons une opportunité unique d'intégrer un modèle hors du commun où vos idées prennent vie et où vos ambitions trouvent leur épanouissement.
-              N'attendez plus, faites le pas vers une expérience exceptionnelle qui transformera votre avenir !</p>
+              N'attendez plus, faites le pas vers une expérience exceptionnelle qui transformera votre avenir !
+              </p>
+              </AnimationWrapper>
+              <AnimationWrapper>
             <a
               href="#"
               className="inline-flex items-center justify-center px-4 md:px-6 py-2 md:py-3 mt-4 md:mt-6 text-sm md:text-lg lg:text-xl font-medium text-center text-gray-900 border border-orange-600 rounded-lg hover:bg-orange-600 hover:text-white focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-orange-600 dark:focus:ring-gray-800 dark:text-orange-600 duration-500 mx-auto lg:ml-20"
@@ -297,6 +369,7 @@ const About_us = () => {
             >
               Voir nos offres d'emplois
             </a>
+            </AnimationWrapper>
 
           </div>
         </div>

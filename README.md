@@ -1,4 +1,4 @@
-Qui sommes-nous ?
+
 
 Instrumea est une société spécialisée dans les services techniques en instrumentation.
 

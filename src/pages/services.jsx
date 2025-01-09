@@ -76,12 +76,10 @@ const Services = () => {
     <div>
       {/* First Section (Background Image with Title) */}
       <div
-        className="py-20 md:py-40 lg:py-[200px] bg-cover  bg-gradient-to-r to-cyan-950 from-white bg-center flex flex-col items-start justify-center relative px-4 md:px-8 lg:px-10"
+        className="py-20 md:py-40 lg:py-[200px] bg-cover bg-gradient-to-r to-cyan-950 from-white bg-center flex flex-col items-start justify-center relative px-4 md:px-8 lg:px-10"
         style={{
           backgroundImage: `url('/image/backgroundSs.jpeg')`,
-          height: '800px',
-
-
+          height: 'auto', // Allow the height to adjust automatically based on content
         }}
       >
         {/* Title Section */}
@@ -102,13 +100,13 @@ const Services = () => {
 
         {/* Cards Section */}
         <div
-          className="absolute transform translate-x-0 md:translate-x-[50%] lg:translate-x-[90%] w-11/12 md:w-2/3 lg:w-2/4 mt-20 md:mt-[300px] lg:mt-[550px] z-20 flex justify-center"
+          className="absolute transform translate-x-0 md:translate-x-[50%] lg:translate-x-[90%] w-11/12 md:w-2/3 lg:w-2/4 mt-20 md:mt-[300px] lg:mt-[550px] z-20  justify-end hidden lg:block"
           style={{ gap: '0px' }}
         >
-          <div className="bg-amber-700 border border-gray-200 shadow-lg overflow-hidden rounded-b-full relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
+          <div className="bg-amber-700 border border-gray-200 shadow-lg overflow-hidden rounded-b-full rounded-tl-full  relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-end items-end transform transition hover:scale-105">
             <a className="block h-full" style={fadeInAnimation}>
               <img
-                className="object-cover w-30 h-30 mb-4  mx-auto  animate-pulse duration-900"
+                className="object-cover w-20 h-20 mb-4 mx-auto animate-pulse duration-900"
                 src="/image/icons/iconS1.png"
                 alt="/service"
                 style={{ filter: 'invert(1)' }}
@@ -120,53 +118,46 @@ const Services = () => {
             </a>
           </div>
         </div>
+
       </div>
 
+ {/* Section 2 */}
 
-      <div className=" bg-cover bg-center  dark:bg-gray-900">
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-4  dark:bg-gray-900">
+      <div className="bg-cover bg-center dark:bg-gray-900">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 dark:bg-gray-900">
           {/* First Column (Main Paragraph with Title) */}
-          <div className=" text-lg md:text-xl leading-relaxed p-6 mt-8 md:p-12 fade-in-up">
+          <div className="text-lg sm:text-xl leading-relaxed p-6 mt-8 sm:p-12 fade-in-up">
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8">
-                <p className="text-black font-bold mb-4 hover:text-orange-600  dark:text-white  dark:bg-gray-900 m-4 hover:pl-6 duration-500">
+              <h2 className="text-amber-700 text-3xl sm:text-5xl font-bold mb-6 sm:mb-8">
+                <p className="text-black font-bold mb-4 hover:text-orange-600 dark:text-white dark:bg-gray-900 m-4 hover:pl-6 duration-500">
                   Présentation de notre entreprise et de ses processus :
                 </p>
               </h2>
             </AnimationWrapper>
-            <div className='p-6 text-gray-600 '>
+            <div className="p-6 text-gray-600">
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" text-blue mb-4 text-xl md:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600  hover:pl-6 duration-500  ">
-                  Instrumea offre une expertise complète en ingénierie et gestion de
-                  projets, avec une approche structurée et rigoureuse.
+                <p className="text-blue mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
+                  Instrumea offre une expertise complète en ingénierie et gestion de projets, avec une approche structurée et rigoureuse.
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600  hover:pl-6 duration-500">
-                  Nous intervenons dans la planification, la préparation des travaux,
-                  l’achat de matériel, et la supervision des opérations.
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
+                  Nous intervenons dans la planification, la préparation des travaux, l’achat de matériel, et la supervision des opérations.
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 dark:text-white  dark:hover:text-orange-600  hover:pl-6 duration-500">
-                  Nos services incluent le développement d’applications sur
-                  automates, la rédaction de cahiers des charges, et la maintenance
-                  des équipements, tout en garantissant des solutions fiables et
-                  innovantes.
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
+                  Nos services incluent le développement d’applications sur automates, la rédaction de cahiers des charges, et la maintenance des équipements.
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600  hover:pl-6 duration-500">
-                  Nous assurons également la budgétisation, l'amélioration des
-                  équipements, et la gestion de démarches SIL et SIS, tout en
-                  respectant les normes QHSE grâce au référentiel MASE.
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
+                  Nous assurons également la budgétisation, l'amélioration des équipements, et la gestion de démarches SIL et SIS.
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className=" mb-4 text-xl md:text-3xl hover:text-blue-800 fade-in-up-delayed dark:text-white dark:hover:text-orange-600  hover:pl-6 duration-500">
-                  Avec une méthodologie rigoureuse, nous répondons aux besoins les
-                  plus complexes, notamment dans les projets neufs, l’automatisme,
-                  et la préparation des arrêts techniques.
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
+                  Avec une méthodologie rigoureuse, nous répondons aux besoins les plus complexes.
                 </p>
               </AnimationWrapper>
             </div>
@@ -178,62 +169,60 @@ const Services = () => {
               className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105 rounded-full duration-500 mt-20"
               style={{
                 backgroundImage: `url('/image/backgroundSs1.jpeg')`,
-                height: '700px',
-                width: '700px',
+                height: '800px',
+                width: '800px',
               }}
             ></div>
-
-
           </AnimationWraLR>
-
         </div>
       </div>
 
+
       {/* Section 3 */}
-      <section className="bg-white bg-cover bg-center   dark:bg-gray-900">
-        <div className="grid grid-cols-1 md:grid-cols-2 bg-white gap-4  dark:bg-gray-900">
+      <section className="bg-white bg-cover bg-center dark:bg-gray-900">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 dark:bg-gray-900">
           {/* Wrapper for Centering */}
           <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-            <div
-              className="flex items-center justify-center bg-cover bg-center hover:scale-110 rounded-full duration-500 m-20"
+          
+             <div
+              className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105 rounded-full duration-500 mt-20"
               style={{
                 backgroundImage: `url('/image/backgroundSs2.jpeg')`,
-                height: '700px',
-                width: '700px',
-
+                height: '800px',
+                width: '800px',
               }}
-            >
-
-            </div>
+            ></div>
           </AnimationWraRL>
-          <div className="text-gray-700 text-lg md:text-xl leading-relaxed p-6 mt-12 md:p-12">
-            <div className="space-y-8 text-xl md:text-3xl transition-transform ">
+
+          {/* Content Section */}
+          <div className="text-gray-700 text-lg sm:text-xl leading-relaxed p-6 mt-12 sm:p-12">
+            <div className="space-y-8 text-xl sm:text-3xl transition-transform">
               {/* 1 Item */}
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <div className="flex items-start space-x-4 m-8 md:m-12  ">
+                <div className="flex items-start space-x-4 m-6 sm:m-12">
                   <img
                     src="/image/icons/iconSs1.png"
                     alt="Qualité"
-                    className="w-16 h-16 m-4 bg-none  dark:bg-orange-600 dark:rounded-full  "
-                    
+                    className="w-16 h-16 m-4 bg-none dark:bg-orange-600 dark:rounded-full"
                   />
                   <div>
-                    <h4 className="font-semibold m-4 text-black hover:text-orange-600 hover:scale-x-110  duration-500 dark:text-white">
+                    <h4 className="font-semibold m-4 text-black hover:text-orange-600 hover:scale-x-110 duration-500 dark:text-white">
                       Expertise polyvalente et complète
                     </h4>
                   </div>
                 </div>
               </AnimationWrapper>
+
               {/* 2 Item */}
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <div className="flex items-start space-x-4 m-8 md:m-12">
+                <div className="flex items-start space-x-4 m-6 sm:m-12">
                   <img
                     src="/image/icons/iconSs2.png"
                     alt="Dynamique"
-                    className="w-16 h-16 m-4 bg-none  dark:bg-orange-600  dark:rounded-full  "
+                    className="w-16 h-16 m-4 bg-none dark:bg-orange-600 dark:rounded-full"
                   />
                   <div>
-                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500 dark:text-white">
+                    <h4 className="font-semibold m-4 text-black hover:text-orange-600 hover:scale-x-110 duration-500 dark:text-white">
                       Engagement envers l’excellence opérationnelle
                     </h4>
                   </div>
@@ -242,29 +231,30 @@ const Services = () => {
 
               {/* 3 Item */}
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <div className="flex items-start space-x-4 m-8 md:m-12">
+                <div className="flex items-start space-x-4 m-6 sm:m-12">
                   <img
                     src="/image/icons/iconSs3.png"
                     alt="A l'écoute"
-                    className="w-16 h-16 m-4 bg-none  dark:bg-orange-600  dark:rounded-full "
+                    className="w-16 h-16 m-4 bg-none dark:bg-orange-600 dark:rounded-full"
                   />
                   <div>
-                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500 dark:text-white">
+                    <h4 className="font-semibold m-4 text-black hover:text-orange-600 hover:scale-x-110 duration-500 dark:text-white">
                       Solutions innovantes et adaptées
                     </h4>
                   </div>
                 </div>
               </AnimationWrapper>
+
               {/* 4 Item */}
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <div className="flex items-start space-x-4 m-8 md:m-12 ">
+                <div className="flex items-start space-x-4 m-6 sm:m-12">
                   <img
                     src="/image/icons/iconSs4.png"
                     alt="A l'écoute"
-                    className="w-16 h-16 m-4 dark:bg-orange-600 dark:rounded-full "
+                    className="w-16 h-16 m-4 dark:bg-orange-600 dark:rounded-full"
                   />
                   <div>
-                    <h4 className="font-semibold m-4 text-black  hover:text-orange-600 hover:scale-x-110  duration-500 dark:text-white">
+                    <h4 className="font-semibold m-4 text-black hover:text-orange-600 hover:scale-x-110 duration-500 dark:text-white">
                       Accompagnement sur mesure
                     </h4>
                   </div>
@@ -274,6 +264,7 @@ const Services = () => {
           </div>
         </div>
       </section>
+
 
       <section className="p-8 dark:bg-gray-900 ">
         <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>

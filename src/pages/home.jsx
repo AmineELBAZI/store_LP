@@ -80,36 +80,46 @@ function Home() {
     <div className="bg-gray-100 dark:bg-gray-900">
       {/* First Section (Background Image with Title) */}
       <div
-        className="py-[200px] bg-gradient-to-r from-cyan-950 to-white bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8"
+        className="bg-gradient-to-r from-[#1F4529] via-[#72BF78] to-[#ffffff] bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8 "
+
+        style={{
+          backgroundImage: `url('/image/backgroundAC1.jpg')`,
+          height: '800px',
 
 
-      >
+        }}>
+
+
+
+
+
+
         {/* Title Section */}
 
         <div className=" max-w-3xl z-10   p-3 " style={fadeInAnimation}>
 
-          <div
-            className="bg-cover bg-center w-full h-20  mr-2 hover:opacity-80 "
-            style={{
-              backgroundImage: `url('/image/logoW.png')`,
-              backgroundSize: 'contain',
-              backgroundRepeat: 'no-repeat',
-            }}
 
-          >
-
-          </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left  " style={fadeInAnimation}>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left  hover:pl-4 hover:pt-4 duration-500 " style={fadeInAnimation}>
             INSTRUMEA
           </h1>
+          <div
+            className='p-4 rounded-r-full rounded-bl-full m-4 items-center justify-items-center transition-transform duration-500'
+            style={{
+              background: 'rgba(0, 0, 0, 0.2)',  // Adds a little black tint
+              backdropFilter: 'blur(40px)',       // Blur effect
+              WebkitBackdropFilter: 'blur(40px)', // For Safari compatibility
+            }}
+          >
+            <p className='text-white mb-4 text-left text-xl  md:text-4xl pl-8 hover:pl-12 hover:pt-4 duration-500'>
+              Vos projets , notre expertise en instrumentation
+            </p>
+          </div>
+
 
 
         </div>
 
 
-
-
-        {/* Cards Section */}
 
         {/* Cards Section */}
 
@@ -226,14 +236,12 @@ function Home() {
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <div className="group col-span-1 hover:scale-125 duration-500">
                 <div className="bg-blue-600 p-4 rounded shadow-md text-white dark:bg-orange-600">
-                  <h3 className="text-2xl font-bold mb-4 ">Notre Expertise</h3>
-                  <p className="text-lg">
-                    Nos spécialistes en instrumentation accompagnent les donneurs
-                    d’ordre en apportant leur expertise dans le domaine, afin de
-                    garantir la qualité, la sécurité et le respect des délais et
-                    objectifs fixés.
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">Notre Expertise</h3>
+                  <p className="text-base sm:text-lg md:text-xl">
+                    Nos spécialistes en instrumentation accompagnent les donneurs d’ordre en apportant leur expertise dans le domaine, afin de garantir la qualité, la sécurité et le respect des délais et objectifs fixés.
                   </p>
                 </div>
+
               </div>
             </AnimationWrapper>
           </div>
@@ -268,7 +276,7 @@ function Home() {
         <div className="max-w-6xl mx-auto text-center ">
 
           <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 p-2 ">
               {carouselText.slice(0, 3).map((item, index) => (
                 <div
                   key={index}
@@ -312,31 +320,24 @@ function Home() {
 
           {/* First Column (Main Paragraph with Title) */}
           <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  ">
-            <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
 
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold  dark:text-white text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-2/3 rounded-br-full bg-none p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8 hover:bg-white hover:text-cyan-600 duration-300">
-                Nos Politiques:
-              </h2>
-            </AnimationWraRL>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <h3 className="text-orange-600 text-3xl font-bold mb-8 p-6 hover:text-gray-700 hover:scale-104  hover:pl-12 duration-500 dark:text-white dark:hover:text-orange-600">
-                <b className="text-black text-3xl font-bold hover:text-orange-600 dark:text-white ">
-                  Politique QHSE
-                </b>{' '}
-                (Qualité, Hygiène, Sécurité, Environnement)
+              <h3 className="text-orange-600 text-3xl font-bold mb-8 p-6 hover:text-gray-700 hover:scale-104 pt-12 hover:pl-12 duration-500 dark:text-white dark:hover:text-orange-600">
+                <b className="text-black text-4xl font-bold hover:text-orange-600 dark:text-white ">
+                  Engagement SSE
+                </b>
+
               </h3>
 
             </AnimationWrapper>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <p className="text-black m-3 text-1xl pl-12 hover:scale-105 duration-500 hover:text-orange-600   hover:pl-20 dark:text-white">
-                Notre politique vise à renforcer la culture SSE (Sécurité, Santé,
-                Environnement) de nos collaborateurs. Cette approche nous permet
-                de perfectionner nos pratiques et de réduire les risques au
-                quotidien. S'appuyant sur le référentiel MASE (Manuel
-                d'Amélioration Sécurité des Entreprises), cette politique permet
-                d'intégrer les meilleures pratiques et de répondre aux exigences
-                réglementaires et normatives.
-              </p>
+              <div className='hover:scale-105 duration-500 hover:text-orange-600  dark:text-white   hover:pl-4'>
+                <p className="text-black m-3 text-3xl pl-12 dark:text-white ">
+                  Notre objectif est d'impliquer nos collaborateurs</p>
+                <p className='text-black m-3 text-3xl pl-12  dark:text-white'>
+                  dans une démarche visant à développer leur culture SSE.
+                </p>
+              </div>
             </AnimationWrapper>
           </div>
 
@@ -351,12 +352,11 @@ function Home() {
                   className="w-16 h-16 p-2 bg-amber-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-2xl dark:text-orange-600 ">
-                    Qualité
+                  <h4 className="text-blue-900 font-semibold  text-3xl dark:text-orange-600 ">
+                    Santé :
                   </h4>
-                  <p>
-                    Viser l'excellence en plaçant la satisfaction de nos clients
-                    au centre de nos préoccupations.
+                  <p className='text-2xl'>
+                    Préserver la santé de nos collaborateur .
                   </p>
                 </div>
               </div>
@@ -372,11 +372,11 @@ function Home() {
                   className="w-16 h-16 p-2   bg-amber-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-2xl  dark:text-orange-600">
-                    Sécurité
+                  <h4 className="text-blue-900 font-semibold  text-3xl  dark:text-orange-600">
+                    Sécurité :
                   </h4>
-                  <p>
-                    Garantir la sécurité physique et morale de nos collaborateurs.
+                  <p className='text-2xl'>
+                    Garantir la sécurité  de nos collaborateurs.
                   </p>
                 </div>
               </div>
@@ -391,10 +391,11 @@ function Home() {
                   className="w-16 h-16 p-2  bg-amber-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-2xl  dark:text-orange-600">
-                    Environnement
+                  <h4 className="text-blue-900 font-semibold  text-3xl  dark:text-orange-600">
+                    Environnement :
                   </h4>
-                  <p>Minimiser l’impact de notre activité sur l’environnement.</p>
+                  <p className='text-2xl'>
+                    Minimiser l’impact de notre activité sur l’environnement.</p>
                 </div>
               </div>
             </AnimationWrapper>

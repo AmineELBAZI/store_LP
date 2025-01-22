@@ -99,7 +99,7 @@ function Home() {
         <div className=" max-w-3xl z-10   p-3 " style={fadeInAnimation}>
 
 
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left  hover:pl-4 hover:pt-4 duration-500 " style={fadeInAnimation}>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left   duration-500 " style={fadeInAnimation}>
             INSTRUMEA
           </h1>
           <div
@@ -110,7 +110,7 @@ function Home() {
               WebkitBackdropFilter: 'blur(40px)', // For Safari compatibility
             }}
           >
-            <p className='text-white mb-4 text-left text-xl  md:text-4xl pl-8 hover:pl-12 hover:pt-4 duration-500'>
+            <p className='text-white mb-4 text-left text-xl  md:text-4xl pl-8   duration-500'>
               Vos projets , notre expertise en instrumentation
             </p>
           </div>

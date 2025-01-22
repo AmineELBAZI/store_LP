@@ -103,10 +103,10 @@ const Services = () => {
           className="absolute transform translate-x-0 md:translate-x-[50%] lg:translate-x-[90%] w-11/12 md:w-2/3 lg:w-2/4 mt-20 md:mt-[300px] lg:mt-[550px] z-20  justify-end hidden lg:block"
           style={{ gap: '0px' }}
         >
-          <div className="bg-amber-700 border border-gray-200 shadow-lg overflow-hidden rounded-b-full rounded-tl-full  relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-end items-end transform transition hover:scale-105">
+          <div className="bg-lime-700 border border-gray-200 shadow-lg overflow-hidden rounded-b-full   relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
             <a className="block h-full" style={fadeInAnimation}>
               <img
-                className="object-cover w-20 h-20 mb-4 mx-auto animate-pulse duration-900"
+                className="object-cover w-30 h-30 mb-4 mx-auto animate-pulse duration-900"
                 src="/image/icons/iconS1.png"
                 alt="/service"
                 style={{ filter: 'invert(1)' }}
@@ -137,27 +137,29 @@ const Services = () => {
             <div className="p-6 text-gray-600">
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
                 <p className="text-blue mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
-                  Instrumea offre une expertise complète en ingénierie et gestion de projets, avec une approche structurée et rigoureuse.
+                Instrumea offre une expertise complète en ingénierie et gestion de projets, avec une approche structurée et rigoureuse. 
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
                 <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
-                  Nous intervenons dans la planification, la préparation des travaux, l’achat de matériel, et la supervision des opérations.
+                Nous intervenons dans la préparation des travaux, la définition des matériels, la fiabilisation et la supervision des opérations. 
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
                 <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
-                  Nos services incluent le développement d’applications sur automates, la rédaction de cahiers des charges, et la maintenance des équipements.
+                Nos services incluent l’élaboration de chiffrage, la rédaction de cahiers des charges, l’aide aux analyses de risques types HAZOP, la sélection d’entreprises de réalisation avec 
+                une évaluation des intervenants afin de garantir la qualité et la sécurité des opérations. 
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
                 <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
-                  Nous assurons également la budgétisation, l'amélioration des équipements, et la gestion de démarches SIL et SIS.
+                Nous assurons également l’interface avec les métiers de l’automatisme et de l’électricité.  
                 </p>
               </AnimationWrapper>
+             
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
                 <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-orange-600 hover:pl-6 duration-500">
-                  Avec une méthodologie rigoureuse, nous répondons aux besoins les plus complexes.
+                Avec une méthodologie rigoureuse, nous répondons aux besoins les plus complexes, notamment dans la gestion des obsolescences des équipements. 
                 </p>
               </AnimationWrapper>
             </div>
@@ -287,16 +289,14 @@ const Services = () => {
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl hover:text-black  ">
-                  Raffinage Pétrochimie
+                  Pétrochimie 
                 </h3>
                 <p
                   className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4'
                     }`}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                  feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-                  Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-                  sollicitudin eros libero non justo. Quisque vel tempor dui.
+                   
+                  Instrumea fiabilise l’instrumentation des installations dédiées à la transformation des coupes pétrolières.
                 </p>
                 <button
                   onClick={toggleDescription}
@@ -324,10 +324,8 @@ const Services = () => {
                   className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 '
                     }`}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                  feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-                  Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-                  sollicitudin eros libero non justo. Quisque vel tempor dui.
+                  
+                  Instrumea possède une solide expertise de l’instrumentation utilisée par l’industrie de la chimie de spécialités.
                 </p>
                 <button
                   onClick={toggleDescription}
@@ -355,10 +353,8 @@ const Services = () => {
                   className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 '
                     }`}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                  feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-                  Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-                  sollicitudin eros libero non justo. Quisque vel tempor dui.
+                  
+                  Instrumea opère dans le secteur du gaz naturel, se spécialisant dans l'ingénierie des installations industrielles de liquéfaction et de regazéification du méthane.
                 </p>
                 <button
                   onClick={toggleDescription}
@@ -379,16 +375,14 @@ const Services = () => {
                   />
                 </div>
                 <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black ">
-                  Pharmaceutique
+                Pharmaceutique
                 </h3>
                 <p
                   className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 '
                     }`}
                 >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                  feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-                  Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-                  sollicitudin eros libero non justo. Quisque vel tempor dui.
+                  
+                  Pour répondre aux plus hautes exigences de l'industrie pharmaceutique, Instrumea assure la conformité aux réglementations strictes en matière de sécurité et d’hygiène. 
                 </p>
                 <button
                   onClick={toggleDescription}
@@ -400,180 +394,7 @@ const Services = () => {
             </AnimationWraLR>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 mt-2">
 
-            {/* Column 1 */}
-            <AnimationWraRL transition={{ duration: 1, delay: 0.3 }}>
-              <div className="bg-white p-6 rounded-lg text-center  border-0 hover:border hover:border-orange-600 shadow-lg">
-                <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-                  <img
-                    src="/image/icons/icon3.png"
-                    alt="Image 1"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black ">
-                  Raffinage Pétrochimie
-                </h3>
-                <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 '
-                    }`}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                  feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-                  Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-                  sollicitudin eros libero non justo. Quisque vel tempor dui.
-                </p>
-                <button
-                  onClick={toggleDescription}
-                  className="text-blue-600 hover:text-blue-800 font-semibold"
-                >
-                  {showMore ? '◁' : '▷'}
-                </button>
-              </div>
-            </AnimationWraRL>
-
-            {/* Column 2 */}
-            <AnimationWraRL transition={{ duration: 1, delay: 0.1 }}>
-              <div className="bg-white p-6 rounded-lg text-center  border hover:border-orange-600">
-                <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-                  <img
-                    src="/image/icons/icon5.png"
-                    alt="Image 2"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black ">
-                  Chimie
-                </h3>
-                <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 '
-                    }`}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                  feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-                  Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-                  sollicitudin eros libero non justo. Quisque vel tempor dui.
-                </p>
-                <button
-                  onClick={toggleDescription}
-                  className="text-blue-600 hover:text-blue-800 font-semibold"
-                >
-                  {showMore ? '◁' : '▷'}
-                </button>
-              </div>
-            </AnimationWraRL>
-
-            {/* Column 3 */}
-            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-              <div className="bg-white p-6 rounded-lg text-center  border hover:border-orange-600">
-                <div className="w-40 h-40 p-8 mx-auto mb-4 rounded-full overflow-hidden">
-                  <img
-                    src="/image/icons/icon1.png"
-                    alt="Image 3"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black ">
-                  Energie
-                </h3>
-                <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 '
-                    }`}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                  feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-                  Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-                  sollicitudin eros libero non justo. Quisque vel tempor dui.
-                </p>
-                <button
-                  onClick={toggleDescription}
-                  className="text-blue-600 hover:text-blue-800 font-semibold"
-                >
-                  {showMore ? '◁' : '▷'}
-                </button>
-              </div>
-            </AnimationWraLR>
-            {/* Column 4 */}
-            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-              <div className="bg-white p-6 rounded-lg text-center  border hover:border-orange-600">
-                <div className="w-40 h-40 mx-auto mb-4 rounded-full p-8 overflow-hidden">
-                  <img
-                    src="/image/icons/icon6.png"
-                    alt="Image 4"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold text-blue-600 mb-2 lg:text-3xl  hover:text-black ">
-                  Pharmaceutique
-                </h3>
-                <p
-                  className={`text-gray-800 text-sm mb-4 lg:text-2xl ${showMore ? '' : 'line-clamp-4 '
-                    }`}
-                >
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                  feugiat justo id ligula sollicitudin, nec condimentum ligula mollis.
-                  Ut pretium, orci in hendrerit cursus, quam purus cursus urna, et
-                  sollicitudin eros libero non justo. Quisque vel tempor dui.
-                </p>
-                <button
-                  onClick={toggleDescription}
-                  className="text-blue-600 hover:text-blue-800 font-semibold"
-                >
-                  {showMore ? '◁' : '▷'}
-                </button>
-              </div>
-            </AnimationWraLR>
-          </div>
-
-        </div>
-      </section>
-
-      {/* Section 2 */}
-
-      <section class="bg-white dark:bg-gray-900">
-        <div class="gap-16 items-center py-16 px-8 mx-auto max-w-screen-2xl lg:grid lg:grid-cols-2 lg:py-24 lg:px-12">
-
-          <div class="text-gray-700 dark:text-gray-300 ">
-            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-              <h2 class="mb-6 text-5xl md:text-6xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-orange-600 dark:hover:text-orange-600  hover:pl-6 duration-500">
-                Matériel Utilisé par INSTRUMEA
-              </h2>
-            </AnimationWraLR>
-            <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-              <p class="mb-6 text-2xl md:text-3xl leading-relaxed dark:text-white pl-2 dark:hover:text-orange-600  hover:pl-6 duration-500">
-                Chez INSTRUMEA, nous utilisons une gamme complète de matériels adaptés aux besoins exigeants des industries françaises.
-              </p>
-              <p class="mb-6 text-2xl md:text-3xl leading-relaxed dark:text-white pl-2 dark:hover:text-orange-600  hover:pl-6 duration-500">
-                Nos capteurs de haute précision, automates programmables, interfaces homme-machine, et outils logiciels garantissent des solutions innovantes et performantes.
-              </p>
-            </AnimationWraRL>
-            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-              <p class="text-2xl md:text-3xl leading-relaxed dark:text-white pl-2 dark:hover:text-orange-600  hover:pl-6 duration-500">
-                Grâce à ces équipements et à l’expertise de nos équipes, nous assurons un service de qualité, répondant aux normes les plus strictes et aux exigences spécifiques des projets industriels.
-              </p>
-            </AnimationWraLR>
-          </div>
-
-
-
-          <div class="grid grid-cols-2 gap-6 mt-12 lg:mt-0">
-            <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-              <img
-                class="w-full h-auto rounded-lg transform hover:scale-105 transition hover:animate-none animate-bounce duration-900"
-                src="/image/backgroundSs6.jpg"
-                alt="Office Content 1"
-              />
-            </AnimationWraRL>
-
-            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-              <img
-                class="w-full h-auto mt-6 lg:mt-12 rounded-lg transform hover:scale-105 transition hover:animate-none animate-bounce duration-900"
-                src="/image/backgroundSs7.jpg"
-                alt="Office Content 2"
-              />
-            </AnimationWraLR>
-          </div>
         </div>
       </section>
 

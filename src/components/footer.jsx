@@ -116,11 +116,11 @@ const Footer = () => {
                     Home
                   </Link>
                 </li>
-                <li>
+               {/*<li>
                   <Link to="/a_propos" className="hover:underline">
                     A propos
                   </Link>
-                </li>
+                </li>*/}
                 <li>
                   <Link to="/service" className="hover:underline">
                     Services

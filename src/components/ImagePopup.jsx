@@ -8,7 +8,7 @@ import AnimationWrapper from './animationWraUP.jsx';
 
 const carouselImages = [
   {
-    src: "/image/image1.jpg",
+    src: "/image/corimage.png",
     title: "Coordinateur Instrumentation (F/H)",
     description:
       "Poste basé chez notre client, en tant que Coordinateur Instrumentation. " +
@@ -31,7 +31,7 @@ const carouselImages = [
     `,
   },
   {
-    src: "/image/image1.jpg",
+    src: "/image/prepimage.jpg",
     title: "Préparateur Instrumentation (F/H) ",
     description:
       "Poste basé chez notre client, en tant que préparateur Instrumentation " +
@@ -117,7 +117,7 @@ const ImagePopup = () => {
                         {item.description}
                       </p>
                       <button
-                        className="bg-blue-500 text-white px-4 py-2 rounded-tr-full rounded-bl-full hover:bg-blue-600 text-lg md:text-2xl"
+                        className="bg-blue-500 text-white px-4 py-2 rounded-full  hover:bg-lime-600 text-lg md:text-2xl"
                         onClick={() => handleSeeMore(item)}
                       >
                         Voir Plus
@@ -183,7 +183,7 @@ const ImagePopup = () => {
               </ul>
               <div className="flex justify-end m-4 md:m-8">
                 <button
-                  className="font-bold inline-flex items-center justify-center px-12 py-3  p-6 text-base  text-center text-gray-900 border-2 border-blue-900 rounded-lg hover:bg-blue-400 hover:text-white focus:ring-4 focus:ring-gray-100 dark:text-gray-600 dark:border-gray-400 dark:hover:bg-blue-400 dark:focus:ring-gray-800 m-4 duration-500"
+                  className="font-bold inline-flex items-center justify-center px-12 py-3  p-6 text-base  text-center text-gray-900 border-2 border-blue-900 rounded-lg hover:bg-lime-600 hover:text-white focus:ring-4 focus:ring-gray-100 dark:text-gray-600 dark:border-gray-400 dark:hover:bg-blue-400 dark:focus:ring-gray-800 m-4 duration-500"
                   onClick={() => {
                     const jobTitle = `Candidature pour le poste de ${modalContent.title}`;
                     const queryParam = new URLSearchParams({

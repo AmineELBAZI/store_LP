@@ -77,33 +77,33 @@ const Contact = () => {
             <div className="md:flex gap-x-12 lg:mb-16 mb-10 relative">
               {/* Left Column */}
               <div className="md:w-1/2 mb-8 md:mb-0 p-2">
-                <h2 className="text-cyan-950 font-manrope text-4xl lg:text-4xl  font-bold leading-10 mb-5 text-center lg:text-left dark:text-white hover:text-orange-600  duration-700" style={fadeInAnimation}>
+                <h2 className="text-cyan-950 font-manrope text-4xl lg:text-4xl  font-bold leading-10 mb-5 text-center lg:text-left dark:text-white hover:text-lime-600  duration-700" style={fadeInAnimation}>
                   Contactez-nous
                 </h2>
-                <p className="text-gray-800 text-2xl font-normal leading-7 mb-7 text-center lg:text-left m-10 dark:text-white hover:text-orange-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                <p className="text-gray-800 text-2xl font-normal leading-7 mb-7 text-center lg:text-left m-10 dark:text-white hover:text-lime-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
                   Que vous ayez une question ou que vous souhaitiez simplement nous dire bonjour, nous sommes là pour faciliter la communication avec vous.
                 </p>
                 <div className="mb-8 p-8">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                     <div>
-                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-orange-600  duration-700" style={fadeInAnimation}>
+                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-lime-600  duration-700" style={fadeInAnimation}>
                         Responsable technique & commercial :
                       </h6>
                       <h6 className="text-blue-500 font-bold text-2xl  leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
                         Youssef FAHIM
                       </h6>
-                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-orange-600  hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
                         E-mail :  youssef.fahim@instrumea.com
                       </h3>
                     </div>
                     <div className='border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6 dark:text-white'>
-                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-orange-600   duration-700" style={fadeInAnimation}>
+                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-lime-600   duration-700" style={fadeInAnimation}>
                         Assistante administrative:
                       </h6>
                       <h6 className="text-blue-500 text-2xl font-bold leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
                         Laurence ROCHE
                       </h6>
-                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-orange-600  hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
                         E-mail :  laurence.roche@instrumea.com
                       </h3>
                     </div>
@@ -113,7 +113,7 @@ const Contact = () => {
               {/* Right Column with Image */}
               <div className="md:w-1/2 border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6">
                 <img
-                  src="/image/backgroundCc.jpeg"
+                  src="/image/callimage.jpg"
                   alt="Illustration de contact"
                   className="w-full h-full  shadow-lg rounded-lg rounded-br-full  rounded-tr-full rounded-bl-full  hover:rounded-tl-full hover:rounded-bl-none duration-500"
                   style={fadeInAnimation}

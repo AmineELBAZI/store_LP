@@ -31,7 +31,7 @@ function Navbars() {
                 backgroundRepeat: 'no-repeat',
               }}
             />
-          <span className="text-3xl font-semibold dark:text-white hover:opacity-80 text-blue-950 dark:hover:text-orange-500 hover:text-blue-800">
+          <span className="text-3xl font-semibold dark:text-white hover:opacity-80 text-blue-950 dark:hover:text-lime-500 hover:text-blue-800">
             INSTRUMEA
           </span>
         </Link>
@@ -80,7 +80,7 @@ function Navbars() {
                   className={`block py-2 px-3 rounded md:p-0 ${
                     location.pathname === item.to
                       ? 'text-white  md:bg-transparent md:text-lime-700 dark:text-blue-400 '
-                      : 'text-gray-900  md:hover:bg-transparent md:hover:text-blue-700 dark:text-white  dark:hover:text-orange-600'
+                      : 'text-gray-900  md:hover:bg-transparent md:hover:text-blue-700 dark:text-white  dark:hover:text-lime-600'
                   }`}
                 >
                   {item.label}

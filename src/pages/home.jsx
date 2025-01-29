@@ -110,7 +110,7 @@ function Home() {
               WebkitBackdropFilter: 'blur(40px)', // For Safari compatibility
             }}
           >
-            <p className='text-white mb-4 text-left text-xl  md:text-4xl pl-8   duration-500'>
+            <p className='text-white mb-4 text-left text-xl  md:text-3xl  font-bold duration-500'>
               Vos projets , notre expertise en instrumentation
             </p>
           </div>
@@ -214,7 +214,7 @@ function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3  ml-12 gap-20">
             {/* Text section (2 columns) */}
 
-            <div className="col-span-2 text-gray-700  text-lg md:text-xl leading-relaxed hover:p-6 hover:scale-125 duration-500 dark:text-white" style={fadeInAnimation}>
+            <div className="col-span-2 text-gray-700  text-lg md:text-2xl lg:text-3xl leading-relaxed hover:p-6 hover:scale-125 duration-500 dark:text-white" style={fadeInAnimation}>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
                 <p>
                   <b className="text-blue-900 ">Instrumea</b> est une société

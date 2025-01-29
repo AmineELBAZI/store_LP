@@ -103,7 +103,7 @@ const Services = () => {
           className="absolute transform translate-x-0 md:translate-x-[50%] lg:translate-x-[90%] w-11/12 md:w-2/3 lg:w-2/4 mt-20 md:mt-[300px] lg:mt-[550px] z-20  justify-end hidden lg:block"
           style={{ gap: '0px' }}
         >
-          <div className="bg-lime-700 border border-gray-200 shadow-lg overflow-hidden rounded-b-full   relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
+          <div className="bg-lime-400 border border-gray-200 shadow-lg overflow-hidden rounded-b-full   relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
             <a className="block h-full" style={fadeInAnimation}>
               <img
                 className="object-cover w-30 h-30 mb-4 mx-auto animate-pulse duration-900"
@@ -271,7 +271,7 @@ const Services = () => {
       <section className="p-8 dark:bg-gray-900 ">
         <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
           <h2 className="text-amber-700 text-3xl md:text-5xl font-bold mb-6 md:mb-8 text-center ">
-            <b className=" font-bold mb-4 text-lime-600    duration-500 dark:text-white">
+            <b className=" font-bold mb-4 text-black   duration-500 dark:text-white">
               <b className="text-blue-600 hover:text-black hover:dark:text-lime-600 duration-500 ">INSTRUMEA</b> intervient dans plusieurs secteurs d'activités
             </b>
           </h2>

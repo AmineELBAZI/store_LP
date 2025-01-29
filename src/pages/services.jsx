@@ -411,13 +411,13 @@ const Services = () => {
       >
         <div className="max-w-6xl mx-auto text-center">
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6  hover:text-lime-600">
-              Ses compétences:
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6 ">
+            Nos compétences:
             </h2>
           </AnimationWrapper>
           <div className="h-1 bg-blue-600 mb-8 w-1/4 mx-auto"></div>
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <p className="text-lg text-black mb-6 mt-2 md:text-2xl hover:text-lime-600 bg-white/50 backdrop-blur-md shadow-lg rounded-lg p-4 dark:text-gray-900">
+            <p className="text-lg text-black mb-6 mt-2 md:text-2xl  bg-white/50 backdrop-blur-md shadow-lg rounded-lg p-4 dark:text-gray-900">
               Nous offrons des solutions complètes en planification, supervision
               de travaux. Nous assurons la maintenance,
               améliorons les équipements, gérons les obsolescences, et

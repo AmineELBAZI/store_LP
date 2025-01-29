@@ -11,6 +11,7 @@ const Contact = () => {
   // State to hold form data
   const [formData, setFormData] = useState({
     firstName: '',
+    lastName:'',
     company: '',
     email: '',
     position: '',
@@ -34,6 +35,7 @@ const Contact = () => {
     const emailData = {
       to_name: "Destinataire",
       from_name: formData.firstName || 'Nom non spécifié',
+      from_lastName: formData.lastName || 'Prenom non spécifié',
       company: formData.company || 'Entreprise non spécifiée',
       email: formData.email || 'Email non spécifié',
       position: formData.position || 'Poste non spécifié',
@@ -149,14 +151,23 @@ const Contact = () => {
                   className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900"
                   placeholder="Nom (obligatoire)"
                 />
+                 <input
+                  type="text"
+                  name="lastName"
+                  required
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900"
+                  placeholder="Prenom (obligatoire)"
+                />
                 <input
                   type="text"
                   name="company"
-                  required
+                  
                   value={formData.company}
                   onChange={handleChange}
                   className="w-full h-12 shadow-sm placeholder-gray-400 dark:placeholder-gray-400 text-lg font-normal rounded-full border border-gray-800 focus:outline-none px-4 text-gray-900"
-                  placeholder="Entreprise (obligatoire)"
+                  placeholder="Entreprise "
                 />
                 <input
                   type="email"

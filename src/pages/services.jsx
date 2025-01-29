@@ -167,15 +167,16 @@ const Services = () => {
 
           {/* Wrapper for Centering */}
           <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
-            <div
-              className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105 rounded-full duration-500 mt-20"
-              style={{
-                backgroundImage: `url('/image/backgroundSs1.jpeg')`,
-                height: '800px',
-                width: '800px',
-              }}
-            ></div>
-          </AnimationWraLR>
+          <div
+            className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105 rounded-full duration-500 mt-20 
+                      w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]"
+            style={{
+              backgroundImage: `url('/image/backgroundSs1.jpeg')`,
+            }}
+          ></div>
+        </AnimationWraLR>
+
+
         </div>
       </div>
 
@@ -185,16 +186,15 @@ const Services = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 dark:bg-gray-900">
           {/* Wrapper for Centering */}
           <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-          
-             <div
-              className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105 rounded-full duration-500 mt-20"
-              style={{
-                backgroundImage: `url('/image/backgroundSs2.jpeg')`,
-                height: '800px',
-                width: '800px',
-              }}
-            ></div>
-          </AnimationWraRL>
+          <div
+            className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105 rounded-full duration-500 mt-20 
+                      w-[300px] h-[300px] md:w-[600px] md:h-[600px]"
+            style={{
+              backgroundImage: `url('/image/backgroundSs2.jpeg')`,
+            }}
+          ></div>
+        </AnimationWraRL>
+
 
           {/* Content Section */}
           <div className="text-gray-700 text-lg sm:text-xl leading-relaxed p-6 mt-12 sm:p-12">

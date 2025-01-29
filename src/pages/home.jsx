@@ -131,7 +131,7 @@ function Home() {
           {[
             {
               image: '/image/Raffinage.jpeg',
-              title: 'Raffinage Pétrochimie',
+              title: 'Pétrochimie',
               link: '/service',
               icon: '/image/icons/icon10.png',
             },
@@ -186,7 +186,7 @@ function Home() {
 
 
                 {/* Title with overlay */}
-                <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl sm:text-[10px] md:text-[15px] lg:text-[20px] font-bold tracking-tight bg-black bg-opacity-80 hover:bg-opacity-10 p-1" style={fadeInAnimation}>
+                <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl sm:text-[10px] md:text-[15px] lg:text-[20px] font-bold tracking-tight bg-black bg-opacity-80 hover:bg-opacity-10 p-3" style={fadeInAnimation}>
                   {card.title}
                 </h5>
               </Link>
@@ -222,10 +222,7 @@ function Home() {
                 </p>
                 <p>
                   Elle accompagne les industries françaises dans la réalisation de
-                  leurs projets en proposant des prestations de support au service
-                  de maintenance
-                  de coordination des travaux neufs et de gestion des arrêts de
-                  maintenance programmés.
+                  leurs projets en proposant des prestations de support au services de maintenance, travaux neufs et de gestion des arrêts de maintenance programmés .
                 </p>
               </AnimationWrapper>
             </div>
@@ -267,7 +264,7 @@ function Home() {
 
       >
         <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold dark:text-white text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-br-full bg-none p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8 hover:bg-white hover:text-cyan-600 duration-300">
+          <h2 className="dark:text-lime-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold  text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-br-full bg-none p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8 hover:bg-white hover:text-cyan-600 duration-300">
             Nos Services :
           </h2>
         </AnimationWraRL>
@@ -278,7 +275,7 @@ function Home() {
               {carouselText.slice(0, 3).map((item, index) => (
                 <div
                   key={index}
-                  className="bg-white p-6 rounded-lg shadow-lg transform transition-all hover:scale-110 hover:shadow-2xl relative overflow-hidden group hover-text-black"
+                  className="bg-white p-6 rounded-lg shadow-lg transform transition-all hover:scale-100 hover:shadow-2xl relative overflow-hidden group hover-text-black"
                 >
                   {/* Hidden image initially, revealed on hover with 50% opacity */}
                   <img
@@ -322,22 +319,23 @@ function Home() {
 
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
             <div
-            className="relative bg-cover bg-center h-60 flex items-center justify-center mt-4"
+            className="relative  xl:w-[600px] w-[400px] h-[110px] sm:h-20 md:h-20 lg:h-40 xl:h-[180px] flex items-center justify-center mt-4 bg-cover bg-center"
             style={{
-              backgroundImage: "url('/image/SSEimage.png')",
+              backgroundImage: "url('/image/imageSSE.png')",
               backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
             }}
-          >
+          ></div>
+
             
-          </div>
 
 
             </AnimationWrapper>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <div className='hover:scale-105 duration-500 hover:text-lime-600  dark:text-white   hover:pl-4'>
-                <p className="text-black m-3 text-3xl pl-12 dark:text-white ">
+              <div className=' duration-500 hover:text-lime-600  dark:text-white  mt-12 hover:pt-4'>
+                <p className="text-black   text-xl md:text-3xl pl-12 dark:text-white  ">
                   Notre objectif est d'impliquer nos collaborateurs</p>
-                <p className='text-black m-3 text-3xl pl-12  dark:text-white'>
+                <p className='text-black mt-3 md:text-3xl pl-12 text-xl  dark:text-white'>
                   dans une démarche visant à développer leur culture SSE.
                 </p>
               </div>
@@ -355,10 +353,10 @@ function Home() {
                   className="w-16 h-16 p-2 bg-lime-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-3xl dark:text-lime-600 ">
+                  <h4 className="text-blue-900 font-semibold  md:text-3xl text-2xl dark:text-lime-600 ">
                     Santé :
                   </h4>
-                  <p className='text-2xl'>
+                  <p className='md:text-2xl text-xl '>
                     Préserver la santé de nos collaborateur .
                   </p>
                 </div>
@@ -375,10 +373,10 @@ function Home() {
                   className="w-16 h-16 p-2    bg-lime-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-3xl  dark:text-lime-600">
+                  <h4 className="text-blue-900 font-semibold  md:text-3xl text-2xl  dark:text-lime-600">
                     Sécurité :
                   </h4>
-                  <p className='text-2xl'>
+                  <p className='md:text-2xl text-xl'>
                     Garantir la sécurité  de nos collaborateurs.
                   </p>
                 </div>
@@ -394,10 +392,10 @@ function Home() {
                   className="w-16 h-16 p-2  bg-lime-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />
                 <div>
-                  <h4 className="text-blue-900 font-semibold  text-3xl  dark:text-lime-600">
+                  <h4 className="text-blue-900 font-semibold  md:text-3xl text-2xl dark:text-lime-600">
                     Environnement :
                   </h4>
-                  <p className='text-2xl'>
+                  <p className='md:text-2xl text-xl'>
                     Minimiser l’impact de notre activité sur l’environnement.</p>
                 </div>
               </div>

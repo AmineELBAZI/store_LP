@@ -8,7 +8,7 @@ import AnimationWrapper from './animationWraUP.jsx';
 
 const carouselImages = [
   {
-    src: "/image/corimage.png",
+    src: "/image/coordinateurimage.jpg",
     title: "Coordinateur Instrumentation (F/H)",
     description:
       "Poste basé chez notre client, en tant que Coordinateur Instrumentation. " +
@@ -31,7 +31,7 @@ const carouselImages = [
     `,
   },
   {
-    src: "/image/prepimage.jpg",
+    src: "/image/preparatoureimage.jpg",
     title: "Préparateur Instrumentation (F/H) ",
     description:
       "Poste basé chez notre client, en tant que préparateur Instrumentation " +
@@ -79,7 +79,7 @@ const ImagePopup = () => {
   return (
     <div className="bg-[#eaf1f5] dark:bg-gray-900">
       <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold  dark:text-white text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-br-full bg-none p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8 hover:bg-white hover:text-cyan-600 duration-300">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold  dark:text-lime-600 text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-br-full bg-none p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8 hover:bg-white hover:text-cyan-600 duration-300">
           Nos Offres d'Emploi :
         </h2>
 

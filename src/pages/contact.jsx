@@ -86,24 +86,24 @@ const Contact = () => {
                 <div className="mb-8 p-8">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                     <div>
-                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-lime-600  duration-700" style={fadeInAnimation}>
+                      <h6 className="text-black text-xl lg:text-2xl xl:text-2xl  font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-lime-600  duration-700" style={fadeInAnimation}>
                         Responsable technique & commercial :
                       </h6>
-                      <h6 className="text-blue-500 font-bold text-2xl  leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h6 className="text-blue-500 font-bold text-xl lg:text-2xl xl:text-2xl   leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
                         Youssef FAHIM
                       </h6>
-                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h3 className="text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
                         E-mail :  youssef.fahim@instrumea.com
                       </h3>
                     </div>
                     <div className='border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6 dark:text-white'>
-                      <h6 className="text-black text-2xl font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-lime-600   duration-700" style={fadeInAnimation}>
+                      <h6 className="text-black text-xl lg:text-2xl xl:text-2xl  font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-lime-600   duration-700" style={fadeInAnimation}>
                         Assistante administrative:
                       </h6>
-                      <h6 className="text-blue-500 text-2xl font-bold leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h6 className="text-blue-500 text-xl lg:text-2xl xl:text-2xl  font-bold leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
                         Laurence ROCHE
                       </h6>
-                      <h3 className="text-gray-700 text-2xl font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
+                      <h3 className="text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
                         E-mail :  laurence.roche@instrumea.com
                       </h3>
                     </div>
@@ -111,14 +111,17 @@ const Contact = () => {
                 </div>
               </div>
               {/* Right Column with Image */}
-              <div className="md:w-1/2 border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6">
+              <div className="w-full md:w-1/2 border-gray-200 px-6 md:px-10 py-6">
                 <img
                   src="/image/callimage.jpg"
                   alt="Illustration de contact"
-                  className="w-full h-full  shadow-lg rounded-lg rounded-br-full  rounded-tr-full rounded-bl-full  hover:rounded-tl-full hover:rounded-bl-none duration-500"
+                  className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 
+                            shadow-lg rounded-lg rounded-br-full rounded-tr-full rounded-bl-full  
+                            hover:rounded-tl-full hover:rounded-bl-none duration-500"
                   style={fadeInAnimation}
                 />
               </div>
+
             </div>
           </div>
           {/* Form Section */}
@@ -135,7 +138,7 @@ const Contact = () => {
               </div>
 
               {/* Form Section */}
-              <form className="border-l-2 md:border-blue-600 pl-12 grid lg:grid-cols-1 grid-cols-1 p-12" onSubmit={handleSubmit}>
+              <form className="border-l-2 md:border-blue-600 pl-12 grid lg:grid-cols-1 grid-cols-1 p-12 gap-2" onSubmit={handleSubmit}>
                 {/* Left Side of the Form */}
                 <input
                   type="text"

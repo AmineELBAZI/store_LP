@@ -50,7 +50,7 @@ const Footer = () => {
               </h2>
             </AnimationWrapper>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <ul className="text-blue-900  font-medium space-y-2 justify-self-center p-4 dark:text-white">
+              <ul className="text-blue-900  font-medium space-y-2 justify-self-center items-center p-4 dark:text-white">
                 <li>
                   <strong> Email :</strong> 
                   <br></br>
@@ -70,7 +70,7 @@ const Footer = () => {
           {/* Location Section */}
           <div>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase dark:text-white flex items-center justify-center justify-self-center">
+              <h2 className="mb-4 text-lg font-semibold text-gray-900 uppercase dark:text-white flex  items-center justify-center justify-self-center">
                 <img
                   src="/image/icons/iconF2.png"
                   alt="Location Icon"

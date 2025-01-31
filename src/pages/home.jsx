@@ -348,7 +348,7 @@ function Home() {
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <div className=" group flex items-start space-x-4 pt-12 hover:scale-120 hover:p-4 duration-500 ">
                 <img
-                  src="/image/icons/iconQ1.png"
+                  src="/image/icons/Sanicon.png"
                   alt="Qualité"
                   className="w-16 h-16 p-2 bg-lime-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
                 />

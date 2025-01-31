@@ -317,20 +317,14 @@ function Home() {
           <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  "
           >
 
-            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <div
-            className="relative  xl:w-[600px] w-[400px] h-[110px] sm:h-20 md:h-20 lg:h-40 xl:h-[180px] flex items-center justify-center mt-4 bg-cover bg-center"
-            style={{
-              backgroundImage: "url('/image/imageSSE.png')",
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-            }}
-          ></div>
-
-            
-
-
-            </AnimationWrapper>
+        <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
+          <h2 className="dark:text-lime-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold  text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-2/3 rounded-br-full bg-none  sm:p-6 lg:p-8    hover:bg-white hover:text-cyan-600 duration-300">
+          Engagement :
+          </h2>
+          <h3 className="text-lime-600 text-xl sm:text-xl md:text-2xl lg:text-4xl   w-full   pl-10  mb-4  ">
+          Sécurité , Santé , Environnement
+          </h3>
+        </AnimationWraRL>
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <div className=' duration-500 hover:text-lime-600  dark:text-white  mt-12 hover:pt-4'>
                 <p className="text-black   text-xl md:text-3xl pl-12 dark:text-white  ">
@@ -357,7 +351,7 @@ function Home() {
                     Santé :
                   </h4>
                   <p className='md:text-2xl text-xl '>
-                    Préserver la santé de nos collaborateur .
+                  Préserver la santé de nos collaborateurs.
                   </p>
                 </div>
               </div>

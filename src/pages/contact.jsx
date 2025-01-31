@@ -55,10 +55,10 @@ const Contact = () => {
     // Send the email via EmailJS
     emailjs
       .send(
-        'service_sge31sw', // Your service ID
-        'template_8825utg', // Your template ID
+        'service_7vcolzj', // Your service ID
+        'template_z8v7m5p', // Your template ID
         emailData,
-        'TZ94hkSpvPX-s5UuM' // Your user ID
+        'kBGY4822rOxtki7Up' // Your user ID
       )
       .then(
         () => {
@@ -95,7 +95,7 @@ const Contact = () => {
                         Youssef FAHIM
                       </h6>
                       <h3 className="text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
-                        E-mail :  youssef.fahim@instrumea.com
+                        E-mail :  contact@instrumea.com
                       </h3>
                     </div>
                     <div className='border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6 dark:text-white'>

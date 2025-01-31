@@ -5,7 +5,7 @@ import AnimationWrapper from '../components/animationWraUP.jsx';
 const Footer = () => {
   return (
     <footer className="bg-white dark:bg-gray-700 w-full dark:text-white">
-      <div className="mx-auto max-w-7xl p-4 sm:p-2 pt-8 lg:p-2">
+      <div className="mx-auto max-w-8xl p-4 sm:p-2 pt-8 lg:p-2">
         {/* Logo Section */}
         <div className=" justify-items-start m-8 ">
           <Link to="/" className="flex items-start">
@@ -52,25 +52,17 @@ const Footer = () => {
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <ul className="text-blue-900  font-medium space-y-2 justify-self-center p-4 dark:text-white">
                 <li>
-                  <strong>RTC :</strong> Youssef FAHIM
+                  <strong> Email :</strong> 
+                  <br></br>
                   <a
                     href="mailto:youssef.fahim@instrumea.com"
                     className="hover:underline"
                   >
                     {' '}
-                    youssef.fahim@instrumea.com
+                    contact@instrumea.com
                   </a>
                 </li>
-                <li>
-                  <strong>AA :</strong> Laurence ROCHE
-                  <a
-                    href="mailto:laurence.roche@instrumea.com"
-                    className="hover:underline"
-                  >
-                    {' '}
-                    laurence.roche@instrumea.com
-                  </a>
-                </li>
+              
               </ul>
             </AnimationWrapper>
           </div>
@@ -90,8 +82,8 @@ const Footer = () => {
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <ul className="text-blue-900 dark:text-white font-medium justify-self-center  p-4">
                 <li>
-                  <strong>Agence de Lyon :</strong>
-                  <div>Z.A des Platières, 5 rue Frédéric Monin</div>
+                  <strong>Agence Rhône-Alpes :</strong>
+                  <div>Z.A des Platières, 5 rue Frédéric Monin 69440 Mornant</div>
                 </li>
               </ul>
             </AnimationWrapper>

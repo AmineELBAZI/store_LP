@@ -88,27 +88,18 @@ const Contact = () => {
                 <div className="mb-8 p-8">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                     <div>
-                      <h6 className="text-black text-xl lg:text-2xl xl:text-2xl  font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-lime-600  duration-700" style={fadeInAnimation}>
-                        Responsable technique & commercial :
-                      </h6>
-                      <h6 className="text-blue-500 font-bold text-xl lg:text-2xl xl:text-2xl   leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
-                        Youssef FAHIM
-                      </h6>
-                      <h3 className="text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
-                        E-mail :  contact@instrumea.com
+                    
+                    <h3 className=" text-xl lg:text-3xl xl:text-3xl  font-semibold leading-8 text-center lg:text-left dark:text-white text-lime-600   duration-700" style={fadeInAnimation}>
+                    Nous contacter
+                      </h3>
+                      <h3 className="p-4 text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white   duration-700" style={fadeInAnimation}>
+                        E-mail :
+                      </h3>
+                      <h3 className="pl-6 text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
+                        contact@instrumea.com
                       </h3>
                     </div>
-                    <div className='border-l-2 md:border-blue-600 border-gray-200 px-6 md:px-10 py-6 dark:text-white'>
-                      <h6 className="text-black text-xl lg:text-2xl xl:text-2xl  font-medium leading-5 pb-3 text-center lg:text-left dark:text-white hover:text-lime-600   duration-700" style={fadeInAnimation}>
-                        Assistante administrative:
-                      </h6>
-                      <h6 className="text-blue-500 text-xl lg:text-2xl xl:text-2xl  font-bold leading-5 pb-3 text-center lg:text-left m-6   hover:pt-6 duration-700" style={fadeInAnimation}>
-                        Laurence ROCHE
-                      </h6>
-                      <h3 className="text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
-                        E-mail :  laurence.roche@instrumea.com
-                      </h3>
-                    </div>
+                   
                   </div>
                 </div>
               </div>

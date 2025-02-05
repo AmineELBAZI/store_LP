@@ -142,12 +142,12 @@ const Footer = () => {
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <ul className="text-blue-900 dark:text-white font-medium space-y-2 justify-self-center p-4">
                 <li>
-                  <Link to="/service" className="hover:underline">
+                  <Link to="https://www.linkedin.com/company/instrumea/about/" className="hover:underline">
                     LinkedIn
                   </Link>
                 </li>
                 <li>
-                  <Link to="/service" className="hover:underline">
+                  <Link to="/" className="hover:underline">
                     X
                   </Link>
                 </li>

@@ -103,7 +103,7 @@ const Services = () => {
           className="absolute transform translate-x-0 md:translate-x-[50%] lg:translate-x-[90%] w-11/12 md:w-2/3 lg:w-2/4 mt-20 md:mt-[300px] lg:mt-[550px] z-20  justify-end hidden lg:block"
           style={{ gap: '0px' }}
         >
-          <div className="bg-lime-400 border border-gray-200 shadow-lg overflow-hidden rounded-b-full   relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
+          <div className="bg-[#9cda6c] border border-gray-200 shadow-lg overflow-hidden rounded-b-full   relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
             <a className="block h-full" style={fadeInAnimation}>
               <img
                 className="object-cover w-30 h-30 mb-4 mx-auto animate-pulse duration-900"
@@ -112,7 +112,7 @@ const Services = () => {
                 style={{ filter: 'invert(1)' }}
               />
               {/* Title with overlay */}
-              <h5 className="absolute inset-0 mt-12 md:mt-16 lg:mt-20 flex items-center justify-center text-white text-sm md:text-3xl lg:text-3xl font-bold tracking-tight text-center" style={fadeInAnimation}>
+              <h5 className="absolute inset-0 mt-12 md:mt-16 lg:mt-20 flex items-center justify-center text-black text-sm md:text-3xl lg:text-3xl font-bold tracking-tight text-center" style={fadeInAnimation}>
                 Présentation de nos services et domaines d'expertise
               </h5>
             </a>
@@ -129,7 +129,7 @@ const Services = () => {
           <div className="text-lg sm:text-xl leading-relaxed p-6 mt-8 sm:p-12 fade-in-up">
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h2 className="text-amber-700 text-3xl sm:text-5xl font-bold mb-6 sm:mb-8">
-                <p className=" font-bold mb-4 text-lime-600 dark:text-white dark:bg-gray-900 m-4 hover:pl-6 duration-500">
+                <p className=" font-bold mb-4 text-black hover:text-blue-700 dark:text-white dark:bg-gray-900 m-4 hover:pl-6 duration-500">
                   Présentation de notre entreprise et de ses processus :
                 </p>
               </h2>

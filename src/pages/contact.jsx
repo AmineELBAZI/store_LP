@@ -82,21 +82,23 @@ const Contact = () => {
                 <h2 className="text-cyan-950 font-manrope text-4xl lg:text-4xl  font-bold leading-10 mb-5 text-center lg:text-left dark:text-white hover:text-lime-600  duration-700" style={fadeInAnimation}>
                   Contactez-nous
                 </h2>
-                <p className="text-gray-800 text-2xl font-normal leading-7 mb-7 text-center lg:text-left m-10 dark:text-white hover:text-lime-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
-                  Que vous ayez une question ou que vous souhaitiez simplement nous dire bonjour, nous sommes là pour faciliter la communication avec vous.
+                <p className="text-gray-800 text-xl lg:text-2xl xl:text-2xl  font-semibold  leading-7 mb-7 text-center lg:text-left m-10 dark:text-white hover:text-lime-600 hover:pl-6 hover:pt-6 duration-700" style={fadeInAnimation}>
+                  Que vous ayez une question ou que vous souhaitiez des précisions supplémentaires , nous sommes là pour faciliter la communication avec vous.
                 </p>
                 <div className="mb-8 p-8">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
                     <div>
                     
-                    <h3 className=" text-xl lg:text-3xl xl:text-3xl  font-semibold leading-8 text-center lg:text-left dark:text-white text-lime-600   duration-700" style={fadeInAnimation}>
-                    Nous contacter
+                   
+                      <h3 className="p-1 text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white   duration-700" style={fadeInAnimation}>
+                      Vous pouvez nous contacter par e-mail:   <b className='font-bold'>contact@instrumea.com</b>
                       </h3>
-                      <h3 className="p-4 text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white   duration-700" style={fadeInAnimation}>
-                        E-mail :
+                     
+                      <h3 className="pl-16 text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white  hover:pt-6 duration-700" style={fadeInAnimation}>
+                        ou depuis notre formulaire de contact ci-dessous.
                       </h3>
                       <h3 className="pl-6 text-gray-700 text-xl lg:text-2xl xl:text-2xl  font-semibold leading-8 text-center lg:text-left dark:text-white hover:text-lime-600  hover:pt-6 duration-700" style={fadeInAnimation}>
-                        contact@instrumea.com
+                      
                       </h3>
                     </div>
                    

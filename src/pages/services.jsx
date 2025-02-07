@@ -83,19 +83,13 @@ const Services = () => {
         }}
       >
         {/* Title Section */}
-        <div className="rounded-lg text-left mt-0 max-w-lg md:max-w-2xl lg:max-w-3xl bg-white p-4 text-black opacity-90 shadow-lg transform transition hover:scale-105" style={fadeInAnimation}>
-          <p className="text-base md:text-lg lg:text-4xl hover:text-lime-600 duration-500 hover:pl-6">
-            Installée en Rhône Alpes, <b className="text-blue-600 hover:text-lime-600 duration-500">INSTRUMEA</b> est
-            une société spécialisée dans les métiers de l'ingénierie.
+        <div className="rounded-lg text-left mt-0  max-w-lg md:max-w-2xl lg:max-w-4xl bg-white p-4 text-black opacity-90 shadow-lg transform transition hover:scale-105" style={fadeInAnimation}>
+          <p className="text-base md:text-lg lg:text-4xl hover:text-lime-600 font-normal duration-500   m-4">
+          Installée en Rhône Alpes depuis 2020, <b className="text-blue-600 hover:text-lime-600  font-normal duration-500">INSTRUMEA </b> 
+              est une société spécialisée dans les métiers de l’ingénierie dans le domaine de l’instrumentation et de l’informatique industriel.
           </p>
-          <p className="text-base md:text-lg lg:text-2xl p-4 pb-0">
-            Dans le domaine de l'instrumentation et de l'informatique industriel.
-          </p>
-          <p className="text-base md:text-lg lg:text-2xl p-4 pt-0">
-            Elle accompagne les industries françaises dans leurs projets, elle
-            propose une assistance technique en maintenance, travaux neufs et
-            préparation d'arrêt.
-          </p>
+          
+         
         </div>
 
         {/* Cards Section */}
@@ -103,7 +97,7 @@ const Services = () => {
           className="absolute transform translate-x-0 md:translate-x-[50%] lg:translate-x-[90%] w-11/12 md:w-2/3 lg:w-2/4 mt-20 md:mt-[300px] lg:mt-[550px] z-20  justify-end hidden lg:block"
           style={{ gap: '0px' }}
         >
-          <div className="bg-[#9cda6c] border border-gray-200 shadow-lg overflow-hidden rounded-b-full   relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
+          <div className="bg-[#9cda6c] border border-gray-200 shadow-lg overflow-hidden rounded-b-full   relative h-[250px] md:h-[350px] lg:h-[400px] w-full md:w-[400px] lg:w-[500px] p-4 ml-12 md:p-6 lg:p-8 opacity-90 flex justify-center items-center transform transition hover:scale-105">
             <a className="block h-full" style={fadeInAnimation}>
               <img
                 className="object-cover w-30 h-30 mb-4 mx-auto animate-pulse duration-900"
@@ -168,7 +162,7 @@ const Services = () => {
           {/* Wrapper for Centering */}
           <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
           <div
-            className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105 rounded-full duration-500 mt-20 
+            className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105 rounded-full duration-500  mt-[150px] 
                       w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]"
             style={{
               backgroundImage: `url('/image/backgroundSs1.jpeg')`,

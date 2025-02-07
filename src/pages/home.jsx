@@ -124,7 +124,7 @@ function Home() {
         {/* Cards Section */}
 
         <div
-          className="absolute transform translate-x-[90%] w-2/4 mr-0 mt-[600px] grid grid-cols-1 md:grid-cols-4 z-20 sm:grid-cols-4 sm:text-xs"
+          className="absolute transform translate-x-[90%] sm:w-[20px] lg:w-2/4 mr-0 mt-[600px] grid grid-cols-1 md:grid-cols-4 z-20 sm:grid-cols-4 sm:text-xs"
           style={{ gap: '0px' }} // Removes space between cards
         >
 
@@ -204,7 +204,7 @@ function Home() {
       <div className="bg-gray-100 mt-[250px] px-6 mb-4  dark:text-white  dark:bg-gray-900">
         <div className="max-w-5xl mx-auto text-center">
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 hover:scale-125 duration-500 hover:text-lime-600 dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 hover:scale-110 duration-500 hover:text-lime-600 dark:text-white">
               Qui sommes-nous ?
             </h2>
           </AnimationWrapper>

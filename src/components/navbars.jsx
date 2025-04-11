@@ -67,27 +67,7 @@ function Navbars() {
           className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}
           id="navbar-multi-level"
         >
-          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            {[
-              {to: '/', label: 'Accueil'},
-              //{to: '/about_us', label: 'A propos'},
-              {to: '/service', label: 'Services'},
-              {to: '/contact', label: 'Contact'},
-            ].map(item => (
-              <li key={item.to}>
-                <Link
-                  to={item.to}
-                  className={`block py-2 px-3 rounded md:p-0 ${
-                    location.pathname === item.to
-                      ? 'text-white  md:bg-transparent md:text-lime-700 dark:text-blue-400 '
-                      : 'text-gray-900  md:hover:bg-transparent md:hover:text-blue-700 dark:text-white  dark:hover:text-lime-600'
-                  }`}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+         
         </div>
       </div>
     </nav>

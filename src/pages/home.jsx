@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { useAddKeyframes, fadeInAnimation, fadeOutAnimation } from "../components/animationUtils.jsx";
 import AnimationWrapper from '../components/animationWraUP.jsx';
 import AnimationWraRL from '../components/animationWraRL.jsx';
-
+import AnimationWraLR from '../components/animationWraLR.jsx';
 
 function Home() {
   useAddKeyframes();
@@ -77,10 +77,10 @@ function Home() {
   }
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900">
+    <div className="bg-[rgb(112,98,88)] dark:bg-gray-900">
       {/* First Section (Background Image with Title) */}
       <div
-        className="bg-gradient-to-r from-[#23422c] via-[#5ea364] to-[#e9fcea] bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8 "
+        className="bg-gradient-to-r from-[#a17a50] via-[#d6a870] to-[#ffffff] bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8 "
 
         style={{
          
@@ -201,14 +201,14 @@ function Home() {
       {/* Second Section (About the Company) */}
 
 
-      <div className="bg-gray-100 mt-[250px] px-6 mb-4  dark:text-white  dark:bg-gray-900">
+      <div  className="bg-[#dfdcd7] mt-[250px] p-20   dark:text-white  dark:bg-gray-900">
         <div className="max-w-5xl mx-auto text-center">
           <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 hover:scale-110 duration-500 hover:text-lime-600 dark:text-white">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6 hover:scale-110 duration-500 hover-text-[#cea58e] dark:text-white">
               Qui sommes-nous ?
             </h2>
           </AnimationWrapper>
-          <div className="h-1 bg-blue-600 mb-8 w-2/4 mx-auto"></div>
+          <div className="h-1 bg-[#cea58e] mb-8 w-2/4 mx-auto"></div>
 
           {/* Two text columns and one card column */}
           <div className="grid grid-cols-1 md:grid-cols-3  ml-12 gap-20">
@@ -230,7 +230,7 @@ function Home() {
             {/* Cards section (1 column) */}
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <div className="group col-span-1 hover:scale-125 duration-500">
-                <div className="bg-blue-600 p-4 rounded shadow-md text-white dark:bg-lime-600">
+                <div className="bg-[#cea58e] p-4 rounded shadow-md text-white dark:bg-lime-600">
                   <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">Notre Expertise</h3>
                   <p className="text-base sm:text-lg md:text-xl">
                     Nos spécialistes en instrumentation accompagnent les donneurs d’ordre en apportant leur expertise dans le domaine, afin de garantir la qualité, la sécurité et le respect des délais et objectifs fixés.
@@ -245,9 +245,125 @@ function Home() {
 
       {/* Fourth Section (Image and Description Slider) */}
 
-      <ImagePopup></ImagePopup>
+     
+      <div className="bg-cover bg-center dark:bg-gray-900 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 dark:bg-gray-900 ">
+          {/* First Column (Main Paragraph with Title) */}
+          <div className="text-lg sm:text-xl leading-relaxed p-6  sm:p-12 fade-in-up bg-[#cea58e]">
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+              <h2 className="text-amber-700 text-3xl sm:text-5xl font-bold mb-6 sm:mb-8">
+                <p className=" font-bold mb-4 text-black hover:text-blue-700 dark:text-white dark:bg-gray-900 m-4 hover:pl-6 duration-500">
+                  Présentation de notre entreprise et de ses processus :
+                </p>
+              </h2>
+            </AnimationWrapper>
+            <div className="p-6 text-gray-600">
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="text-blue mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Instrumea offre une expertise complète en ingénierie et gestion de projets, avec une approche structurée et rigoureuse. 
+                </p>
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Nous intervenons dans la préparation des travaux, la définition des matériels, la fiabilisation et la supervision des opérations. 
+                </p>
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Nos services incluent l’élaboration de chiffrage, la rédaction de cahiers des charges, l’aide aux analyses de risques types HAZOP, la sélection d’entreprises de réalisation avec 
+                une évaluation des intervenants afin de garantir la qualité et la sécurité des opérations. 
+                </p>
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Nous assurons également l’interface avec les métiers de l’automatisme et de l’électricité.  
+                </p>
+              </AnimationWrapper>
+             
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Avec une méthodologie rigoureuse, nous répondons aux besoins les plus complexes, notamment dans la gestion des obsolescences des équipements. 
+                </p>
+              </AnimationWrapper>
+            </div>
+          </div>
+
+          {/* Wrapper for Centering */}
+          <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
+            
+          <div
+            className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105  duration-500  mt-[150px] 
+                      w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]"
+            style={{
+              backgroundImage: `url('/image/stor_Image/image1.jpg')`,
+            }}
+          ></div>
+          
+        </AnimationWraLR>
 
 
+        </div>
+      </div>
+
+      <div className="bg-cover bg-center dark:bg-gray-900 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 dark:bg-gray-900 ">
+            {/* Wrapper for Centering */}
+            <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
+            
+            <div
+              className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105  duration-500  mt-[150px] 
+                        w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]"
+              style={{
+                backgroundImage: `url('/image/stor_Image/image9.png')`,
+              }}
+            ></div>
+            
+          </AnimationWraLR>
+          {/* First Column (Main Paragraph with Title) */}
+          <div className="text-lg sm:text-xl leading-relaxed p-6  sm:p-12 fade-in-up bg-[#cea58e]">
+            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+              <h2 className="text-amber-700 text-3xl sm:text-5xl font-bold mb-6 sm:mb-8">
+                <p className=" font-bold mb-4 text-black hover:text-blue-700 dark:text-white dark:bg-gray-900 m-4 hover:pl-6 duration-500">
+                  Présentation de notre entreprise et de ses processus :
+                </p>
+              </h2>
+            </AnimationWrapper>
+            <div className="p-6 text-gray-600">
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="text-blue mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Instrumea offre une expertise complète en ingénierie et gestion de projets, avec une approche structurée et rigoureuse. 
+                </p>
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Nous intervenons dans la préparation des travaux, la définition des matériels, la fiabilisation et la supervision des opérations. 
+                </p>
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Nos services incluent l’élaboration de chiffrage, la rédaction de cahiers des charges, l’aide aux analyses de risques types HAZOP, la sélection d’entreprises de réalisation avec 
+                une évaluation des intervenants afin de garantir la qualité et la sécurité des opérations. 
+                </p>
+              </AnimationWrapper>
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Nous assurons également l’interface avec les métiers de l’automatisme et de l’électricité.  
+                </p>
+              </AnimationWrapper>
+             
+              <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pl-6 duration-500">
+                Avec une méthodologie rigoureuse, nous répondons aux besoins les plus complexes, notamment dans la gestion des obsolescences des équipements. 
+                </p>
+              </AnimationWrapper>
+            </div>
+          </div>
+
+        
+
+
+        </div>
+      </div>
 
 
 
@@ -308,6 +424,10 @@ function Home() {
           </AnimationWraRL>
         </div>
       </div>
+
+
+    
+
 
       <div className="bg-[#eaf1f5] bg-cover bg-center dark:bg-gray-900 ">
 

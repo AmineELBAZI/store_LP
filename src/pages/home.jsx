@@ -12,24 +12,24 @@ function Home() {
   useAddKeyframes();
   const carouselImages = [
     {
-      src: '/image/image1.jpg',
+      src: '/image/stor_Image/image10.png',
       title: 'Maintenance industrielle et gestion\n' + 'de projets\n',
       description:
         '' +
         "Nous offrons des services complets en gestion de projets et préparation d'arrêt,\n",
     },
     {
-      src: '/image/image2.jpg',
+      src: '/image/stor_Image/image10.png',
       title: 'title',
       description: 'description',
     },
     {
-      src: '/image/image3.jpg',
+      src: '/image/stor_Image/image10.png',
       title: 'title',
       description: 'description',
     },
     {
-      src: '/image/image4.png',
+      src: '/image/stor_Image/image10.png',
       title: 'title',
       description: 'description',
     },
@@ -100,7 +100,7 @@ function Home() {
 
 
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 text-left   duration-500 " style={fadeInAnimation}>
-            INSTRUMEA
+            text
           </h1>
           <div
             className='p-4 rounded-r-full rounded-bl-full m-4 items-center justify-items-center transition-transform duration-500'
@@ -111,7 +111,7 @@ function Home() {
             }}
           >
             <p className='text-white mb-4 text-left text-xl  md:text-3xl  font-bold duration-500'>
-              Vos projets , notre expertise en instrumentation
+             text
             </p>
           </div>
 
@@ -130,28 +130,28 @@ function Home() {
 
           {[
             {
-              image: '/image/Raffinage.jpeg',
-              title: 'Pétrochimie',
+              image: '/image/stor_Image/image5.jpg',
+             
               link: '/service',
-              icon: '/image/icons/icon10.png',
+              
             },
             {
-              image: '/image/backgroundHh3.jpeg',
-              title: 'Energie',
+              image: '/image/stor_Image/image8.jpg',
+             
               link: '/service',
-              icon: '/image/icons/icon1.png',
+             
             },
             {
-              image: '/image/backgroundHh6.jpeg',
-              title: 'Industrie',
+              image: '/image/stor_Image/image3.jpg',
+              
               link: '/service',
-              icon: '/image/icons/icon9.png',
+              
             },
             {
-              image: '/image/backgroundSs2.jpeg',
-              title: 'Ingénierie',
+              image: '/image/stor_Image/image1.jpg',
+              
               link: '/service',
-              icon: '/image/icons/icon4.png',
+             
             },
           ].map((card, index) => (
             <div
@@ -175,12 +175,7 @@ function Home() {
                     WebkitBackdropFilter: 'blur(10px)',
                   }}
                 >
-                  <img
-                    className="w-16 h-16 duration-300"
-                    src={card.icon}
-                    alt={`${card.title} icon`}
-                    style={{ filter: 'invert(0)' }}
-                  />
+                 
                 </div>
 
 
@@ -295,7 +290,7 @@ function Home() {
             className="flex items-center justify-center mx-auto bg-cover bg-center hover:scale-105  duration-500  mt-[150px] 
                       w-[300px] h-[300px] lg:w-[600px] lg:h-[600px]"
             style={{
-              backgroundImage: `url('/image/stor_Image/image1.jpg')`,
+              backgroundImage: `url('/image/stor_Image/image10.png')`,
             }}
           ></div>
           
@@ -369,154 +364,101 @@ function Home() {
 
       {/* Third Section (3 Columns with Title and Description) */}
 
+      <section className="bg-[#cea58e] p-8">
+  <div className="max-w-6xl mx-auto flex flex-col mt-20 md:flex-row items-start justify-between space-y-8 md:space-y-0 md:space-x-6">
 
+    {/* Column 1: Image section */}
+    <div className="w-full md:w-1/3  flex justify-center">
       <div
-        className="  bg-cover bg-center bg-white pb-8 "
+        className="bg-cover bg-center hover:scale-105 duration-500 w-[300px] h-[300px] lg:w-[300px] lg:h-[300px] rounded-full shadow-xl"
         style={{
-          backgroundImage: `url('/image/logoO.png')`,
-          backgroundSize: '200%',
-          backgroundRepeat: 'no-repeat',
+          backgroundImage: `url('/image/stor_Image/image6.jpg')`,
         }}
+      ></div>
+    </div>
 
+    {/* Column 2: Text section */}
+    <div className="w-full md:w-1/3    space-y-4 text-center md:text-left flex flex-col justify-center">
+      <h2 className="text-3xl mt-10 font-bold text-white">Welcome to Our Website</h2>
+      <p className="text-lg text-white">
+        Explore our offerings and discover amazing deals just for you!
+      </p>
+    </div>
+
+    {/* Column 3: Button section */}
+  
+<div className="w-full md:w-1/3 flex flex-col items-center justify-center md:justify-end space-y-4">
+  <svg
+    className="w-8 h-20 animate-bounce text-white"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    viewBox="0 0 24 24"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+  </svg>
+
+  <a
+    href="https://ma.theuntamed.com/?referral=dFZZG4"
+    target="_blank"
+    rel="noopener noreferrer"
+    className=" px-12 py-4 mt-20  bg-white text-[#cea58e] font-semibold rounded-full hover:bg-[#ffb489] hover:text-white transition duration-300"
+  >
+    Visit Official Site
+  </a>
+</div>
+
+
+  </div>
+</section>
+
+
+{/* pake section */}
+
+<section className="bg-[rgb(112,98,88)] p-8">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-6">
+
+    {/* Column 1: Video */}
+    <div className="w-full md:w-1/3">
+      <video
+        className="w-full h-auto rounded-lg shadow-lg"
+        controls
+        poster="/image/stor_Image/image2.jpg" // Optional thumbnail
       >
-        <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-          <h2 className="dark:text-lime-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold  text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-1/3 rounded-br-full bg-none p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8 hover:bg-white hover:text-cyan-600 duration-300">
-            Nos Services :
-          </h2>
-        </AnimationWraRL>
-        <div className="max-w-6xl mx-auto text-center ">
+        <source src="/video/video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
 
-          <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 p-2 ">
-              {carouselText.slice(0, 3).map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white p-6 rounded-lg shadow-lg transform transition-all hover:scale-100 hover:shadow-2xl relative overflow-hidden group hover-text-black"
-                >
-                  {/* Hidden image initially, revealed on hover with 50% opacity */}
-                  <img
-                    src={item.src}
-                    alt={`Service ${index + 1}`}
-                    className="absolute inset-0 w-full h-full object-cover opacity-100 group-hover:opacity-10 transition-opacity duration-500"
-                  />
-                  {/* Card content */}
-                  <div className="group relative z-10 ">
-                    <h3 className="text-2xl font-semibold text-white  group-hover:text-blue-900 mb-8 transition-colors duration-300 group-hover:text-3xl">
-                      {item.title}
-                    </h3>
-                    <p className="text-gray-700 text-lg group-hover:text-black  opacity-0 mt-4 group-hover:opacity-100 transition-colors duration-300 group-hover:text-2xl">
-                      {/* Handle the second card description as one word per row */}
-                      {index === 1
-                        ? item.description
-                          .split('.')
-                          .filter(text => text.trim() !== '')
-                          .map((line, idx) => (
-                            <span key={idx} className="block   m-3 ">
-                              {line.trim()}
-                            </span>
-                          ))
-                        : item.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </AnimationWraRL>
-        </div>
-      </div>
+    {/* Column 2: Image */}
+    <div className="w-full md:w-1/3 flex justify-center">
+      <img
+        src="/image/stor_Image/image2.jpg"
+        alt="Product"
+        className="rounded-xl shadow-md w-[300px] h-auto object-cover"
+      />
+    </div>
+
+    {/* Column 3: Text + Button */}
+    <div className="w-full md:w-1/3 space-y-4 text-center md:text-left">
+      <h2 className="text-3xl font-bold text-[#ffffff]">اكتشف منتجنا الجديد</h2>
+      <p className="text-red-400">
+      اكتشف الابتكار كما لم تراه من قبل. شاهد الفيديو لترى المنتج أثناء الاستخدام، ثم استعرض المزيد من التفاصيل والعروض.
+      </p>
+      <a
+        href="https://ma.theuntamed.com/product/starter-anti-ageing-treatment-duo/"
+        className="inline-block px-6 py-3 bg-[#cea58e] text-white font-semibold rounded-full hover:bg-[#aa7d66] transition duration-300"
+      >
+        Learn More
+      </a>
+    </div>
+
+  </div>
+</section>
 
 
-    
 
-
-      <div className="bg-[#eaf1f5] bg-cover bg-center dark:bg-gray-900 ">
-
-        <div className="grid grid-cols-1   md:grid-cols-2 bg-[#eaf1f5]  gap-4 dark:bg-gray-900 dark:text-white ">
-
-          {/* First Column (Main Paragraph with Title) */}
-          <div className="text-gray-700 text-lg md:text-xl  leading-relaxed  "
-          >
-
-        <AnimationWraRL transition={{ duration: 1, delay: 0.2 }}>
-          <h2 className="dark:text-lime-600 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold  text-blue-900 w-full sm:w-2/3 md:w-1/2 lg:w-2/3 rounded-br-full bg-none  sm:p-6 lg:p-8    hover:bg-white hover:text-cyan-600 duration-300">
-          Engagement :
-          </h2>
-          <h3 className="text-lime-600 text-xl sm:text-xl md:text-2xl lg:text-4xl   w-full   pl-10  mb-4  ">
-          Sécurité , Santé , Environnement
-          </h3>
-        </AnimationWraRL>
-            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <div className=' duration-500 hover:text-lime-600  dark:text-white  mt-12 hover:pt-4'>
-                <p className="text-black   text-xl md:text-3xl pl-12 dark:text-white  ">
-                  Notre objectif est d'impliquer nos collaborateurs</p>
-                <p className='text-black mt-3 md:text-3xl pl-12 text-xl  dark:text-white'>
-                  dans une démarche visant à développer leur culture SSE.
-                </p>
-              </div>
-            </AnimationWrapper>
-          </div>
-
-          {/* Second Column (Three Sections with Logos and Titles) */}
-          <div className="space-y-8   bg-white  p-20  dark:bg-gray-700">
-            {/* First Item */}
-            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <div className=" group flex items-start space-x-4 pt-12 hover:scale-120 hover:p-4 duration-500 ">
-                <img
-                  src="/image/icons/Sanicon.png"
-                  alt="Qualité"
-                  className="w-16 h-16 p-2 bg-lime-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
-                />
-                <div>
-                  <h4 className="text-blue-900 font-semibold  md:text-3xl text-2xl dark:text-lime-600 ">
-                    Santé :
-                  </h4>
-                  <p className='md:text-2xl text-xl '>
-                  Préserver la santé de nos collaborateurs.
-                  </p>
-                </div>
-              </div>
-            </AnimationWrapper>
-
-
-            {/* Second Item */}
-            <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-              <div className=" group flex items-start space-x-4  hover:scale-120 hover:p-4 duration-500">
-                <img
-                  src="/image/icons/iconQ2.png"
-                  alt="Sécurité"
-                  className="w-16 h-16 p-2    bg-lime-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
-                />
-                <div>
-                  <h4 className="text-blue-900 font-semibold  md:text-3xl text-2xl  dark:text-lime-600">
-                    Sécurité :
-                  </h4>
-                  <p className='md:text-2xl text-xl'>
-                    Garantir la sécurité  de nos collaborateurs.
-                  </p>
-                </div>
-              </div>
-            </AnimationWrapper>
-
-            {/* Third Item */}
-            <AnimationWrapper transition={{ duration: 1, delay: 0.5 }}>
-              <div className=" group flex items-start space-x-4  hover:scale-120 hover:p-4 duration-500">
-                <img
-                  src="/image/icons/iconQ3.png"
-                  alt="Environnement"
-                  className="w-16 h-16 p-2  bg-lime-600 rounded-full group-hover:scale-150 duration-500  group-hover:m-2 "
-                />
-                <div>
-                  <h4 className="text-blue-900 font-semibold  md:text-3xl text-2xl dark:text-lime-600">
-                    Environnement :
-                  </h4>
-                  <p className='md:text-2xl text-xl'>
-                    Minimiser l’impact de notre activité sur l’environnement.</p>
-                </div>
-              </div>
-            </AnimationWrapper>
-          </div>
-        </div>
-      </div>
     </div>
   )
 }

@@ -32,7 +32,7 @@ function Navbars() {
               }}
             />
           <span className="text-3xl font-semibold dark:text-white hover:opacity-80 text-blue-950 dark:hover:text-lime-500 hover:text-blue-800">
-            INSTRUMEA
+            text
           </span>
         </Link>
 

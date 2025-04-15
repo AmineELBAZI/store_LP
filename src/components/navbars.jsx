@@ -13,26 +13,10 @@ function Navbars() {
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
-          {/* Logo */}
-          <div
-              className="logo bg-cover bg-center w-12 h-12 dark:hidden"
-              style={{
-                backgroundImage: `url('/image/logoF.png')`,
-                backgroundSize: 'contain',
-                backgroundRepeat: 'no-repeat',
-              }}
-            />
-            {/* Dark Mode Logo */}
-            <div
-              className="logo bg-cover bg-center w-12 h-12 hidden dark:block"
-              style={{
-                backgroundImage: `url('/image/logoW.png')`,
-                backgroundSize: 'contain',
-                backgroundRepeat: 'no-repeat',
-              }}
-            />
+         
+        
           <span className="text-3xl font-semibold dark:text-white hover:opacity-80 text-blue-950 dark:hover:text-lime-500 hover:text-blue-800">
-            text
+          THE  UNTAMED
           </span>
         </Link>
 

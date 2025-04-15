@@ -4,7 +4,6 @@ import './App.css'
 import Navbars from './components/navbars.jsx'
 import Home from './pages/home.jsx'
 import NoPage from './pages/noPage.jsx'
-import Footer from './components/footer.jsx'
 
 function App() {
   return (
@@ -12,9 +11,6 @@ function App() {
     
     <BrowserRouter >
     <Navbars />
-      {/* Navbar shown on all pages */}
-    
-
       <div >
         <Routes>
           <Route index element={<Home />} />
@@ -22,9 +18,6 @@ function App() {
           <Route path="*" element={<NoPage />} />
         </Routes>
       </div>
-
-      {/* Footer shown on all pages */}
-      <Footer />
     </BrowserRouter>
     </>
   )

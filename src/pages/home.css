@@ -1,0 +1,30 @@
+.perspective {
+    perspective: 1000px;
+  }
+  
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  /* Optional: Adding a hover effect on images */
+  .group:hover .group-hover\:rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+  
+  .group:hover .group-hover\:rotate-y-180 .backface-hidden {
+    opacity: 1;
+  }
+  
+  .group .backface-hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  

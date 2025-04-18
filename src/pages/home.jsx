@@ -230,7 +230,7 @@ function Home() {
               muted
               loop
               controls
-              poster="/image/video/new_video.gif"
+              poster="/image/video/new1_video.gif"
             >
               <source src="/image/video/new_video.mp4" type="video/mp4" />
               المتصفح الخاص بك لا يدعم تشغيل الفيديو.

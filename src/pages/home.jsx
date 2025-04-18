@@ -75,7 +75,7 @@ function Home() {
   }
 
   return (
-    <div className="bg-[#dfdcd7] dark:bg-gray-900">
+    <div className="bg-[#dfdcd7] ">
       {/* First Section (Background Image with Title) */}
       <div
         className="bg-gradient-to-r from-[#a17a50] via-[#d6a870] to-[#ffffff] bg-cover bg-center flex flex-col items-start justify-center relative pl-8 pr-8 "
@@ -230,7 +230,7 @@ function Home() {
               muted
               loop
               controls
-              poster="/image/stor_Image/new_image.png"
+              poster="/image/video/new_video.gif"
             >
               <source src="/image/video/new_video.mp4" type="video/mp4" />
               المتصفح الخاص بك لا يدعم تشغيل الفيديو.
@@ -259,47 +259,47 @@ function Home() {
       {/* Fourth Section (Image and Description Slider) */}
 
 
-      <div className="bg-cover bg-center bg-[rgb(112,98,88)] dark:bg-gray-900 ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 dark:bg-gray-900 ">
+      <div className="bg-cover bg-center bg-[rgb(112,98,88)]  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  ">
           {/* First Column (Main Paragraph with Title) */}
 
 
           <div dir="rtl" className="text-lg sm:text-xl leading-relaxed p-6 sm:p-12 fade-in-up bg-[#cea58e]">
             <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
               <h2 className="text-amber-700 text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">
-                <p className="font-bold mb-4 text-black hover:text-blue-700 dark:text-white dark:bg-gray-900 m-4 hover:pr-6 duration-500">
+                <p className="font-bold mb-4 text-black hover:text-blue-700 dark:text-white  m-4 hover:pr-6 duration-500">
                   سيروم للجسم لشد البشرة ومضاد للأكسدة
                 </p>
               </h2>
             </AnimationWrapper>
             <div className="p-6 text-gray-600">
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pr-6 duration-500">
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white  hover:pr-6 duration-500">
                   يُحسن من تماسك البشرة بفضل الريسفيراترول الطبيعي
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pr-6 duration-500">
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white  hover:pr-6 duration-500">
                   94٪ من المكونات طبيعية
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pr-6 duration-500">
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white  hover:pr-6 duration-500">
                   مناسب لجميع أنواع البشرة
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pr-6 duration-500">
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white  hover:pr-6 duration-500">
                   خالٍ من التجارب على الحيوانات (CRUELTY-FREE)
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pr-6 duration-500">
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white  hover:pr-6 duration-500">
                   مصنوع في سويسرا
                 </p>
               </AnimationWrapper>
               <AnimationWrapper transition={{ duration: 1, delay: 0.2 }}>
-                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white dark:hover:text-lime-600 hover:pr-6 duration-500">
+                <p className="mb-4 text-xl sm:text-3xl hover:text-blue-800 dark:text-white hover:pr-6 duration-500">
                   نباتي (VEGAN)
                 </p>
               </AnimationWrapper>
@@ -338,8 +338,8 @@ function Home() {
 
 
 
-      <div className="bg-cover bg-center bg-[rgb(112,98,88)] dark:bg-gray-900 ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 dark:bg-gray-900 ">
+      <div className="bg-cover bg-center bg-[rgb(112,98,88)] ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  ">
           {/* Wrapper for Centering */}
           <AnimationWraLR transition={{ duration: 1, delay: 0.2 }}>
 
@@ -367,13 +367,13 @@ function Home() {
             {/* Content */}
             <div className="space-y-6 sm:space-y-10 text-3xl sm:text-3xl pt-20">
               <AnimationWrapper transition={{ duration: 1, delay: 0.3 }}>
-                <p className="hover:text-blue-800 dark:hover:text-lime-500 transition duration-500">
+                <p className="hover:text-blue-800 transition duration-500">
                   هل تبحث عن لحظة هدوء وسط صخب الحياة؟
                 </p>
-                <p className="hover:text-blue-800 text-teal-800 mt-10 dark:hover:text-lime-500 transition duration-500">
+                <p className="hover:text-blue-800 text-teal-800 mt-10  transition duration-500">
                   The Untamed
                 </p>
-                <p className="hover:text-blue-800 dark:hover:text-lime-500 transition duration-500">
+                <p className="hover:text-blue-800  transition duration-500">
                   تأخذك في رحلة من العناية الذاتية مستوحاة من سحر الطقوس الإسكندنافية
                 </p>
               </AnimationWrapper>
@@ -481,14 +481,14 @@ function Home() {
       <section className="bg-[rgb(112,98,88)] p-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-6">
           {/* Column 1: Video */}
-          <div className="w-full md:w-1/3">
+          <div className="w-full  md:w-1/3 ">
             <video
               className="w-full h-auto rounded-lg shadow-lg"
               controls
-              poster="/image/stor_Image/back2.jpg" // Optional thumbnail
+              poster="/image/video/PF_video.gif" 
               autoplay
-              muted // For autoplay to work in most browsers
-              loop // Optional, if you want the video to loop
+              muted 
+              loop 
             >
               <source src="/image/video/PF_video.mp4" type="video/mp4" />
               Your browser does not support the video tag.
@@ -500,7 +500,7 @@ function Home() {
             <img
               src="/image/stor_Image/p_image.png"
               alt="Product"
-              className="rounded-xl shadow-md w-[800px] h-auto object-cover"
+              className="rounded-full shadow-md w-[600px] h-[300px] object-cover "
             />
           </div>
 
@@ -520,6 +520,8 @@ function Home() {
         </div>
       </section>
 
+
+    
 
 
 

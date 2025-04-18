@@ -154,24 +154,7 @@ function Home() {
                 alt={card.title}
               />
 
-              {/* Icon at the top */}
-              <div
-                className="absolute top-4 left-4 flex justify-center items-center rounded-full p-4"
-                style={{
-                  background: 'rgba(255, 255, 255, 0)',
-                  backdropFilter: 'blur(10px)',
-                  WebkitBackdropFilter: 'blur(10px)',
-                }}
-              >
-
-              </div>
-
-
-
-              {/* Title with overlay */}
-              <h5 className="absolute inset-0 flex items-center justify-center text-white text-xl sm:text-[10px] md:text-[15px] lg:text-[20px] font-bold tracking-tight bg-black bg-opacity-0 hover:bg-opacity-10 p-3" style={fadeInAnimation}>
-                {card.title}
-              </h5>
+             
 
             </div>
           ))}
